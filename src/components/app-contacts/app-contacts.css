@@ -1,0 +1,21 @@
+.main-contacts {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-family: 'FiraSans-regular';
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main-contacts a {
+    text-decoration: none;
+    color: #fff;
+    transition: .25s ease-in-out;
+}
+
+.main-contacts a:hover {
+    color: var(--hover-color);
+}

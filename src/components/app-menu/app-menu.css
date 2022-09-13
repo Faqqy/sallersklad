@@ -1,0 +1,24 @@
+.main-menu {
+    height: 100%;
+    font-family: 'FiraSans-regular';
+    font-weight: 400;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    height: 100%;
+}
+
+.main-menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .25s ease-in-out;
+}
+
+.main-menu a:hover {
+    color: var(--hover-color);
+}

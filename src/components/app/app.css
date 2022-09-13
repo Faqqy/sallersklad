@@ -1,0 +1,13 @@
+.main-header {
+    background: var(--main-color);
+    height: 136px;
+    width: 100%;
+    display: flex;
+    align-items: center
+}
+
+
+
+
+
+

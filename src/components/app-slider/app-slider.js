@@ -3,6 +3,7 @@ import  './app-slider.css';
 import SimpleImageSlider from "react-simple-image-slider";
 
 
+
 const images = [
   { url: "images/imgslide/slide1.png" },
   { url: "images/imgslide/slide2.png" },

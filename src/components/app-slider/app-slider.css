@@ -12,10 +12,11 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin: 0 40px 0 222px;
+    margin: 0 40px 0 170px;
 }
 
 .rgbaSLiderText h1 {
+    font-family: 'Fira Sans semibold';
     font-size: 55px;
     color: #2C2C2C;
     font-weight: 600;
@@ -27,6 +28,7 @@
     font-weight: 400;
     color: #4D4D4D;
     padding-bottom: 70px;
+    width: 510px;
 }
 
 .rgbaSLiderText a {

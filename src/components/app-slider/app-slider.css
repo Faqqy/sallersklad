@@ -1,0 +1,50 @@
+.rgbaSLiderBLock {
+    position: absolute;
+    top: 136px;
+    background: rgba(255,255,255, 0.74);
+    z-index: 1;
+    height: 990px;
+    width: 805px;
+}
+
+.rgbaSLiderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 40px 0 222px;
+}
+
+.rgbaSLiderText h1 {
+    font-size: 55px;
+    color: #2C2C2C;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+
+.rgbaSLiderText p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4D4D4D;
+    padding-bottom: 70px;
+}
+
+.rgbaSLiderText a {
+    width: 350px;
+    height: 80px;
+    background: linear-gradient(180deg, #FF7A00 0%, #ED5500 100%);
+    border-radius: 4px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.rgbaSLiderText a:hover {
+    background: #FF5C00;
+}
+
+.rgbaSLiderText a:active {
+    background: #ED5500;
+}

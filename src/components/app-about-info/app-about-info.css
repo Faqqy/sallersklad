@@ -1,0 +1,74 @@
+.aboutInfoBlock {
+    padding-top: 100px;
+}
+
+.aboutInfoBlock img {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.aboutInfoBlock h2 {
+    font-size: 45px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 600;
+    padding-bottom: 45px;
+}
+
+.aboutInfoBlock h3 {
+    font-size: 35px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 500;
+    padding-bottom: 55px;
+    padding-top: 135px;
+}
+
+.aboutInfoBlock h4  {
+    font-size: 25px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 320px;
+}
+
+.aboutInfoBlock p {
+    font-family: 'FiraSans-regular';
+    font-size: 19px;
+    font-weight: 400;
+    color: #2C2C2C;
+    padding-bottom: 15px;
+}
+
+.second-block_aboutInfo-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-block_aboutInfo-item {
+    position: relative;
+    width: 345px;
+}
+
+.second-block_aboutInfo-item img {
+    padding: 0;
+}
+
+.iconOk {
+    position: absolute;
+    border: 8px solid #fff;
+    border-radius: 30px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: -30px;
+}
+
+.rsis-container {
+    width: 272px;
+}
+
+.rsis-image {
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+}

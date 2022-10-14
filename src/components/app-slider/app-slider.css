@@ -1,18 +1,28 @@
+.slider {
+    position: relative;
+}
+
 .rgbaSLiderBLock {
     position: absolute;
-    top: 136px;
     background: rgba(255,255,255, 0.74);
     z-index: 1;
     height: 990px;
-    width: 805px;
+    width: 915px;
+}
+
+.rgbaSLiderBLock .container {
+    display: flex;
+    height: 100%;
 }
 
 .rgbaSLiderText {
+    position: absolute;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin: 0 40px 0 170px;
+    width: 500px;
 }
 
 .rgbaSLiderText h1 {

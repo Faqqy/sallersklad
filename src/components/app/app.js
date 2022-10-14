@@ -7,6 +7,7 @@ import Logo from '../app-logo/app-logo';
 import MainMenu from '../app-menu/app-menu';
 import HeaderContacts from '../app-contacts/app-contacts';
 import Slider from '../app-slider/app-slider';
+import AboutInfo from '../app-about-info/app-about-info';
 
 function App() {
     return(
@@ -24,11 +25,15 @@ function App() {
                 <div className="slider">
                     { <Slider/> }
                 </div>
-                <Container>
-                    <Row>
-                        <Col></Col>
-                    </Row>
-                </Container>
+                <div className="about-info">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <AboutInfo/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
             </div>
         </div>
 

@@ -34,7 +34,11 @@ export default function App() {
         }
       })} 
       />
-
+      <div style={{ height:40 }}>
+      {errors.Phone && errors.Phone.type === "minLength" && <span>Введите 11 цифр вашего номера</span>}
+      {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
+      </div>
+      
 
 
       <input type="submit" />

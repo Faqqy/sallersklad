@@ -34,9 +34,6 @@ export default function App() {
         }
       })} 
       />
-        <div style={{ height: 20 }}>
-            { errors?.message && <p>{errors?.Phone?.message}</p> }
-        </div>
 
 
 

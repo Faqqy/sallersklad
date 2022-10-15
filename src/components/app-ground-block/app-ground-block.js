@@ -9,7 +9,12 @@ function Ground() {
         <div className='groundInfoBlock'>
             <div className="firstBlockGround">
                 <h2> <img src={ h2Img } alt="" />Площадки</h2>  
-                { <Form/> }
+                
+            </div>
+            <div className="secondBLockForm">
+                <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
+                <p>или позвоните по номеру <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+            { <Form/> }
             </div>
         </div>
     );

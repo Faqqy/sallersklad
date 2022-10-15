@@ -25,7 +25,7 @@ export default function App() {
         required: "Поле обязательно к заполнению!",
         maxLength: 11,
         minLength: {
-            value: 11,
+            value: 3,
             message: 'Введите 11 цифр вашего номера'
         },
         pattern: {
@@ -34,9 +34,11 @@ export default function App() {
         }
       })} 
       />
-        <div style={{ height: 20 }}>
-            { errors?.message && <p>{errors?.Phone?.message}</p> }
-        </div>
+      <div style={{ height:40 }}>
+      {errors.Phone && errors.Phone.type === "minLength" && <span>Введите 11 цифр вашего номера</span>}
+      {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
+      </div>
+      
 
 
 

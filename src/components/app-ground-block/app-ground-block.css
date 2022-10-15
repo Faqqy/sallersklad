@@ -1,7 +1,5 @@
 .groundInfoBlock {
-    margin-top: 218px;
-    height: 1200px;
-    background-color: #999;                                     
+    margin-top: 218px;                                   
 }
 
 .groundInfoBlock img {
@@ -15,4 +13,14 @@
     font-family: 'Fira Sans semibold';
     font-weight: 600;
     padding-bottom: 45px;
+}
+
+.firstBlockGround {
+    height: 1200px;
+    background-color: #999;  
+}
+
+.secondBLockForm {
+    height: 412px;
+    background-color: var(--hover-color);
 }

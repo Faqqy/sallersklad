@@ -8,6 +8,7 @@ import MainMenu from '../app-menu/app-menu';
 import HeaderContacts from '../app-contacts/app-contacts';
 import Slider from '../app-slider/app-slider';
 import AboutInfo from '../app-about-info/app-about-info';
+import Ground from '../app-ground-block/app-ground-block';
 
 function App() {
     return(
@@ -30,6 +31,15 @@ function App() {
                         <Row>
                             <Col>
                                 { <AboutInfo/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="ground-block">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <Ground/> }
                             </Col>
                         </Row>
                     </Container>

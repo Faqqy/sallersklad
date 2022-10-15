@@ -1,0 +1,18 @@
+.groundInfoBlock {
+    margin-top: 218px;
+    height: 1200px;
+    background-color: #999;                                     
+}
+
+.groundInfoBlock img {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.groundInfoBlock h2 {
+    font-size: 45px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 600;
+    padding-bottom: 45px;
+}

@@ -48,6 +48,7 @@
 .second-block_aboutInfo-item {
     position: relative;
     width: 345px;
+    margin-top: 25px;
 }
 
 .second-block_aboutInfo-item img {
@@ -69,6 +70,34 @@
 }
 
 .rsis-image {
-    background-size: contain!important;
+    background-size: cover!important;
     background-repeat: no-repeat!important;
+}
+
+.bBfHpH {
+    top: calc(111% - 17.5px)!important;
+    background: none!important;
+    box-shadow: none!important;
+    opacity: 1!important; 
+}
+
+.bBfHpH::before {
+    border-top: 2px solid #FF5C00!important;
+    border-right: 2px solid #FF5C00!important;
+    height: 23px!important;
+    width: 23px!important;
+}
+
+.dZkckO {
+    top: calc(111% - 17.5px)!important;
+    background: none!important;
+    box-shadow: none!important;
+    opacity: 1!important;  
+}
+
+.dZkckO::before {
+    border-top: 2px solid #FF5C00!important;
+    border-right: 2px solid #FF5C00!important;
+    height: 23px!important;
+    width: 23px!important;
 }

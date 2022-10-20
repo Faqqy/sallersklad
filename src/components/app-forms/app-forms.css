@@ -1,0 +1,66 @@
+.secondBLockForm {
+    margin-top: 75px;
+}
+
+.secondBLockForm h3 {
+    font-size: 35px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.secondBLockForm p {
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.secondBLockForm a {
+    font-size: 25px;
+    color: #413C33;
+    font-family: 'Fira Sans semibold';
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+input[type="text"] {
+    height: 80px;
+    width: 350px;
+    display: inline-block; 
+    border: 1px solid #413C33;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+
+input[type="submit"] {
+    height: 80px;
+    width: 350px;  
+    display: inline-block;
+    border: 1px solid #413C33;
+    background: linear-gradient(180deg, #504B42 0%, #2C2925 100%);
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Fira Sans semibold';
+}
+
+input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+
+.check_block {
+    display: flex;
+    text-align: left;
+    margin-right: 97px;
+    justify-content: end;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: #2C2C2C;
+    padding-left: 25px;
+}

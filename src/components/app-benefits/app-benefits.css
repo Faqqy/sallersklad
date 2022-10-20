@@ -1,0 +1,22 @@
+.flexItem {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 65px;
+}
+
+.flexItem p {
+    width: 300px;
+}
+
+.flexItem img {
+    margin: 0 auto;
+}
+
+.benefitsBlock {
+    margin-top: 190px;
+}
+
+.benefitsBlock h3{
+    padding-bottom: 130px;
+}

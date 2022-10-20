@@ -9,6 +9,8 @@ import HeaderContacts from '../app-contacts/app-contacts';
 import Slider from '../app-slider/app-slider';
 import AboutInfo from '../app-about-info/app-about-info';
 import Ground from '../app-ground-block/app-ground-block';
+import Form from '../app-forms/app-forms';
+import Benif from '../app-benefits/app-benefits';
 
 function App() {
     return(
@@ -40,6 +42,25 @@ function App() {
                         <Row>
                             <Col>
                                 { <Ground/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="ground-block_form">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <Form/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                   
+                </div>
+                <div className="benefits-block">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <Benif/> }
                             </Col>
                         </Row>
                     </Container>

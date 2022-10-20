@@ -20,7 +20,10 @@
     background-color: #999;  
 }
 
-.secondBLockForm {
+.ground-block_form {
     height: 412px;
     background-color: var(--hover-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
 }

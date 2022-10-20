@@ -15,33 +15,53 @@ export default function App() {
 
   
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input {...register("Name", {
-        required: "Поле обязательно к заполнению!",
-        minLength: 3
-      })} 
-      />
-      <input {...register("Phone", {
-        required: "Поле обязательно к заполнению!",
-        maxLength: 11,
-        minLength: {
-            value: 3,
-            message: 'Введите 11 цифр вашего номера'
-        },
-        pattern: {
-            value: /^[\d\+][\d\(\)\ -]{4,14}\d$/,
-            message: 'Для ввода допустимы только цифры'
-        }
-      })} 
-      />
-      <div style={{ height:40 }}>
-      {errors.Phone && errors.Phone.type === "minLength" && <span>Введите 11 цифр вашего номера</span>}
-      {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
-      </div>
-      
 
 
-      <input type="submit" />
-    </form>
+    <div className="secondBLockForm">
+      <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
+      <p>или позвоните по номеру :<a href="tel:+79265330740">+7 926 533 07 40</a></p>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <input type='text' placeholder='Имя' {...register("Name", {
+            required: "Поле обязательно к заполнению!",
+            minLength: 3
+          })} 
+          />
+          <input type='text' placeholder='Телефон' {...register("Phone", {
+            required: "Поле обязательно к заполнению!",
+            maxLength: 11,
+            minLength: {
+                value: 3,
+                message: 'Введите 11 цифр вашего номера'
+            },
+            pattern: {
+                value: /^[\d\+][\d\(\)\ -]{4,14}\d$/,
+                message: 'Для ввода допустимы только цифры'
+            }
+          })} 
+          />
+          <input type="submit" />
+          <div className="check_block">
+          <input
+            type='checkbox'
+            placeholder='February'
+            {...register('February', {})}
+            className='mx-3'
+          />
+          <label htmlFor=''>Даю согласие на обработку <br />
+персональных данных</label>
+          </div>
+
+          <div class="errors_block" style={{ height:40 }}>
+            {errors.Phone && errors.Phone.type === "minLength" && <span>Введите 11 цифр вашего номера</span>}
+            {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
+          </div>
+          
+
+
+          
+
+        </form>
+    </div>
+    
   );
 }

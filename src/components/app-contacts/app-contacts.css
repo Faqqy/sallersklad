@@ -19,3 +19,21 @@
 .main-contacts a:hover {
     color: var(--hover-color);
 }
+
+.footer-contacts p {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.styleOpasity {
+    color: #ADA79C!important;   
+}
+
+.footer-contacts a {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}

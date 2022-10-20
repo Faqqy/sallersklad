@@ -11,6 +11,11 @@ import AboutInfo from '../app-about-info/app-about-info';
 import Ground from '../app-ground-block/app-ground-block';
 import Form from '../app-forms/app-forms';
 import Benif from '../app-benefits/app-benefits';
+import PhotoGallery from '../app-photoGallery/app-photoGallery';
+import Cooperation from '../app-cooperation/app-cooperation';
+import Footer from '../app-footer/app-footer';
+import FooterContacts from '../app-contacts/app-contacts-footer';
+
 
 function App() {
     return(
@@ -61,6 +66,43 @@ function App() {
                         <Row>
                             <Col>
                                 { <Benif/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="photo-gallery-block">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <PhotoGallery/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="cooperation-block">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <Cooperation/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="main-footer">
+                    <Container>
+                        <Row>
+                            <Col>{ <Logo/> }</Col>
+                            <Col>{ <MainMenu/> }</Col>
+                            <Col>{ <FooterContacts/> }</Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <a className='aboutLink' href="#">
+                                    Согласие на обработку персональных данных
+                                </a>
+                                <a className='aboutLink' href="#">
+                                    Политика конфиденциальности
+                                </a>
                             </Col>
                         </Row>
                     </Container>

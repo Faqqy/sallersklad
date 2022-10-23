@@ -8,16 +8,19 @@
     padding-bottom: 10px;
 }
 
+.map-block img {
+    padding: 0;
+}
+
 .groundInfoBlock h2 {
     font-size: 45px;
     font-family: 'Fira Sans semibold';
     font-weight: 600;
-    padding-bottom: 45px;
+    padding-bottom: 80px;
 }
 
 .firstBlockGround {
-    height: 1200px;
-    background-color: #999;  
+    height: 1700px;
 }
 
 .ground-block_form {
@@ -26,4 +29,141 @@
     text-align: center;
     display: flex;
     align-items: center;
+}
+
+.react-tabs__tab-list {
+    border: none!important;
+}
+
+.react-tabs__tab {
+    padding-right: 100px!important;
+    padding-left: 0!important;
+}
+
+.react-tabs__tab--selected, .react-tabs__tab  {
+    background: none!important;
+    border: none!important;
+}
+
+.react-tabs__tab--selected h4{
+    color: var(--hover-color);
+    font-size: 35px;
+    font-weight: 500;
+    opacity: 1!important;
+}
+
+.react-tabs__tab--selected p {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 1!important;
+}
+
+.react-tabs__tab h4 {
+    color: var(--hover-color);
+    font-size: 35px;
+    font-weight: 500;
+    opacity: 0.6;
+} 
+
+.react-tabs__tab p {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.map-block {
+    margin-top: 30px;
+}
+
+.react-tabs__tab-panel h3 {
+    font-size: 35px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 500;
+    padding-bottom: 55px;
+    padding-top: 60px;
+}
+
+.block-modules {
+    position: absolute;
+}
+
+.bigModul {
+    display: block;
+    width: 160px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: var(--hover-color);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.bigModul:hover {
+    color: #fff;
+}
+
+.minModul {
+    position: relative; /* Относительное позиционирование */
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: var(--hover-color);
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.minModul:hover {
+    color: #fff;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background: rgba(77, 77, 77, 0.86);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 11px 0;
+    position: absolute;
+    z-index: 1;
+    top: 66%;
+    left: 50%;
+    margin-left: -60px;
+    transition: .25s ease-in-out;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
+}
+  
+.modulSecond:hover .tooltiptext {
+    visibility: visible;
+}
+
+.modulFirst, .modulSecond {
+    padding-right: 40px;
+}
+
+.modulImgBlock {
+    padding: 0;
+}
+
+.modulFirst img, .modulSecond img, .modulThree img {
+    padding: 0;
+    margin: 10px auto;
+    display: block;
+    cursor: pointer;
 }

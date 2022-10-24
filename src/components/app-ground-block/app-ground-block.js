@@ -72,6 +72,11 @@ function Ground() {
                                 </a>
                                 <img src={ carsImg } alt="" />
                             </div>
+                            <div className="modulDash">
+                                <a className='bigModul' href="#">
+                                    <img src={ carsImg } alt="" />
+                                </a>
+                            </div>
                             <div className="modulSecond">
                                 <a className='minModul' href="#">
                                     П2 <br />

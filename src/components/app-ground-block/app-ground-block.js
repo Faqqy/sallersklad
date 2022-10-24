@@ -6,6 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 import mapFirst from './map1.jpg';
 import mapSecond from './map2.jpg';
 import modulFirstImg from './modul1.png';
+import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
 
 
@@ -63,6 +64,32 @@ function Ground() {
                             <img src={ mapSecond } alt="Алтуфьевское шоссе, вл. 79Ж" />
                         </div>
                         <h3>Схема расположения модулей</h3>
+                        <div className="block-modules d-flex">
+                            <div className="modulFirst">
+                                <a className='bigModul' href="#">
+                                    П1 <br />
+                                    (30 м2)
+                                </a>
+                                <img src={ carsImg } alt="" />
+                            </div>
+                            <div className="modulSecond">
+                                <a className='minModul' href="#">
+                                    П2 <br />
+                                    (15 м2)
+                                </a>
+                                <span class="tooltiptext">Мини <br /> модуль</span>
+                                <img src={ carsImg } alt="" />
+                            </div>
+
+                        </div>
+                        <img className='modulImgBlock' src={ modulSecondImg } alt="Схема расположения модулей" />
+                        <div className="modulThree">
+                                <a className='bigModul' href="#">
+                                    П3 <br />
+                                    (30 м2)
+                                </a>
+                                <img src={ carsImg } alt="" />
+                            </div>
                     </TabPanel>
                 </Tabs>
             </div>

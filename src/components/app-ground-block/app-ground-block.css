@@ -690,11 +690,12 @@
 .moduleBlockModal {
     position: fixed;
     /* right: 13%; */
-    left: 36%;
-    bottom: 40%;
-    width: 526px;
-    height: 300px;
+    left: 25%;
+    bottom: 25%;
+    width: 920px;
+    height: 586px;
     background-color: #fff;
+    display: flex;
 }
 
 .modalMiniModule {
@@ -715,3 +716,43 @@
     height:100%;
     z-index:1;
 }
+
+.moduleBlockModal .close {
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    cursor: pointer;
+}
+
+.moduleBlockModal .carouselImgPopupp>div>div {
+    width: 375px;
+    height: 380px;
+    left: 73px;
+    top: 73px;
+}
+
+.infoBlockImgText {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoBlockPopupp {
+    margin-top: 71px;
+    margin-right: 170px;
+}
+
+.infoBlockPopupp h4 {
+    font-size: 30px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 600;
+}
+
+.infoBlockPopupp p {
+    font-size: 25px;
+    color: var(--hover-color);
+    font-family: 'Fira Sans semibold';
+}
+
+.infoBlockPopupp .dark {
+    color: #766D62;
+} 

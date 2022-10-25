@@ -8,32 +8,26 @@ import mapSecond from './map2.jpg';
 import modulFirstImg from './modul1.png';
 import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
+import closeImg from './close-btn.png';
+import SimpleImageSlider from "react-simple-image-slider";
 
-
+const images = [
+    { url: "images/imgSlidePopupp/slideP1.jpg" },
+    { url: "images/imgSlidePopupp/slideP2.jpg" },
+    { url: "images/imgSlidePopupp/slideP3.jpg" }
+];
 
 
 
 document.addEventListener("DOMContentLoaded",() => {
-  const the_button = document.querySelector(".block-modules span");
+  const the_button = document.querySelector(".block-modules button");
   the_button.addEventListener("click", handleClick);
 });
 
-document.addEventListener("click", (e) => {
-    const modalOver = document.querySelector(".moduleBlockModal");
-    const the_button = document.querySelector(".block-modules span");
-    const modal = document.querySelector(".modalMiniModule");
-    const bodyStyle = document.body;
-    const click = e.composedPath().includes(modalOver);
-        if(!click) {
-            modalOver.style.display = "none";
-            modal.style.display = "none";
-            the_button.style.backgroundColor = "";
-            bodyStyle.style.overflow = "";
-        }
-  });
+
 
 function handleClick(event) {
-  const the_button = document.querySelector(".block-modules span");
+  const the_button = document.querySelector(".block-modules button");
   const modal = document.querySelector(".modalMiniModule");
   const modalOver = document.querySelector(".moduleBlockModal");
   const closeBtn = document.querySelector(".close");
@@ -49,6 +43,20 @@ function handleClick(event) {
   })
   event.stopPropagation();
 }
+
+document.addEventListener("click", (e) => {
+    const modalOver = document.querySelector(".moduleBlockModal");
+    const the_button = document.querySelector(".block-modules button");
+    const modal = document.querySelector(".modalMiniModule");
+    const bodyStyle = document.body;
+    const click = e.composedPath().includes(modalOver);
+        if(!click) {
+            modalOver.style.display = "none";
+            modal.style.display = "none";
+            the_button.style.backgroundColor = "";
+            bodyStyle.style.overflow = "";
+        }
+  });
 
 
 function Ground() {
@@ -75,10 +83,10 @@ function Ground() {
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules d-flex">
                             <div className="modulFirst">
-                                <span className='bigModul' href="">
+                                <button className='bigModul' href="">
                                     П1 <br />
                                     (30 м<sup>2</sup>)
-                                </span>
+                                </button>
                                 <span class="tooltiptext2">Двойной <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
@@ -223,7 +231,25 @@ function Ground() {
             
                 <div className="modalMiniModule">
                     <div className="moduleBlockModal">
-                        <span className='close' href="#">1231</span>   
+                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                        <div className="infoBlockImgText d-flex">
+                            <div className="carouselImgPopupp">
+                                <SimpleImageSlider
+                                    useGPURender={true}
+                                    width={'375'}
+                                    height={'380'}
+                                    images={images}
+                                    showBullets={true}
+                                />
+                            </div>  
+                            <div className="infoBlockPopupp">
+                                <h4>
+                                    Мини модуль
+                                </h4>
+                                <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
+                            </div>
+                        </div> 
+
                     </div>           
                 </div>
             

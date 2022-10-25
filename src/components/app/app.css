@@ -3,7 +3,9 @@
     height: 136px;
     width: 100%;
     display: flex;
-    align-items: center
+    align-items: center;
+    position: fixed;
+    z-index: 2;
 }
 
 .main-body {

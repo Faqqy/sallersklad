@@ -13,7 +13,7 @@
 .main-contacts a {
     text-decoration: none;
     color: #fff;
-    transition: .25s ease-in-out;
+    transition: .25s ease-in-out!important;
 }
 
 .main-contacts a:hover {

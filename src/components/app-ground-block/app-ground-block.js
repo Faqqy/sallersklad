@@ -10,7 +10,13 @@ import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
 import closeImg from './close-btn.png';
 import frameImg from './frameMini.png';
+import frameImg2 from './frameDouble.png';
+import frameImg3 from './frameModuleYchast.png';
+import frameImg4 from './frame36.png';
+import frameImg5 from './frame18.png';
 import SimpleImageSlider from "react-simple-image-slider";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 const images = [
     { url: "images/imgSlidePopupp/slideP1.jpg" },
@@ -18,46 +24,13 @@ const images = [
     { url: "images/imgSlidePopupp/slideP3.jpg" }
 ];
 
+// const images2 = [
+//     { url: "images/imgSlidePopupp/slideP1.jpg" },
+//     { url: "images/imgSlidePopupp/slideP2.jpg" },
+//     { url: "images/imgSlidePopupp/slideP3.jpg" }
+// ];
 
 
-document.addEventListener("DOMContentLoaded",() => {
-  const the_button = document.querySelector(".block-modules button");
-  the_button.addEventListener("click", handleClick);
-});
-
-
-
-function handleClick(event) {
-  const the_button = document.querySelector(".block-modules button");
-  const modal = document.querySelector(".modalMiniModule");
-  const modalOver = document.querySelector(".moduleBlockModal");
-  const closeBtn = document.querySelector(".close");
-  const bodyStyle = document.body;
-  modal.style.display = "block";
-  modalOver.style.display = "block";
-  the_button.style.backgroundColor = "#413C33";
-  bodyStyle.style.overflow = "hidden";
-  closeBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-    the_button.style.backgroundColor = "";
-    bodyStyle.style.overflow = "";
-  })
-  event.stopPropagation();
-}
-
-document.addEventListener("click", (e) => {
-    const modalOver = document.querySelector(".moduleBlockModal");
-    const the_button = document.querySelector(".block-modules button");
-    const modal = document.querySelector(".modalMiniModule");
-    const bodyStyle = document.body;
-    const click = e.composedPath().includes(modalOver);
-        if(!click) {
-            modalOver.style.display = "none";
-            modal.style.display = "none";
-            the_button.style.backgroundColor = "";
-            bodyStyle.style.overflow = "";
-        }
-  });
 
 
 function Ground() {
@@ -84,26 +57,118 @@ function Ground() {
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules d-flex">
                             <div className="modulFirst">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П1 <br />
                                     (30 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Двойной модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg2 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
+
+
+
                                 <span class="tooltiptext2">Двойной <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulSecond">
-                                <button className='minModul'>
-                                    П2 <br />
-                                    (15 м<sup>2</sup>)
-                                </button>
+                                
+                            <Popup trigger={<button className='minModul open15'>
+                                П2 <br />
+                                (15 м<sup>2</sup>)
+                            </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Мини модуль
+                                                </h4>
+                                                <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
+         
                                 <span class="tooltiptext">Мини <br /> модуль</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulThree">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П3 <br />
                                     (30 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Двойной модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg2 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext3">Двойной <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
@@ -117,10 +182,39 @@ function Ground() {
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules_second d-flex">
                             <div className="modulFirst_seven">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П7 <br />
                                     (30 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Двойной модуль <br /> с участком
+                                                </h4>
+                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg3 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext4">Двойной <br /> модуль <br /> с участком</span>
                             </div>
                             <div className="modulDash">
@@ -129,41 +223,186 @@ function Ground() {
                                 </button>
                             </div>
                             <div className="modulSecond">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П8 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext5">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulThree">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П9 <br />
                                     (36 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Большой модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg4 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext6">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFour">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П10 <br />
                                     (36 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Большой модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg4 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext7">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFive">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П11 <br />
                                     (36 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Большой модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg4 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext8">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulSix">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П12 <br />
                                     (36 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Большой модуль <br /> с парковкой
+                                                </h4>
+                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg4 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext9">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
@@ -172,10 +411,39 @@ function Ground() {
                         <img className='modulImgBlock' src={ modulSecondImg } alt="Схема расположения модулей" />
                         <div className="block-modules_three d-flex">
                             <div className="modulFirst_seven sec0">
-                                <button className='bigModul'>
+                            <Popup trigger={<button className='bigModul open16'>
                                     П6.1 <br />
                                     (30 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Двойной модуль <br /> с участком
+                                                </h4>
+                                                <p>от 32 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg3 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext10">Двойной <br /> модуль <br /> с участком</span>
                             </div>
                             <div className="modulDash">
@@ -184,68 +452,246 @@ function Ground() {
                                 </button>
                             </div>
                             <div className="modulSecond sec1">
-                                <button className='minModul' href="#">
+                            <Popup trigger={<button className='minModul open16'>
                                     П6 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext11">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec2">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П5 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext12">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec3">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П4 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext13">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec4">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П3 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext14">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec5">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П2 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext15">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec6">
-                                <button className='minModul'>
+                            <Popup trigger={<button className='minModul open16'>
                                     П1 <br />
                                     (18 м<sup>2</sup>)
-                                </button>
+                                </button>} 
+                                modal
+                                closeOnDocumentClick
+                                lockScroll
+                                >
+                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <SimpleImageSlider
+                                                    useGPURender={true}
+                                                    width={'375'}
+                                                    height={'380'}
+                                                    images={images}
+                                                    showBullets={true}
+                                                />
+                                            </div>  
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br />
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={ frameImg5 } alt="1" />
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                        </div>
+                            </Popup>
                                 <span class="tooltiptext16">Одиночный <br /> модуль</span>
                             </div>
                         </div>
                     </TabPanel>
                 </Tabs>
             </div>
+
             
-                <div className="modalMiniModule">
-                    <div className="moduleBlockModal">
-                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+
+
+                {/* <div className="modalDoubleParkingModule">
+                    <div className="moduleBlockDoubleModal">
+                        <span className='close2'><img src={ closeImg } alt="Закрыть окно" /></span>
                         <div className="infoBlockImgText d-flex">
                             <div className="carouselImgPopupp">
                                 <SimpleImageSlider
                                     useGPURender={true}
                                     width={'375'}
                                     height={'380'}
-                                    images={images}
+                                    images={images2}
                                     showBullets={true}
                                 />
                             </div>  
                             <div className="infoBlockPopupp">
                                 <h4>
-                                    Мини модуль
+                                    Двойной модуль <br />
+                                    с парковкой
                                 </h4>
                                 <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
                                 <div className="frameTextMini">
@@ -259,7 +705,7 @@ function Ground() {
 
                     </div>           
                 </div>
-            
+             */}
 
         
         </div>

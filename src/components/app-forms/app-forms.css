@@ -30,6 +30,7 @@ input[type="text"] {
     border: 1px solid #413C33;
     border-radius: 4px;
     margin-right: 15px;
+    padding-left: 20px;
 }
 
 
@@ -43,6 +44,14 @@ input[type="submit"] {
     font-size: 20px;
     color: #fff;
     font-family: 'Fira Sans semibold';
+}
+
+input[type="submit"]:hover {
+    background: #36332C;
+}
+
+input[type="submit"]:active {
+    background: #7E7D7A;
 }
 
 input[type="checkbox"] {

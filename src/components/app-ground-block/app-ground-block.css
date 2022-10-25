@@ -87,18 +87,6 @@
     position: absolute;
 }
 
-/* .block-modules .push {
-    background-color: var(--main-color);
-}
-
-.block-modules_second a:active {
-    background-color: var(--main-color);
-}
-
-.block-modules_three a:active {
-    background-color: var(--main-color);
-} */
-
 .bigModul {
     display: block;
     width: 160px;
@@ -110,28 +98,35 @@
     padding: 10px;
     text-decoration: none;
     color: #fff;
+    border: none;
+    transition: .25s ease-in-out!important;
 }
 
 .bigModul:hover {
     color: #fff;
+    background-color: var(--main-color);
+    
 }
 
 .minModul {
-    position: relative; /* Относительное позиционирование */
+    position: relative;
     display: block;
-    width: 100px;
+    width: 95px;
     height: 100px;
     border-radius: 4px;
     background-color: var(--hover-color);
     font-size: 25px;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     text-decoration: none;
     color: #fff;
+    border: none;
+    transition: .25s ease-in-out!important;
 }
 
 .minModul:hover {
     color: #fff;
+    background-color: var(--main-color);
 }
 
 .tooltiptext {
@@ -687,7 +682,7 @@
 
 /* modal */
 
-.moduleBlockModal {
+.moduleBlockModal, .moduleBlockDoubleModal {
     position: fixed;
     /* right: 13%; */
     left: 25%;
@@ -698,8 +693,8 @@
     display: flex;
 }
 
-.modalMiniModule {
-    display: none;
+.modalMiniModule, .modalDoubleParkingModule {
+    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -717,28 +712,45 @@
     z-index:1;
 }
 
-.moduleBlockModal .close {
+.popup-content .close {
     position: absolute;
     top: 33px;
     right: 33px;
     cursor: pointer;
 }
 
-.moduleBlockModal .carouselImgPopupp>div>div {
+.moduleBlockDoubleModal .close2 {
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    cursor: pointer;
+}
+
+.popup-content .carouselImgPopupp>div>div {
     width: 375px;
     height: 380px;
     left: 73px;
     top: 73px;
 }
 
+.popup-content {
+    height: 740px;
+}
+
 .infoBlockImgText {
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+}
+
+.infoBlockImgText .carouselImgPopupp .rsis-image>div {
+    left: 52%!important;
+    position: revert!important;
 }
 
 .infoBlockPopupp {
-    margin-top: 71px;
-    margin-right: 36px;
+    margin-top: 66px;
+    margin-right: 55px;
 }
 
 .infoBlockPopupp h4 {

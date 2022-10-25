@@ -23,7 +23,10 @@ export default function App() {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input type='text' placeholder='Имя' {...register("Name", {
             required: "Поле обязательно к заполнению!",
-            minLength: 3
+            minLength: {
+              value: 3,
+              message: 'Слишком короткое имя'
+            }
           })} 
           />
           <input type='text' placeholder='Телефон' {...register("Phone", {
@@ -44,7 +47,9 @@ export default function App() {
           <input
             type='checkbox'
             placeholder='February'
-            {...register('February', {})}
+            {...register('February', {
+              required: "Поле обязательно к заполнению!"
+            })}
             className='mx-3'
           />
           <label htmlFor=''>Даю согласие на обработку <br />

@@ -738,7 +738,7 @@
 
 .infoBlockPopupp {
     margin-top: 71px;
-    margin-right: 170px;
+    margin-right: 36px;
 }
 
 .infoBlockPopupp h4 {
@@ -756,3 +756,24 @@
 .infoBlockPopupp .dark {
     color: #766D62;
 } 
+
+.frameTextMini {
+    margin-top: 60px;
+}
+
+.aboutCallMe p {
+    font-size: 25px;
+    color: var(--hover-color);
+    font-family: 'Fira Sans semibold';
+}
+
+.aboutCallMe a {
+    color: #2C2C2C;
+}
+
+.aboutCallMe {
+    left: 75px;
+    display: block;
+    position: absolute;
+    bottom: 28px;
+}

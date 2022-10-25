@@ -9,6 +9,7 @@ import modulFirstImg from './modul1.png';
 import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
 import closeImg from './close-btn.png';
+import frameImg from './frameMini.png';
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
@@ -34,7 +35,7 @@ function handleClick(event) {
   const bodyStyle = document.body;
   modal.style.display = "block";
   modalOver.style.display = "block";
-  the_button.style.backgroundColor = "var(--main-color)";
+  the_button.style.backgroundColor = "#413C33";
   bodyStyle.style.overflow = "hidden";
   closeBtn.addEventListener("click", () => {
     modal.style.display = "none";
@@ -83,7 +84,7 @@ function Ground() {
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules d-flex">
                             <div className="modulFirst">
-                                <button className='bigModul' href="">
+                                <button className='bigModul'>
                                     П1 <br />
                                     (30 м<sup>2</sup>)
                                 </button>
@@ -91,18 +92,18 @@ function Ground() {
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulSecond">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П2 <br />
                                     (15 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext">Мини <br /> модуль</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulThree">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П3 <br />
                                     (30 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext3">Двойной <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
@@ -116,53 +117,53 @@ function Ground() {
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules_second d-flex">
                             <div className="modulFirst_seven">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П7 <br />
                                     (30 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext4">Двойной <br /> модуль <br /> с участком</span>
                             </div>
                             <div className="modulDash">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     <img src={ carsImg } alt="" />
-                                </a>
+                                </button>
                             </div>
                             <div className="modulSecond">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П8 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext5">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulThree">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П9 <br />
                                     (36 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext6">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFour">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П10 <br />
                                     (36 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext7">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFive">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П11 <br />
                                     (36 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext8">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulSix">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П12 <br />
                                     (36 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext9">Большой <br /> модуль <br /> с парковкой</span>
                                 <img src={ carsImg } alt="" />
                             </div>
@@ -171,57 +172,57 @@ function Ground() {
                         <img className='modulImgBlock' src={ modulSecondImg } alt="Схема расположения модулей" />
                         <div className="block-modules_three d-flex">
                             <div className="modulFirst_seven sec0">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     П6.1 <br />
                                     (30 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext10">Двойной <br /> модуль <br /> с участком</span>
                             </div>
                             <div className="modulDash">
-                                <a className='bigModul' href="#">
+                                <button className='bigModul'>
                                     <img src={ carsImg } alt="" />
-                                </a>
+                                </button>
                             </div>
                             <div className="modulSecond sec1">
-                                <a className='minModul' href="#">
+                                <button className='minModul' href="#">
                                     П6 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext11">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec2">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П5 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext12">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec3">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П4 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext13">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec4">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П3 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext14">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec5">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П2 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext15">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec6">
-                                <a className='minModul' href="#">
+                                <button className='minModul'>
                                     П1 <br />
                                     (18 м<sup>2</sup>)
-                                </a>
+                                </button>
                                 <span class="tooltiptext16">Одиночный <br /> модуль</span>
                             </div>
                         </div>
@@ -247,8 +248,14 @@ function Ground() {
                                     Мини модуль
                                 </h4>
                                 <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
+                                <div className="frameTextMini">
+                                    <img src={ frameImg } alt="1" />
+                                </div>
                             </div>
                         </div> 
+                        <div className="aboutCallMe">
+                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                        </div>
 
                     </div>           
                 </div>

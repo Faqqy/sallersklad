@@ -16,7 +16,7 @@ function PhotoGallery() {
         console.log('lightGallery has been initialized');
     };
     return (
-        <div className="Gallery">
+        <div className="Gallery" id='photoGallery'>
             <h2> <img src={ h2Img } alt="Фотогалерея площадок" />Фотогалерея площадок</h2> 
             <div className="GalleryBox">
                 <LightGallery

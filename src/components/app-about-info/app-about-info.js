@@ -8,7 +8,7 @@ import Carousel from 'better-react-carousel';
 
 function AboutInfo() {
     return(
-        <div className='aboutInfoBlock'>
+        <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img src={ h2Img } alt="" />О нас</h2>    
                 <p>Аренда бытовок с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок.</p>

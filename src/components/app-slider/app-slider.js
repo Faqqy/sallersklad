@@ -4,6 +4,7 @@ import SimpleImageSlider from "react-simple-image-slider";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 
@@ -20,7 +21,7 @@ const SLide = () => {
   return (
     <div>
       
-      <div className="rgbaSLiderBLock"></div>
+      <div className="rgbaSLiderBLock" id='top'></div>
           <Container>
           
               <Row>
@@ -28,7 +29,10 @@ const SLide = () => {
                     <div className="rgbaSLiderText">
                       <h1>Модульные здания для бизнеса</h1>
                       <p>Текст текст текст текст текст Текст текст текст текст текст текст Текст текст текст текст текст</p>
-                      <a href="#">Арендовать модуль</a>
+                      <Link to="forms" spy={true} smooth={true} duration={500} offset={-217}>
+                        Арендовать модуль           
+                      </Link>
+                      {/* <a href="#">Арендовать модуль</a> */}
                     </div>
                   </Col>
               </Row>

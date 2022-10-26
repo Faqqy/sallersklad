@@ -19,3 +19,13 @@
     font-size: 20px;
     color: #4D4D4D;
 }
+
+.buttonBack {
+    position: relative;
+}
+
+.buttonBack img {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}

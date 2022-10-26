@@ -24,19 +24,11 @@ const images = [
     { url: "images/imgSlidePopupp/slideP3.jpg" }
 ];
 
-// const images2 = [
-//     { url: "images/imgSlidePopupp/slideP1.jpg" },
-//     { url: "images/imgSlidePopupp/slideP2.jpg" },
-//     { url: "images/imgSlidePopupp/slideP3.jpg" }
-// ];
-
-
-
 
 function Ground() {
     return(
         <div className='groundInfoBlock'>
-            <div className="firstBlockGround">
+            <div className="firstBlockGround" id='ploshadki'>
                 <h2> <img src={ h2Img } alt="Площадки" />Площадки</h2>  
                 <Tabs>
                     <TabList>
@@ -670,44 +662,7 @@ function Ground() {
                         </div>
                     </TabPanel>
                 </Tabs>
-            </div>
-
-            
-
-
-                {/* <div className="modalDoubleParkingModule">
-                    <div className="moduleBlockDoubleModal">
-                        <span className='close2'><img src={ closeImg } alt="Закрыть окно" /></span>
-                        <div className="infoBlockImgText d-flex">
-                            <div className="carouselImgPopupp">
-                                <SimpleImageSlider
-                                    useGPURender={true}
-                                    width={'375'}
-                                    height={'380'}
-                                    images={images2}
-                                    showBullets={true}
-                                />
-                            </div>  
-                            <div className="infoBlockPopupp">
-                                <h4>
-                                    Двойной модуль <br />
-                                    с парковкой
-                                </h4>
-                                <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
-                                <div className="frameTextMini">
-                                    <img src={ frameImg } alt="1" />
-                                </div>
-                            </div>
-                        </div> 
-                        <div className="aboutCallMe">
-                            <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
-                        </div>
-
-                    </div>           
-                </div>
-             */}
-
-        
+            </div>   
         </div>
     );
 }

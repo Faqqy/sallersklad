@@ -17,7 +17,7 @@ export default function App() {
   return (
 
 
-    <div className="secondBLockForm">
+    <div className="secondBLockForm" id='forms'>
       <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
       <p>или позвоните по номеру :<a href="tel:+79265330740">+7 926 533 07 40</a></p>
         <form onSubmit={handleSubmit(onSubmit)}>

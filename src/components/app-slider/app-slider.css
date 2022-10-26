@@ -55,6 +55,7 @@
 
 .rgbaSLiderText a:hover {
     background: #FF5C00;
+    color: #fff!important;
 }
 
 .rgbaSLiderText a:active {

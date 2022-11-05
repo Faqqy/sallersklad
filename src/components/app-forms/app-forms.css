@@ -1,5 +1,6 @@
 .secondBLockForm {
     margin-top: 75px;
+    position: relative;
 }
 
 .secondBLockForm h3 {
@@ -72,4 +73,42 @@ input[type="checkbox"] {
     font-size: 20px;
     color: #2C2C2C;
     padding-left: 25px;
+}
+
+.modal.show {
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 445px;
+    height: 310px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.modal__dialog {
+    position: relative;
+}
+
+.modal__title {
+    width: 266px;
+    margin: 18px auto;
+}
+
+.modal__close {
+    position: absolute;
+    right: 11px;
+    top: -28px;
+    cursor: pointer;
+}
+.modal__content {
+    margin-top: 20px;
+}
+
+.modal img {
+    margin: 0 auto;
+    padding-top: 20px;
 }

@@ -64,10 +64,8 @@ export default function App() {
         document.querySelector('.modal').append(thanksModal);
         setTimeout(() => {
             thanksModal.remove();
-            // prevModalDialog.classList.add('show');
-            // prevModalDialog.classList.remove('hide');
             closeModal();
-        }, 4000);
+        }, 2000);
     }
 
 
@@ -103,8 +101,9 @@ export default function App() {
                     <input
                         type='checkbox'
                         placeholder='February'
+                        checked
                         {...register('February', {
-                            required: "Поле обязательно к заполнению!"
+                            required: "Поле обязательно к заполнению!",
                         })}
                         className='mx-3'
                     />
@@ -117,9 +116,12 @@ export default function App() {
                     {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
                 </div>
             </form>
-            <div className="modal">
+            <div className="overModal">
+                <div className="modal">
 
+                </div>
             </div>
+
         </div>
 
   );

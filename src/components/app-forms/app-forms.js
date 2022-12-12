@@ -96,7 +96,7 @@ export default function App() {
                     }
                 })}
                 />
-                <input type="submit"/>
+                <input type="submit" value="Отправить"/>
                 <div className="check_block">
                     <input
                         type='checkbox'

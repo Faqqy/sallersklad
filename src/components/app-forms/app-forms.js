@@ -101,7 +101,6 @@ export default function App() {
                     <input
                         type='checkbox'
                         placeholder='February'
-                        checked
                         {...register('February', {
                             required: "Поле обязательно к заполнению!",
                         })}

@@ -35,6 +35,9 @@ const SLide = () => {
               height={'825px'}
               images={images}
               showBullets={true}
+              autoPlay={2000}
+              slideDuration={0.7}
+              showNavs={true}
               // showNavs={true}
             />
       </div>

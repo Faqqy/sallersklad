@@ -96,7 +96,7 @@ export default function App() {
                     }
                 })}
                 />
-                <input type="submit" value="Отправить"/>
+                <input className='buttonOrange' type="submit" value="Оставить заявку"/>
                 <div className="check_block">
                     <input
                         type='checkbox'

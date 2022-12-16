@@ -42,6 +42,15 @@ function App() {
                         </Row>
                     </Container>
                 </div>
+                <div className="benefits-block">
+                    <Container>
+                        <Row>
+                            <Col>
+                                { <Benif/> }
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
                 <div className="ground-block">
                     <Container>
                         <Row>
@@ -60,15 +69,6 @@ function App() {
                         </Row>
                     </Container>
                    
-                </div>
-                <div className="benefits-block">
-                    <Container>
-                        <Row>
-                            <Col>
-                                { <Benif/> }
-                            </Col>
-                        </Row>
-                    </Container>
                 </div>
                 <div className="photo-gallery-block">
                     <Container>

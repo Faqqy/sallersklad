@@ -1,20 +1,41 @@
 import React from 'react';
 import './app-about-info.css';
 import h2Img from './h2img.svg';
-import itemImg from './foto-about.png';
+import itemImg1 from './firstphotop.png';
+import itemImg2 from './firstphotop2.png';
+import itemImg3 from './firstphotop3.png';
 import iconOkImg from './iconOk.png';
 import Carousel from 'better-react-carousel';
 
 
 function AboutInfo() {
+    const styleSpanTxtInfo = {
+        color: 'var(--hover-color)',
+        fontSize: '35px'
+      };
+      const styleSpanTxtInfo2 = {
+        color: 'var(--hover-color)',
+        fontSize: '25px'
+      };
+      const styleLi = {
+        fontSize: '20px'
+      }
     return(
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img src={ h2Img } alt="" />О нас</h2>    
-                <p>Аренда бытовок с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок.</p>
-                <p>Аренда бытовок с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок.</p> 
+                <p>Аренда склада - офиса с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок. Мы предоставляем оформление аренды на договорной основе с ежемесячной оплатой.</p>
+                <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
+                <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
+                    <li style={styleLi}>облегчить ведение бизнеса и поиски подходящего помещения под него;</li>
+                    <li style={styleLi}>доступность подъезда к складу на автомобиле и упрощение погрузки и выгрузки Вашего товара и вещей;</li>
+                    <li style={styleLi}>удобное расположение модульных зданий в пределах Москвы и в пешей доступности от метро;</li>
+                    <li style={styleLi}>круглосуточную охрану и видеонаблюдение на складах.</li>
+                </ul>
+                <br />
+                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p> 
             </div>
-            <h3>Как можно использовать модуль?</h3>
+            <h3>Как можно использовать <span style={styleSpanTxtInfo}>модуль?</span></h3>
             <div className="second-block_aboutInfo">
                 
                 <div className="second-block_aboutInfo-items">
@@ -28,7 +49,7 @@ function AboutInfo() {
                     <Carousel.Item>
                     <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg } alt="" />
+                        <img src={ itemImg1 } alt="" />
                         <h4>Мини - офис</h4>
                         <p>Кчественные утепленные помещения с внутренней отделкой. В модулях подключено освещение, розетки, кондиционеры, установлены пластиковые окна и металлические двери под размер паллетов.</p>
                     </div>
@@ -36,7 +57,7 @@ function AboutInfo() {
                     <Carousel.Item>
                     <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg } alt="" />
+                        <img src={ itemImg2 } alt="" />
                         <h4>Склад для магазина</h4>
                         <p>Удобное отапливаемое помещение для размещения ассортимента вашего магазина. Модули оснащены стеллажами по периметру. Двери выполнены из прочного металла.</p>
                     </div>
@@ -44,7 +65,7 @@ function AboutInfo() {
                     <Carousel.Item>
                     <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg } alt="" />
+                        <img src={ itemImg3 } alt="" />
                         <h4>Хранение инвентаря и личных вещей</h4>
                         <p>Многофункциональный модуль для личного пользования. Прочные и надежные металлические двери, окна оснащены антивандальными решетками.</p>
                     </div>
@@ -55,45 +76,37 @@ function AboutInfo() {
 
                 </div>
             </div>
-            <h3>Что можно хранить в модулях?</h3>
+            <h3>Что можно хранить в <span style={{color:'var(--hover-color)'}}>модулях</span>?</h3>
             <Carousel
              cols={4} 
              rows={1} 
              gap={20} 
              loop={'true'}
-             autoplay={2000}
+             autoplay={8000}
              >
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide1.png" />
-                    <p>Личные вещи</p>
+                    <img width="100%" src="images/imgSLideAbout/image1about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide2.png" />
-                    <p>Бытовая и офисная техника</p>
+                    <img width="100%" src="images/imgSLideAbout/image2about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide3.png" />
-                    <p>Некоторые продукты питания</p>
+                    <img width="100%" src="images/imgSLideAbout/image3about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide4.png" />
-                    <p>Автозапчасти, шины, диски</p>
+                    <img width="100%" src="images/imgSLideAbout/image4about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide1.png" />
-                    <p>Личные вещи</p>
+                    <img width="100%" src="images/imgSLideAbout/image5about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide2.png" />
-                    <p>Бытовая и офисная техника</p>
+                    <img width="100%" src="images/imgSLideAbout/image6about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide3.png" />
-                    <p>Некоторые продукты питания</p>
+                    <img width="100%" src="images/imgSLideAbout/image7about.png" />
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/slide4.png" />
-                    <p>Автозапчасти, шины, диски</p>
+                    <img width="100%" src="images/imgSLideAbout/image8about.png" />
                 </Carousel.Item>
             </Carousel>
         </div> 

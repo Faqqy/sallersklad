@@ -34,15 +34,17 @@ function Ground() {
                     <TabList>
                     <Tab>
                         <h4>Площадка №1 </h4>
-                       
                     </Tab>
                     <Tab>
                         <h4>Площадка №2 </h4>
-                        
+             
                     </Tab>
                     </TabList>
 
                     <TabPanel>
+                        <p className="paragTabName">
+                            Алтуфьевское шоссе, вл. 79Ж
+                        </p>
                         <div className="map-block">
                             <img src={ mapFirst } alt="Алтуфьевское шоссе, вл. 79Ж" />
                         </div>
@@ -168,8 +170,11 @@ function Ground() {
                         <img className='modulImgBlock' src={ modulFirstImg } alt="Схема расположения модулей" />
                     </TabPanel>
                     <TabPanel>
+                        <p className="paragTabName">
+                            Путевой проезд, д. 13с4
+                        </p>
                         <div className="map-block">
-                            <img src={ mapSecond } alt="Алтуфьевское шоссе, вл. 79Ж" />
+                            <img src={ mapSecond } alt="Путевой проезд, д. 13с4" />
                         </div>
                         <h3>Схема расположения модулей</h3>
                         <div className="block-modules_second d-flex">

@@ -6,17 +6,20 @@
 }
 
 .flexItem p {
-    width: 300px;
+    width: 130px;
 }
 
 .flexItem img {
-    margin: 0 auto;
+    margin: 0 33px;
 }
 
 .benefitsBlock {
-    margin-top: 190px;
+    margin-top: 135px;
 }
 
 .benefitsBlock h3{
-    padding-bottom: 130px;
+    padding-bottom: 60px;
+    font-size: 35px;
+    font-family: 'Fira Sans semibold';
+    font-weight: 500;
 }

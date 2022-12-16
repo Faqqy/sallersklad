@@ -17,7 +17,7 @@
 
 .secondBLockForm a {
     font-size: 25px;
-    color: #413C33;
+    color: var(--hover-color);
     font-family: 'Fira Sans semibold';
     text-decoration: none;
     padding-left: 10px;
@@ -38,23 +38,26 @@ input[type="text"] {
 
 
 input[type="submit"] {
+    width: 350px;
     height: 80px;
-    width: 350px;  
-    display: inline-block;
-    border: 1px solid #413C33;
-    background: linear-gradient(180deg, #504B42 0%, #2C2925 100%);
+    background: linear-gradient(180deg, #FF7A00 0%, #ED5500 100%);
     border-radius: 4px;
-    font-size: 20px;
+    text-align: center;
+    line-height: 80px;
+    text-decoration: none;
     color: #fff;
+    font-size: 20px;
+    border: none;
     font-family: 'Fira Sans semibold';
 }
 
 input[type="submit"]:hover {
-    background: #36332C;
+    background: #FF5C00;
+    color: #fff!important;
 }
 
 input[type="submit"]:active {
-    background: #7E7D7A;
+    background: #ED5500;
 }
 
 input[type="checkbox"] {
@@ -70,6 +73,7 @@ input[type="checkbox"] {
     justify-content: end;
     margin-top: 20px;
     line-height: 1.2;
+    color: #fff;
 }
 
 ::placeholder {

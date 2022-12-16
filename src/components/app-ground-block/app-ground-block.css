@@ -1,5 +1,6 @@
 .groundInfoBlock {
-    margin-top: 218px;                                   
+    margin-top: 135px; 
+    margin-bottom: 135px;                                  
 }
 
 .groundInfoBlock img {
@@ -25,7 +26,7 @@
 
 .ground-block_form {
     height: 412px;
-    background-color: var(--hover-color);
+    background: #413C33;
     text-align: center;
     display: flex;
     align-items: center;
@@ -36,11 +37,22 @@
     box-shadow: inset 0px 0px 15px rgb(18 18 18 / 51%);
     border-radius: 62px;
     height: 85px;
+    width: 744px;
+}
+
+.paragTabName {
+    font-weight: 500;
+    font-size: 25px;
+    color: #2C2C2C;
+    padding: 23px 0px 8px 6px;
+    font-family: 'Fira Sans semibold';
 }
 
 .react-tabs__tab {
-    padding-right: 100px!important;
-    padding-left: 0!important;
+    height: 65px;
+    width: 350px;
+    margin: 8px 11px;
+    border: none!important;
 }
 
 .react-tabs__tab--selected {
@@ -48,10 +60,9 @@
     border-radius: 53px!important;
 }
 
-/* .react-tabs__tab--selected, .react-tabs__tab  {
-    background: none!important;
-    border: none!important;
-} */
+.react-tabs__tab:focus:after {
+    display: none;
+}
 
 .react-tabs__tab--selected h4{
     color: #fff;
@@ -68,8 +79,10 @@
 
 .react-tabs__tab h4 {
     color: #fff;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 500;
+    display: block;
+    padding: 7px 48px;
 } 
 
 .react-tabs__tab p {

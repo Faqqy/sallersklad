@@ -83,19 +83,21 @@ export default function App() {
                     }
                 })}
                 />
+                <div className="errors_block2" style={{height: 40}}>
+                    {errors.Name && errors.Name.type === "minLength" && <span>Слишком короткое имя</span>}
+                </div>
                 <input type='text' placeholder='Телефон' {...register("Phone", {
                     required: "Поле обязательно к заполнению!",
                     maxLength: 11,
-                    minLength: {
-                        value: 3,
-                        message: 'Введите 11 цифр вашего номера'
-                    },
                     pattern: {
                         value: /^[\d\+][\d\(\)\ -]{4,14}\d$/,
-                        message: 'Для ввода допустимы только цифры'
+                        message: 'Для ввода телефона допустимы только цифры'
                     }
                 })}
                 />
+                <div className="errors_block" style={{height: 40}}>
+                    {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода телефона допустимы только цифры</span>}
+                </div>
                 <input className='buttonOrange' type="submit" value="Оставить заявку"/>
                 <div className="check_block">
                     <input
@@ -110,10 +112,7 @@ export default function App() {
                         персональных данных</label>
                 </div>
 
-                <div className="errors_block" style={{height: 40}}>
-                    {errors.Phone && errors.Phone.type === "minLength" && <span>Введите 11 цифр вашего номера</span>}
-                    {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода допустимы только цифры</span>}
-                </div>
+
             </form>
             <div className="overModal">
                 <div className="modal">

@@ -24,7 +24,7 @@ function App() {
                 <Container>
                     <Row>
                         <Col>{ <Logo/> }</Col>
-                        <Col xs={7}>{ <MainMenu/> }</Col>
+                        <Col md={7} sm={12}>{ <MainMenu/> }</Col>
                         <Col>{ <HeaderContacts/> }</Col>
                     </Row>
                 </Container>

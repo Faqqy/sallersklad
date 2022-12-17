@@ -26,7 +26,94 @@
 }
 
 
+@media (max-width: 1024px) {
+    .rgbaSLiderText {
+      width: 438px!important;
+    }
+    .rgbaSLiderText p {
+      width: 386px!important;
+    }
+    .aboutInfoBlock h4 {
+        width: 100%!important;
+    }
+    .scrollDivName, .scrollDivName2  {
+        overflow-x: scroll;
+    }
+    input[type="text"] {
+        width: 270px!important;
+    }
+    .lg-react-element img {
+        width: 465px!important;
+    }
+    .modulFirst, .modulSecond {
+        padding-right: 15px!important;
+    }
+    .slider__block>div>div {
+        width: 48.6%!important;
+    }
+  }
 
+  @media (max-width: 768px) {
+    .topBlockTwo {
+        width: 100%!important;
+        height: 516px!important;
+        padding-top: 91px!important;
+        flex-direction: column!important;
+        border-radius: 0px 0px 15px 15px!important;
+    }
+    .slider__block>div>div {
+        width: 100%!important;
+        height: 214px!important;
+        border-radius: 15px 15px 0px 0px!important;
+        
+    }
+    .slider__block button {
+        display: none!important; 
+    }
+    .main-menu ul {
+        margin-top: 16px!important;
+    }
+    .main-header {
+        height: 162px!important;
+    }
+    .main-contacts {
+        position: absolute!important;
+        right: 0!important;
+        text-align: 0!important;
+        top: -1px!important;
+    }
+    .first-block_aboutInfo {
+        margin-top: 160px;
+    }
+    .second-block_aboutInfo-item {
+        padding: 0!important;
+    }
+    .iconOk {
+        margin: 0 33%!important;
+    }
+    .aboutInfoBlock p {
+        width: 80%!important;
+    }
+    .aboutInfoBlock h4 {
+        width: 80%!important;
+    }
+    .flexItem {
+        flex-direction: column!important;
+    }
+    .bnefitsBlock_item {
+        display: inline-block!important;
+        line-height: 5;
+    }
+    .bnefitsBlock_item img {
+        margin-bottom: -80px!important;
+    }
+    .flexItem p {
+        width: 100%!important;
+    }
+    .react-tabs__tab-list {
+        width: 100%!important;
+    }
+  }
 
 
 

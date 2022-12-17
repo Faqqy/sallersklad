@@ -103,7 +103,7 @@
 }
 
 .block-modules {
-    position: absolute;
+    margin-bottom: -160px;
 }
 
 .bigModul {
@@ -808,3 +808,4 @@
     position: absolute;
     bottom: 28px;
 }
+

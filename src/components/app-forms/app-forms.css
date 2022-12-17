@@ -132,8 +132,20 @@ input:focus-visible {
     padding: 0;
 }
 
-.overModal {
+/* .overModal {
     width: 1440px;
     height: 100%;
     position: absolute;
+} */
+
+.errors_block {
+    position: absolute;
+    left: 368px;
+    color: #FFF;
+}
+
+.errors_block2 {
+    position: absolute;
+    left: 20px;
+    color: #FFF;
 }

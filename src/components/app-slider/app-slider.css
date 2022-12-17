@@ -17,6 +17,11 @@
     overflow-x: hidden;
 }
 
+.slider__block>div>div>div>button {
+    box-shadow: none!important;
+    margin: 0px 22px!important;
+}
+
 .slider__block button {
     width: 100px;
 }

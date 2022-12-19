@@ -32,12 +32,11 @@
 
 .rgbaSLiderBLock {
     z-index: 1;
-    height: 990px;
     position: relative;
     display: flex;
     justify-content: end;
     width: 100%;
-    margin-left: 30px!important;
+    margin-left: 30px;
 }
 
 

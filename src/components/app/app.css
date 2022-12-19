@@ -155,14 +155,15 @@
     .scrollDivName2 {
         position: relative!important;
     }
-    .main-app {
-        overflow-x: hidden!important;
-    }
     .logo-img img {
         width: 145px;
     }
     .rgbaSLiderText {
-        margin-right: 7px!important;
+        margin-right: 0!important;
+    }
+    .rgbaSLiderText p {
+        width: 340px!important;
+        padding-bottom: 40px!important;
     }
     .showHideLink {
         color: #FF5C00;
@@ -198,6 +199,9 @@
     .cooperation-block h2 {
         font-size: 35px!important;
     }
+    .secondBLockForm {
+        margin-top: 30px!important;
+    }
     .secondBLockForm h3 {
         font-size: 30px!important;
     }
@@ -219,6 +223,13 @@
     }
     .Gallery img {
         padding-right: 0!important;
+    }
+    .second-block_aboutInfo-items {
+        overflow-x: hidden!important;
+    }
+    .rgbaSLiderBLock {
+        margin-left: 0!important;
+        padding-left: 12px;
     }
   }
 

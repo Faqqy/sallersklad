@@ -1,8 +1,22 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './app-benefits.css';
 import iconOk from './iconOk.png';
 
 function Benefits() {
+
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 768px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(min-width: 768px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
+    
+    
+    const [style, setDp] = useState("none");
+
     return (
         <div className='benefitsBlock'>
             <h3>Наши преимущества</h3>
@@ -30,8 +44,8 @@ function Benefits() {
                         <p>Модули с электричеством</p>
                 </div>
             </div>
-
-            <div className="flexItem">
+            {!matches && (<span className='showHideLink' onClick={() => {setDp("flex");}}>Развернуть</span>)}
+            {!matches && (<div className="flexItem" style={{ display: style }}>
                 <div className="bnefitsBlock_item">
                     <img src={ iconOk } alt="Охраняемая территория с КПП"/>
                         <p>Охраняемая территория с КПП</p>
@@ -52,7 +66,29 @@ function Benefits() {
                     <img src={ iconOk } alt="Круглосуточный доступ"/>
                         <p>Круглосуточный доступ</p>
                 </div>
-            </div>
+            </div>)}
+            {matches && (<div className="flexItem">
+                <div className="bnefitsBlock_item">
+                    <img src={ iconOk } alt="Охраняемая территория с КПП"/>
+                        <p>Охраняемая территория с КПП</p>
+                </div>
+                <div className="bnefitsBlock_item">
+                    <img src={ iconOk } alt="Проезд на своей машине"/>
+                        <p>Проезд на своей машине</p>
+                </div>
+                <div className="bnefitsBlock_item">
+                    <img src={ iconOk } alt="Собственное место парковки"/>
+                        <p>Собственное место парковки</p>
+                </div>
+                <div className="bnefitsBlock_item">
+                    <img src={ iconOk } alt="Санузел"/>
+                        <p>Санузел</p>
+                </div>
+                <div className="bnefitsBlock_item">
+                    <img src={ iconOk } alt="Круглосуточный доступ"/>
+                        <p>Круглосуточный доступ</p>
+                </div>
+            </div>)}
         </div>
     );
 }

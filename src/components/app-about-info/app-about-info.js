@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './app-about-info.css';
 import h2Img from './h2img.svg';
 import itemImg1 from './firstphotop.png';
@@ -13,18 +13,34 @@ function AboutInfo() {
         color: 'var(--hover-color)',
         fontSize: '35px'
       };
-      const styleSpanTxtInfo2 = {
+    const styleSpanTxtInfo2 = {
         color: 'var(--hover-color)',
         fontSize: '25px'
-      };
-      const styleLi = {
+    };
+    const styleLi = {
         fontSize: '20px'
-      }
+    }
+
+    const [matches, setMatches] = useState(
+        window.matchMedia("(min-width: 768px)").matches
+      )
+    
+      useEffect(() => {
+        window
+        .matchMedia("(min-width: 768px)")
+        .addEventListener('change', e => setMatches( e.matches ));
+      }, []);
+    
+    
+    const [style, setDp] = useState("none");
+
     return(
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img src={ h2Img } alt="" />О нас</h2>    
                 <p>Аренда склада - офиса с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок. Мы предоставляем оформление аренды на договорной основе с ежемесячной оплатой.</p>
+                {!matches && (<span className='showHideLink' onClick={() => {setDp("block");}}>Развернуть</span>)}
+                {!matches && (<div className="hiddenShowBlock" style={{ display: style }}>
                 <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
                 <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
                     <li style={styleLi}>облегчить ведение бизнеса и поиски подходящего помещения под него;</li>
@@ -33,7 +49,20 @@ function AboutInfo() {
                     <li style={styleLi}>круглосуточную охрану и видеонаблюдение на складах.</li>
                 </ul>
                 <br />
-                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p> 
+                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
+                </div> )}
+               
+                {matches && (<div className="hiddenShowBlock">
+                <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
+                <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
+                    <li style={styleLi}>облегчить ведение бизнеса и поиски подходящего помещения под него;</li>
+                    <li style={styleLi}>доступность подъезда к складу на автомобиле и упрощение погрузки и выгрузки Вашего товара и вещей;</li>
+                    <li style={styleLi}>удобное расположение модульных зданий в пределах Москвы и в пешей доступности от метро;</li>
+                    <li style={styleLi}>круглосуточную охрану и видеонаблюдение на складах.</li>
+                </ul>
+                <br />
+                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
+                </div> )}
             </div>
             <h3>Как можно использовать <span style={styleSpanTxtInfo}>модуль?</span></h3>
             <div className="second-block_aboutInfo">
@@ -42,8 +71,8 @@ function AboutInfo() {
                 <Carousel
                     cols={3} 
                     rows={1} 
-                    gap={10} 
-                    loop={'true'}
+                    gap={30} 
+                    loop={'false'}
                     hideArrow
                     >
                     <Carousel.Item>

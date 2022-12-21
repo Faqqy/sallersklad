@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -17,7 +17,11 @@ import Footer from '../app-footer/app-footer';
 import FooterContacts from '../app-contacts/app-contacts-footer';
 
 
+
 function App() {
+    useEffect(() => {
+        document.title = "Seller Sklad - Модульные здания для бизнеса";
+      }, []);
     return(
         <div className='main-app'>
             <div className='main-header'>
@@ -91,8 +95,11 @@ function App() {
                 <div className="main-footer">
                     <Container>
                         <Row>
-                            <Col>{ <Logo/> }</Col>
-                            <Col>{ <MainMenu/> }</Col>
+                        <Col className="footerMobileMenu" sm={12}>{ <MainMenu/> }</Col> 
+                        </Row>
+                        <Row>
+                            <Col md={4} sm={12}>{ <Logo/> }</Col>
+                            <Col className='mobileMenu' md={4} sm={12}>{ <MainMenu/> }</Col>
                             <Col>{ <FooterContacts/> }</Col>
                         </Row>
                         <Row>

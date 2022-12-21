@@ -25,6 +25,10 @@
     color: #ADA79C;
 }
 
+.footerMobileMenu {
+    display: none;
+}
+
 
 @media (max-width: 1024px) {
     .rgbaSLiderText {
@@ -188,16 +192,23 @@
         font-size: 20px!important;
     }
     .aboutInfoBlock h2 {
-        font-size: 35px!important;
+        font-size: 30px!important;
+    }
+    .groundInfoBlock {
+        margin-bottom: -135px!important;
     }
     .groundInfoBlock h2 {
-        font-size: 35px!important; 
+        font-size: 30px!important; 
+        padding-bottom: 26px!important;
     }
     .Gallery h2 {
-        font-size: 20px!important; 
+        font-size: 30px!important; 
+    }
+    .cooperation-block {
+        margin-bottom: -210px!important;
     }
     .cooperation-block h2 {
-        font-size: 35px!important;
+        font-size: 30px!important;
     }
     .secondBLockForm {
         margin-top: 30px!important;
@@ -206,7 +217,9 @@
         font-size: 30px!important;
     }
     .ground-block_form {
+        overflow: hidden!important;
         height: 650px!important;
+        margin-bottom: -90px!important;
     }
     input[type="text"] {
         width: 100%!important;
@@ -221,15 +234,67 @@
         margin-top: 26px!important;
         justify-content: start!important;
     }
-    .Gallery img {
-        padding-right: 0!important;
-    }
     .second-block_aboutInfo-items {
         overflow-x: hidden!important;
     }
     .rgbaSLiderBLock {
         margin-left: 0!important;
         padding-left: 12px;
+    }
+    .main-footer {
+        margin-top: 460px!important;
+        height: 460px!important;
+        align-items: baseline!important;
+    }
+    .main-footer .mobileMenu {
+        display: none;
+    }
+    .footerMobileMenu {
+        display: block;
+    }
+    .main-footer ul {
+        flex-direction: row!important;
+    }
+    .aboutLink {
+        margin: 0!important;
+    }
+    .cooperation-block {
+        margin-top: 40px!important;
+    }
+    .cooperation-block span {
+        font-size: 23px!important;
+    }
+    .buttonBack {
+        display: none;
+    }
+    .paragTabName {
+        font-size: 12px!important;
+        font-family: 'FiraSans-regular'!important;
+    }
+    .lg-react-element img {
+        padding-right: 0!important;
+    }
+    .infoBlockPopupp {
+        margin-top: 64px!important;
+    }
+    .frameTextMini {
+        margin-top: 259px!important;
+        width: 200px!important;
+        height: 208px!important;
+    }
+    .popup-content .carouselImgPopupp>div>div {
+        width: 326px!important;
+        height: 192px!important;
+        left: 18px!important;
+        top: 180px!important;
+    }
+    .aboutCallMe {
+        position: relative!important;
+        left: 0!important;
+        bottom: -18px!important;
+    }
+    .aboutCallMe p {
+        font-size: 16px!important;
     }
   }
 

@@ -24,8 +24,8 @@ const images = [
     { url: "images/imgSlidePopupp/slideP3.jpg" }
 ];
 
-
 function Ground() {
+    
     return(
         <div className='groundInfoBlock'>
             <div className="firstBlockGround" id='ploshadki'>

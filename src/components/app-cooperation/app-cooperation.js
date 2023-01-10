@@ -1,7 +1,7 @@
 import React from 'react';
 import './app-cooperation.css';
 import h2Img from './h2img.svg';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 import imgUp from './buttonUp.png';
 
 

@@ -10,6 +10,10 @@
     z-index: -1;
 }
 
+.map-block {
+    position: relative;
+}
+
 .map-block img {
     padding: 0;
 }
@@ -23,6 +27,24 @@
 
 .firstBlockGround {
     height: 1500px;
+}
+
+.divPosAbsFirst {
+    position: absolute;
+    left: 309px;
+    top: 99px;
+    width: 152px;
+    height: 94px;
+    cursor: pointer;
+}
+
+.divPosAbsSecond {
+    position: absolute;
+    left: 506px;
+    top: 52px;
+    width: 152px;
+    height: 94px;
+    cursor: pointer;
 }
 
 .ground-block_form {
@@ -579,6 +601,61 @@
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
+}
+
+.textOpen {
+    visibility: hidden;
+    width: 350px;
+    height: 260px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 11px 0;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: -20%;
+    margin-left: -60px;
+    transition: .25s ease-in-out; 
+}
+
+.textOpen::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+}
+
+.textOpen2 {
+    visibility: hidden;
+    width: 350px;
+    height: 260px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 11px 0;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: -60%;
+    margin-left: -60px;
+    transition: .25s ease-in-out; 
+}
+
+.textOpen2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+}
+
+
+.divPosAbsSecond:hover .textOpen2 {
+    visibility: visible;
+}
+
+.divPosAbsFirst:hover .textOpen {
+    visibility: visible;
 }
   
 .modulSecond:hover .tooltiptext {

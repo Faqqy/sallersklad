@@ -1,11 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import './app-about-info.css';
+import 'swiper/swiper.min.css';
+import 'swiper/swiper-bundle.min.css';
 import h2Img from './h2img.svg';
 import itemImg1 from './firstphotop.png';
 import itemImg2 from './firstphotop2.png';
 import itemImg3 from './firstphotop3.png';
 import iconOkImg from './iconOk.png';
-import Carousel from 'better-react-carousel';
+import { Navigation, Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 
 function AboutInfo() {
@@ -38,7 +41,7 @@ function AboutInfo() {
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img src={ h2Img } alt="" />О нас</h2>    
-                <p>Аренда склада - офиса с земельным участком в нашей компании – выгодное сотрудничество, которое можно реализовать как на небольшой, так и длительный срок. Мы предоставляем оформление аренды на договорной основе с ежемесячной оплатой.</p>
+                <p>Аренда склада - офиса с земельным участком в нашей компании – выгодное сотрудничество, которое можно <br /> реализовать как на небольшой, так и длительный срок. Мы предоставляем оформление аренды на договорной <br /> основе с ежемесячной оплатой.</p>
                 {!matches && (<span className='showHideLink' onClick={() => {setDp("block");}}>Развернуть</span>)}
                 {!matches && (<div className="hiddenShowBlock" style={{ display: style }}>
                 <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
@@ -68,76 +71,101 @@ function AboutInfo() {
             <div className="second-block_aboutInfo">
                 
                 <div className="second-block_aboutInfo-items">
-                <Carousel
-                    cols={3} 
-                    rows={1} 
-                    gap={30} 
-                    loop={'false'}
-                    hideArrow
-                    >
-                    <Carousel.Item>
-                    <div className="second-block_aboutInfo-item">
+                <Swiper
+
+                modules={[Navigation, Pagination, A11y]}
+                spaceBetween={50}
+                slidesPerView={3}
+                navigation
+                pagination={{ clickable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                breakpoints={{
+                    "@0.00": {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                    },
+                    "@0.75": {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    "@1.00": {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                    },
+                    "@1.50": {
+                      slidesPerView: 3,
+                      spaceBetween: 50,
+                    },
+                  }}
+                >
+                <SwiperSlide>
+                <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
                         <img src={ itemImg1 } alt="" />
                         <h4>Мини - офис</h4>
                         <p>Кчественные утепленные помещения с внутренней отделкой. В модулях подключено освещение, розетки, кондиционеры, установлены пластиковые окна и металлические двери под размер паллетов.</p>
                     </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
                         <img src={ itemImg2 } alt="" />
                         <h4>Склад для магазина</h4>
                         <p>Удобное отапливаемое помещение для размещения ассортимента вашего магазина. Модули оснащены стеллажами по периметру. Двери выполнены из прочного металла.</p>
                     </div>
-                    </Carousel.Item>
-                    <Carousel.Item>
+                </SwiperSlide>
+                <SwiperSlide>
                     <div className="second-block_aboutInfo-item">
                         <img className='iconOk' src={ iconOkImg } alt="" />
                         <img src={ itemImg3 } alt="" />
                         <h4>Хранение инвентаря и личных вещей</h4>
                         <p>Многофункциональный модуль для личного пользования. Прочные и надежные металлические двери, окна оснащены антивандальными решетками.</p>
                     </div>
-                    </Carousel.Item>
-                </Carousel>
-
-
+                </SwiperSlide>
+            </Swiper>
 
                 </div>
             </div>
             <h3>Что можно хранить в <span style={{color:'var(--hover-color)'}}>модулях</span>?</h3>
-            <Carousel
-             cols={4} 
-             rows={1} 
-             gap={20} 
-             loop={'true'}
-             autoplay={8000}
-             >
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image1about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image2about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image3about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image4about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image5about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image6about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image7about.png" />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img width="100%" src="images/imgSLideAbout/image8about.png" />
-                </Carousel.Item>
-            </Carousel>
+            <Swiper
+                // install Swiper modules
+                modules={[Navigation, Pagination, A11y]}
+                spaceBetween={50}
+                slidesPerView={4}
+                navigation
+                pagination={{ clickable: true }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+                breakpoints={{
+                    "@0.00": {
+                      slidesPerView: 1,
+                      spaceBetween: 10,
+                    },
+                    "@0.75": {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    "@1.00": {
+                      slidesPerView: 3,
+                      spaceBetween: 40,
+                    },
+                    "@1.50": {
+                      slidesPerView: 4,
+                      spaceBetween: 50,
+                    },
+                  }}
+                >
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image1about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image2about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image3about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image4about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image5about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image6about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image7about.png" /></SwiperSlide>
+                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image8about.png" /></SwiperSlide>
+            </Swiper>
+
         </div> 
     );
 }

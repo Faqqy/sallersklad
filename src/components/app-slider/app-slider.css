@@ -1,44 +1,40 @@
 .slider {
-    position: relative;
     padding-top: 136px;
 }
 
 .topBlockTwo {
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(146.05deg, rgba(255, 122, 0, 0.85) 14.13%, rgba(237, 85, 0, 0.86) 63.04%);
-    border-radius: 0px 50px 50px 0px;
-    width: 48.4%;
     height: 825px;
 }
 
 .slider__block {
-    margin-right: -30px;
+    width: 50%;
     overflow-x: hidden;
+    border-radius: 50px 0px 0px 50px;
+    margin-left: 20px;
 }
 
-.slider__block>div>div>div>button {
-    box-shadow: none!important;
-    margin: 0px 22px!important;
-}
-
-.slider__block button {
-    width: 100px;
-}
-
-.slider__block .rsis-image {
-    border-radius: 50px 0px 0px 50px!important;
-}
 
 .rgbaSLiderBLock {
     z-index: 1;
     position: relative;
     display: flex;
     justify-content: end;
-    width: 100%;
-    margin-left: 30px;
+    width: 50%;
+    background: linear-gradient(146.05deg, rgba(255, 122, 0, 0.85) 14.13%, rgba(237, 85, 0, 0.86) 63.04%);
+    border-radius: 0px 50px 50px 0px;
 }
 
+
+.imgslide {
+    height: 825px;
+}
+
+.imgslide img {
+    height: 100%;
+    object-fit: cover;
+}
 
 .rgbaSLiderBLock .container {
     display: flex;
@@ -52,7 +48,7 @@
     justify-content: center;
     height: 90%;
     width: 504px;
-    margin-right: 40px;
+    margin-right: 67px;
 }
 
 .rgbaSLiderText h1 {
@@ -64,7 +60,7 @@
 }
 
 .rgbaSLiderText p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     color: #fff;
     padding-bottom: 70px;
@@ -92,9 +88,4 @@
 
 .buttonGrey:active {
     background: #36332C;
-}
-
-.slider__block>div>div {
-    border-radius: 50px 0px 0px 50px;
-    padding-left: 20px;
 }

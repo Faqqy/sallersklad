@@ -52,9 +52,6 @@
     .modulFirst, .modulSecond {
         padding-right: 15px!important;
     }
-    .slider__block>div>div {
-        width: 48.6%!important;
-    }
     .firstBlockGround {
         height: 1380px!important;
     }
@@ -85,12 +82,6 @@
         padding-top: 91px!important;
         flex-direction: column!important;
         border-radius: 0px 0px 15px 15px!important;
-    }
-    .slider__block>div>div {
-        width: 100%!important;
-        height: 214px!important;
-        border-radius: 15px 15px 0px 0px!important;
-        
     }
     .slider__block button {
         display: none!important; 

@@ -39,7 +39,6 @@ const SLide = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           style={{
-            // "--swiper-navigation-color": "#000",
             "--swiper-pagination-color": "#413C33",
             "--swiper-pagination-width": "20px",
             "--swiper-pagination-bullet-inactive-color": "#fff",

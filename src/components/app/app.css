@@ -79,9 +79,24 @@
     .topBlockTwo {
         width: 100%!important;
         height: 516px!important;
-        padding-top: 91px!important;
+        padding-top: 25px!important;
         flex-direction: column!important;
         border-radius: 0px 0px 15px 15px!important;
+    }
+    .rgbaSLiderText h1 {
+        padding-top: 45px;
+    }
+    .slider__block {
+        overflow-x: visible!important;
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+    .imgslide {
+        height: 285px!important;
+        border-radius: 15px 15px 0px 0px!important;
+    }
+    .imgslide img {
+        border-radius: 15px 15px 0px 0px!important;
     }
     .slider__block button {
         display: none!important; 
@@ -177,7 +192,16 @@
         font-size: 20px!important;
     }
     .second-block_aboutInfo-item {
-        width: 60%!important;
+        width: 100%!important;
+    }
+    .aboutInfoBlock img {
+        padding-bottom: 0!important;
+    }
+    .aboutInfoBlock .swiper-button-prev {
+        display: none;
+    }
+    .aboutInfoBlock .swiper-button-next {
+        display: none;
     }
     .benefitsBlock h3 {
         font-size: 20px!important;
@@ -231,6 +255,11 @@
     .rgbaSLiderBLock {
         margin-left: 0!important;
         padding-left: 12px;
+        width: 100%!important;
+        border-radius: 0px 0px 15px 15px!important;
+    }
+    .slider__block .swiper-pagination-bullet {
+        display: none;
     }
     .main-footer {
         margin-top: 460px!important;

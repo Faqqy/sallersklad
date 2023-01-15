@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './app-ground-block.css';
 import h2Img from './h2img.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -11,23 +11,38 @@ import carsImg from './car.png';
 import closeImg from './close-btn.png';
 import frameImg from './frameMini.png';
 import frameImg2 from './frameDouble.png';
-import frameImg3 from './frameModuleYchast.png';
+import frameImg3 from './twoModulY4astok.png';
 import frameImg4 from './frame36.png';
 import frameImg5 from './frame18.png';
 import mapOpenFirst from './mapFirst.png';
 import mapOpenSecond from './mapSecond.png';
-import SimpleImageSlider from "react-simple-image-slider";
+import { Navigation, Pagination, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import imageDoubleModulY4astok from './twoModY4.png';
+import imageDoubleModulY4astok1 from './twoModY41.png';
+import imageDoubleModulY4astok2 from './twoModY42.png';
+import imageOdino4Module from './odin3Module.png';
+import imageOdino4Module1 from './odin3Module1.png';
+import imageOdino4Module2 from './odin3Module2.png';
+import imgageBigMudulForParking from './bigmodpark.png';
+import imgageBigMudulForParking1 from './bigmodpark1.png';
+import imgageBigMudulForParking2 from './bigmodpark2.png';
+import imageTwoDPark from './twoMPark.png';
+import imageTwoDPark1 from './twoMPark1.png';
+import imageTwoDPark2 from './twoMPark2.png';
+import imageMiniModule from './minimod.png';
+import imageMiniModule1 from './minimod1.png';
+import imageMiniModule2 from './minimod2.png';
 
-const images = [
-    { url: "images/imgSlidePopupp/slideP1.jpg" },
-    { url: "images/imgSlidePopupp/slideP2.jpg" },
-    { url: "images/imgSlidePopupp/slideP3.jpg" }
-];
+
 
 function Ground() {
-    
+  
+        const ref = useRef();
+        const closeTooltip = () => ref.current.close();
+
     return(
         <div className='groundInfoBlock'>
             <div className="firstBlockGround" id='ploshadki'>
@@ -56,32 +71,58 @@ function Ground() {
                         <div className="scrollDivName">
                         <div className="block-modules_second d-flex">
                             <div className="modulFirst_seven">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
+                                
                                     П7 <br />
                                     (30 м<sup>2</sup>)
                                 </button>} 
                                 modal
                                 closeOnDocumentClick
                                 lockScroll
+                                closeOnEscape
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
                                                     Двойной модуль <br /> с участком
                                                 </h4>
-                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 32 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <img src={ frameImg3 } alt="1" />
+
                                                 </div>
                                             </div>
                                         </div> 
@@ -97,7 +138,7 @@ function Ground() {
                                 </button>
                             </div>
                             <div className="modulSecond">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П8 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -105,16 +146,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -133,7 +197,7 @@ function Ground() {
                                 <span class="tooltiptext5">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulThree">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
                                     П9 <br />
                                     (36 м<sup>2</sup>)
                                 </button>} 
@@ -141,16 +205,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -170,7 +257,7 @@ function Ground() {
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFour">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
                                     П10 <br />
                                     (36 м<sup>2</sup>)
                                 </button>} 
@@ -178,16 +265,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -207,7 +317,7 @@ function Ground() {
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulFive">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
                                     П11 <br />
                                     (36 м<sup>2</sup>)
                                 </button>} 
@@ -215,16 +325,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -244,7 +377,7 @@ function Ground() {
                                 <img src={ carsImg } alt="" />
                             </div>
                             <div className="modulSix">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
                                     П12 <br />
                                     (36 м<sup>2</sup>)
                                 </button>} 
@@ -252,16 +385,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imgageBigMudulForParking } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -286,7 +442,7 @@ function Ground() {
                         
                         <div className="block-modules_three d-flex">
                             <div className="modulFirst_seven sec0">
-                            <Popup trigger={<button className='bigModul open16'>
+                            <Popup ref={ref} trigger={<button className='bigModul open16'>
                                     П6.1 <br />
                                     (30 м<sup>2</sup>)
                                 </button>} 
@@ -294,16 +450,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageDoubleModulY4astok2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -327,7 +506,7 @@ function Ground() {
                                 </button>
                             </div>
                             <div className="modulSecond sec1">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П6 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -335,16 +514,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -363,7 +565,7 @@ function Ground() {
                                 <span class="tooltiptext11">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec2">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П5 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -371,16 +573,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -399,7 +624,7 @@ function Ground() {
                                 <span class="tooltiptext12">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec3">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П4 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -407,16 +632,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -435,7 +683,7 @@ function Ground() {
                                 <span class="tooltiptext13">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec4">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П3 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -443,16 +691,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -471,7 +742,7 @@ function Ground() {
                                 <span class="tooltiptext14">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec5">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П2 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -479,16 +750,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -507,7 +801,7 @@ function Ground() {
                                 <span class="tooltiptext15">Одиночный <br /> модуль</span>
                             </div>
                             <div className="modulSecond sec6">
-                            <Popup trigger={<button className='minModul open16'>
+                            <Popup ref={ref} trigger={<button className='minModul open16'>
                                     П1 <br />
                                     (18 м<sup>2</sup>)
                                 </button>} 
@@ -515,16 +809,39 @@ function Ground() {
                                 closeOnDocumentClick
                                 lockScroll
                                 >
-                                        <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                        <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                         <div className="infoBlockImgText d-flex">
                                             <div className="carouselImgPopupp">
-                                                <SimpleImageSlider
-                                                    useGPURender={true}
-                                                    width={'375'}
-                                                    height={'380'}
-                                                    images={images}
-                                                    showBullets={true}
-                                                />
+                                            <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageOdino4Module2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                             </div>  
                                             <div className="infoBlockPopupp">
                                                 <h4>
@@ -541,6 +858,9 @@ function Ground() {
                                         </div>
                             </Popup>
                                 <span class="tooltiptext16">Одиночный <br /> модуль</span>
+                            </div>
+                            <div className="openVis1">
+                                <div className='parkingToltip1'>Общая парковка</div>
                             </div>
                         </div>
                         </div>
@@ -559,7 +879,7 @@ function Ground() {
                         <div className="scrollDivName2">
                             <div className="block-modules d-flex">
                                 <div className="modulFirst">
-                                <Popup trigger={<button className='bigModul open16'>
+                                <Popup ref={ref} trigger={<button className='bigModul open16'>
                                         П1 <br />
                                         (30 м<sup>2</sup>)
                                     </button>} 
@@ -567,16 +887,39 @@ function Ground() {
                                     closeOnDocumentClick
                                     lockScroll
                                     >
-                                            <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                            <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                             <div className="infoBlockImgText d-flex">
                                                 <div className="carouselImgPopupp">
-                                                    <SimpleImageSlider
-                                                        useGPURender={true}
-                                                        width={'375'}
-                                                        height={'380'}
-                                                        images={images}
-                                                        showBullets={true}
-                                                    />
+                                                <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
                                                     <h4>
@@ -600,7 +943,7 @@ function Ground() {
                                 </div>
                                 <div className="modulSecond">
                                     
-                                <Popup trigger={<button className='minModul open15'>
+                                <Popup ref={ref} trigger={<button className='minModul open15'>
                                     П2 <br />
                                     (15 м<sup>2</sup>)
                                 </button>} 
@@ -608,16 +951,39 @@ function Ground() {
                                     closeOnDocumentClick
                                     lockScroll
                                     >
-                                            <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                            <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                             <div className="infoBlockImgText d-flex">
                                                 <div className="carouselImgPopupp">
-                                                    <SimpleImageSlider
-                                                        useGPURender={true}
-                                                        width={'375'}
-                                                        height={'380'}
-                                                        images={images}
-                                                        showBullets={true}
-                                                    />
+                                                <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageMiniModule } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageMiniModule1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageMiniModule2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
                                                     <h4>
@@ -638,7 +1004,7 @@ function Ground() {
                                     <img src={ carsImg } alt="" />
                                 </div>
                                 <div className="modulThree">
-                                <Popup trigger={<button className='bigModul open16'>
+                                <Popup ref={ref} trigger={<button className='bigModul open16'>
                                         П3 <br />
                                         (30 м<sup>2</sup>)
                                     </button>} 
@@ -646,16 +1012,39 @@ function Ground() {
                                     closeOnDocumentClick
                                     lockScroll
                                     >
-                                            <span className='close'><img src={ closeImg } alt="Закрыть окно" /></span>
+                                            <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>
                                             <div className="infoBlockImgText d-flex">
                                                 <div className="carouselImgPopupp">
-                                                    <SimpleImageSlider
-                                                        useGPURender={true}
-                                                        width={'375'}
-                                                        height={'380'}
-                                                        images={images}
-                                                        showBullets={true}
-                                                    />
+                                                <Swiper
+                                                modules={[Navigation, Pagination, A11y]}
+                                                spaceBetween={100}
+                                                slidesPerView={1}
+                                                pagination={{ clickable: true }}
+                                                style={{
+                                                    "--swiper-pagination-color": "#413C33",
+                                                    "--swiper-pagination-width": "20px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                    "--swiper-pagination-bullet-size": "15px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                  }}
+                                                >
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark1 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                                <SwiperSlide>
+                                                    <div className="firstSlide">
+                                                        <img src={ imageTwoDPark2 } alt="" />
+                                                    </div>
+                                                </SwiperSlide>
+                                            </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
                                                     <h4>
@@ -675,14 +1064,22 @@ function Ground() {
                                     <img src={ carsImg } alt="" />
                                 </div>
                             </div>
-                        
+                      
                         <img className='modulImgBlock' src={ modulFirstImg } alt="Схема расположения модулей" />
+                        <div className="openVis">
+                            <div className='parkingToltip2'>Общая парковка</div>
                         </div>
+                        
+                        </div>
+      
                     </TabPanel>
                 </Tabs>
             </div>   
         </div>
     );
-}
+
+};
+
+
 
 export default Ground;

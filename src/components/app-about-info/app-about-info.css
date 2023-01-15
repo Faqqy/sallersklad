@@ -5,7 +5,7 @@
 .aboutInfoBlock img {
     display: inline-block;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 110px;
 }
 
 .aboutInfoBlock h2 {
@@ -110,4 +110,16 @@
 
 .fPimMH {
     padding-bottom: 20px;
+}
+
+.aboutInfoBlock .swiper-button-next {
+    top: 80%!important;
+}
+
+.aboutInfoBlock .swiper-button-disabled {
+    top: 80%!important;
+}
+
+.aboutInfoBlock .swiper-button-prev {
+    top: 80%!important;
 }

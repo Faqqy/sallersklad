@@ -62,18 +62,28 @@ export default function App() {
             </div>
         `;
         document.querySelector('.modal').append(thanksModal);
-        setTimeout(() => {
+        const closeModalButton = document.querySelector('.modal__close');
+        document.onclick = function (e) {
+            if (e.target.className != "modal") {
+                thanksModal.remove();
+                closeModal();
+            };
+        };
+        closeModalButton.addEventListener('click', function () {
             thanksModal.remove();
             closeModal();
-        }, 2000);
+        });
+
     }
+
+
 
 
   
   return (
         <div className="secondBLockForm" id='forms'>
             <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
-            <p>или позвоните по номеру : <br /> <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+            <p>или позвоните по номеру : <a href="tel:+79265330740">+7 926 533 07 40</a></p>
             <form id="formElem" onSubmit={handleSubmit(onSubmit)}>
                 <input type='text' placeholder='Имя' {...register("Name", {
                     required: "Поле обязательно к заполнению!",

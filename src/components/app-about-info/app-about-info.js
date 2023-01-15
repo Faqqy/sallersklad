@@ -76,13 +76,9 @@ function AboutInfo() {
                 modules={[Navigation, Pagination, A11y]}
                 spaceBetween={50}
                 slidesPerView={3}
-                navigation
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
                 breakpoints={{
                     "@0.00": {
-                      slidesPerView: 1,
+                      slidesPerView: 1.2,
                       spaceBetween: 10,
                     },
                     "@0.75": {
@@ -130,16 +126,22 @@ function AboutInfo() {
             <h3>Что можно хранить в <span style={{color:'var(--hover-color)'}}>модулях</span>?</h3>
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, Pagination, A11y]}
+                modules={[Navigation, A11y]}
                 spaceBetween={50}
                 slidesPerView={4}
                 navigation
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
+                style={{
+                  "--swiper-pagination-color": "#413C33",
+                  "--swiper-pagination-width": "20px",
+                  "--swiper-pagination-bullet-inactive-color": "#fff",
+                  "--swiper-pagination-bullet-inactive-opacity": "1",
+                  "--swiper-pagination-bullet-size": "15px",
+                  "--swiper-pagination-bullet-horizontal-gap": "20px",
+                  "--swiper-navigation-color": "#FF5C00",
+                }}
                 breakpoints={{
                     "@0.00": {
-                      slidesPerView: 1,
+                      slidesPerView: 2.2,
                       spaceBetween: 10,
                     },
                     "@0.75": {

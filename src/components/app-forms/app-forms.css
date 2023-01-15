@@ -1,5 +1,5 @@
 .secondBLockForm {
-    margin-top: 75px;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -88,7 +88,7 @@ input[type="checkbox"] {
     position: absolute;
     width: 445px;
     height: 310px;
-    top: -350px;
+    top: 0;
     left: 320px;
     margin: 0 auto;
     font-size: 25px;

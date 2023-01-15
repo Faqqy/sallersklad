@@ -47,8 +47,12 @@
     cursor: pointer;
 }
 
+.ground-block {
+    overflow-x: hidden;
+}
+
 .ground-block_form {
-    height: 412px;
+    height: 430px;
     background: #413C33;
     text-align: center;
     display: flex;
@@ -181,8 +185,8 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 66%;
-    left: 50%;
+    top: 104%;
+    left: 49.5%;
     margin-left: -60px;
     transition: .25s ease-in-out;
 }
@@ -208,7 +212,7 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 66%;
+    top: 104%;
     left: 16%;
     margin-left: -60px;
     transition: .25s ease-in-out;
@@ -235,7 +239,7 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 66%;
+    top: 104%;
     left: 82%;
     margin-left: -60px;
     transition: .25s ease-in-out;
@@ -316,8 +320,8 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 69%;
-    left: 48%;
+    top: 104%;
+    left: 47.5%;
     margin-left: -60px;
     transition: .25s ease-in-out;
 }
@@ -343,7 +347,7 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 69%;
+    top: 104%;
     left: 62%;
     margin-left: -60px;
     transition: .25s ease-in-out;
@@ -370,8 +374,8 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 69%;
-    left: 77%;
+    top: 104%;
+    left: 76.5%;
     margin-left: -60px;
     transition: .25s ease-in-out;
 }
@@ -397,8 +401,8 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 69%;
-    left: 91%;
+    top: 104%;
+    left: 90.5%;
     margin-left: -60px;
     transition: .25s ease-in-out;
 }
@@ -649,6 +653,91 @@
     left: 50%;
 }
 
+.imgAndTooltip {
+    position: relative;
+}
+
+.parkingToltip2 {
+    position: absolute;
+    right: 90px;
+    bottom: -50px;
+    visibility: hidden;
+    width: 100px;
+    background: rgba(77, 77, 77, 0.86);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 11px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.parkingToltip1 {
+    position: absolute;
+    right: 0px;
+    bottom: -65px;
+    visibility: hidden;
+    width: 100px;
+    background: rgba(77, 77, 77, 0.86);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 11px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.scrollDivName2 {
+    position: relative;
+}
+
+.parkingToltip2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
+}
+
+.parkingToltip1::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
+}
+
+.openVis {
+    width: 200px;
+    height: 127px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-top: -122px;
+}
+
+.openVis1 {
+    width: 102px;
+    height: 107px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-top: -1px;
+}
+
+.openVis:hover .parkingToltip2  {
+    visibility: visible;
+}
+
+.openVis1:hover .parkingToltip1  {
+    visibility: visible;
+}
 
 .divPosAbsSecond:hover .textOpen2 {
     visibility: visible;
@@ -823,26 +912,21 @@
     cursor: pointer;
 }
 
-.popup-content .carouselImgPopupp>div>div {
-    width: 375px;
-    height: 380px;
-    left: 73px;
-    top: 73px;
-}
 
 .popup-content {
     height: 740px;
+    width: 60%;
 }
 
 .infoBlockImgText {
-    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.infoBlockImgText .carouselImgPopupp .rsis-image>div {
-    left: 52%!important;
-    position: revert!important;
+.infoBlockImgText .carouselImgPopupp {
+    width: 375px;
+    margin-left: 68px;
+    margin-top: 77px;
 }
 
 .infoBlockPopupp {
@@ -884,6 +968,6 @@
     left: 75px;
     display: block;
     position: absolute;
-    bottom: 28px;
+    bottom: 170px;
 }
 

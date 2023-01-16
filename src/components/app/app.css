@@ -76,6 +76,14 @@
   }
 
   @media (max-width: 768px) {
+    .modal.show {
+        width: 100%!important;
+        left: 0!important;
+        top: 50%!important;
+    }
+    .infoBlockImgText {
+        flex-direction: column!important;
+    }
     .topBlockTwo {
         width: 100%!important;
         height: 516px!important;
@@ -295,18 +303,15 @@
         padding-right: 0!important;
     }
     .infoBlockPopupp {
-        margin-top: 64px!important;
+        margin-top: -536px!important;
     }
     .frameTextMini {
-        margin-top: 259px!important;
-        width: 200px!important;
-        height: 208px!important;
+        margin-top: 374px!important;
+        width: 190px!important;
     }
-    .popup-content .carouselImgPopupp>div>div {
-        width: 326px!important;
-        height: 192px!important;
-        left: 18px!important;
-        top: 180px!important;
+    .infoBlockImgText .carouselImgPopupp {
+        width: 95%!important;
+        margin: 89px auto!important;
     }
     .aboutCallMe {
         position: relative!important;
@@ -315,6 +320,15 @@
     }
     .aboutCallMe p {
         font-size: 16px!important;
+    }
+    .infoBlockPopupp h4 {
+        font-size: 25px!important;
+    }
+    .infoBlockPopupp {
+        font-size: 18px!important;
+    }
+    .popup-content {
+        height: 773px!important;
     }
   }
 

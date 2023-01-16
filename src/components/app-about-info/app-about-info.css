@@ -2,6 +2,10 @@
     padding-top: 100px;
 }
 
+.aboutInfoBlock .swiper-wrapper {
+    height: 250px;
+}
+
 .aboutInfoBlock img {
     display: inline-block;
     padding-right: 20px;

@@ -46,6 +46,7 @@
 .second-block_aboutInfo-items {
     display: flex;
     justify-content: space-between;
+    height: 561px;
 }
 
 .second-block_aboutInfo-item {

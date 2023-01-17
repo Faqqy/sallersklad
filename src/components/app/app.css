@@ -33,6 +33,7 @@
 @media (max-width: 1024px) {
     .rgbaSLiderText {
       width: 438px!important;
+      margin-right: 12px!important;
     }
     .rgbaSLiderText p {
       width: 386px!important;
@@ -73,9 +74,21 @@
     .popup-content {
         width: 94%!important;
     }
+    .aboutInfoBlock .swiper-wrapper {
+        height: 420px!important;
+    }
+    .second-block_aboutInfo-items {
+        height: 577px;
+    }
   }
 
   @media (max-width: 768px) {
+    .second-block_aboutInfo-items {
+        height: 584px!important;
+    }
+    .aboutInfoBlock .swiper-wrapper {
+        height: 142px!important;
+    }
     .modal.show {
         width: 100%!important;
         left: 0!important;
@@ -130,7 +143,7 @@
         height: 90%!important;
     }
     .first-block_aboutInfo {
-        margin-top: 160px;
+        margin-top: 267px;
     }
     .second-block_aboutInfo-item {
         padding: 0!important;
@@ -241,7 +254,7 @@
     }
     .ground-block_form {
         overflow: hidden!important;
-        height: 650px!important;
+        height: 747px!important;
         margin-bottom: -90px!important;
     }
     input[type="text"] {
@@ -303,15 +316,15 @@
         padding-right: 0!important;
     }
     .infoBlockPopupp {
-        margin-top: -536px!important;
+        margin-top: -406px!important;
     }
     .frameTextMini {
-        margin-top: 374px!important;
+        margin-top: 340px!important;
         width: 190px!important;
     }
     .infoBlockImgText .carouselImgPopupp {
-        width: 95%!important;
-        margin: 89px auto!important;
+        width: 80%!important;
+        margin: 25px auto!important;
     }
     .aboutCallMe {
         position: relative!important;
@@ -322,13 +335,37 @@
         font-size: 16px!important;
     }
     .infoBlockPopupp h4 {
-        font-size: 25px!important;
+        font-size: 20px!important;
+    }
+    .infoBlockPopupp p {
+        font-size: 20px!important;
     }
     .infoBlockPopupp {
         font-size: 18px!important;
     }
     .popup-content {
         height: 773px!important;
+    }
+    .popup-content .swiper-wrapper {
+        margin-top: 123px;
+    }
+    .secondBLockForm a {
+        display: block;
+    }
+    #formElem {
+        position: relative;
+    }
+    .errors_block {
+        left: 3px!important;
+        top: 191px;
+    }
+    .errors_block2 {
+        left: 3px;
+        top: 82px;
+    }
+    .popup-content .close {
+        top: 15px!important;
+        right: 17px!important;
     }
   }
 

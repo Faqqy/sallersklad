@@ -49,6 +49,7 @@
 
 .ground-block {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .ground-block_form {

@@ -77,12 +77,12 @@ function AboutInfo() {
                 spaceBetween={50}
                 slidesPerView={3}
                 breakpoints={{
-                    "@0.00": {
-                      slidesPerView: 1.2,
+                    "320": {
+                      slidesPerView: 1,
                       spaceBetween: 10,
                     },
-                    "@0.75": {
-                      slidesPerView: 2,
+                    "768": {
+                      slidesPerView: 3,
                       spaceBetween: 20,
                     },
                     "@1.00": {
@@ -140,12 +140,12 @@ function AboutInfo() {
                   "--swiper-navigation-color": "#FF5C00",
                 }}
                 breakpoints={{
-                    "@0.00": {
+                    "320": {
                       slidesPerView: 2.2,
                       spaceBetween: 10,
                     },
-                    "@0.75": {
-                      slidesPerView: 2,
+                    "768": {
+                      slidesPerView: 3.2,
                       spaceBetween: 20,
                     },
                     "@1.00": {

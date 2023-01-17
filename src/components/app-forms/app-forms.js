@@ -1,9 +1,10 @@
 import React from 'react';
 import './app-forms.css';
 import { useForm } from 'react-hook-form';
+import InputMask from "react-input-mask";
 
-export default function App() {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+export default function App(props) {
+    const { register, setError, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
         const formData = new FormData(document.getElementById("formElem"));
@@ -76,39 +77,40 @@ export default function App() {
 
     }
 
+    const inputType = document.querySelectorAll('[name="Name[]"]');
 
-
-
+    inputType.onblur = function() {
+        if (!this.value.includes('@')) { // не email
+          // показать ошибку
+          this.classList.add("error");
+          // ...и вернуть фокус обратно
+          this.focus();
+        } else {
+          this.classList.remove("error");
+        }
+      };
   
   return (
+    
         <div className="secondBLockForm" id='forms'>
             <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
             <p>или позвоните по номеру : <a href="tel:+79265330740">+7 926 533 07 40</a></p>
             <form id="formElem" onSubmit={handleSubmit(onSubmit)}>
-                <input type='text' placeholder='Имя' {...register("Name", {
-                    required: "Поле обязательно к заполнению!",
-                    minLength: {
-                        value: 3,
-                        message: 'Слишком короткое имя'
-                    }
+                <input id="input" type='text' placeholder='Имя' autoComplete="new-password" {...register("Name", {
+                    required: true
                 })}
                 />
                 <div className="errors_block2" style={{height: 40}}>
-                    {errors.Name && errors.Name.type === "minLength" && <span>Слишком короткое имя</span>}
+                    {errors.Name && errors.Name.type === "required" && <span>Поле обязательно к заполнению!</span>}
                 </div>
-                <input type='text' placeholder='Телефон' {...register("Phone", {
-                    required: "Поле обязательно к заполнению!",
-                    maxLength: 11,
-                    pattern: {
-                        value: /^[\d\+][\d\(\)\ -]{4,14}\d$/,
-                        message: 'Для ввода телефона допустимы только цифры'
-                    }
+                <InputMask autoComplete="new-password" type='text' mask="+7 999 9999999" onChange={props.onChange} value={props.value}  placeholder='Телефон' {...register("Phone", {
+                    required: true
                 })}
-                />
+                 />
                 <div className="errors_block" style={{height: 40}}>
-                    {errors.Phone && errors.Phone.type === "pattern" && <span>Для ввода телефона допустимы только цифры</span>}
+                    {errors.Phone && errors.Phone.type === "required" && <span>Поле обязательно к заполнению!</span>}
                 </div>
-                <input className='buttonOrange' type="submit" value="Оставить заявку"/>
+                <input className='buttonOrange' type="submit" required value="Оставить заявку"/>
                 <div className="check_block">
                     <input
                         type='checkbox'
@@ -118,6 +120,9 @@ export default function App() {
                         })}
                         className='mx-3'
                     />
+                    <div className="errors_block3" style={{height: 40}}>
+                        {errors.February && errors.February.type === "required" && <span>Поле обязательно к заполнению!</span>}
+                    </div>
                     <label htmlFor=''>Даю согласие на обработку <br/>
                         персональных данных</label>
                 </div>

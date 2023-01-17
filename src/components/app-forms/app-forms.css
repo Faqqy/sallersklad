@@ -23,6 +23,15 @@
     padding-left: 10px;
 }
 
+.errors_block3 {
+    position: relative;
+    margin-top: 50px;
+}
+
+.errors_block3 span {
+    position: absolute;
+    width: 270px;
+}
 
 input[type="text"] {
     height: 80px;
@@ -70,6 +79,7 @@ input:focus::placeholder {
     font-size: 12px;
     position: absolute;
     top: 10px;
+    border: none!important;
 }
 
 .check_block {
@@ -192,6 +202,13 @@ input:focus-visible {
 
 .errors_block2 {
     position: absolute;
-    left: 20px;
+    left: 5px;
     color: #FFF;
 }
+
+input[type="text"]:invalid {
+    background-color: #000!important;
+}
+
+input[type="text"]:valid {background:#fff;}
+input[type="text"]:invalid {background:#000;}

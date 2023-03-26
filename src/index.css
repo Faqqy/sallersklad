@@ -73,7 +73,19 @@ select {
 
 @media (min-width: 1440px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1110px;
+      max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1200px;
   }
 }
 
@@ -97,6 +109,15 @@ select {
   font-weight: normal;
   src: url('./fonts/FiraSans-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Fira Sans light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/FiraSans-Light.ttf') format('truetype');
+}
+
+
 
 
 :root {

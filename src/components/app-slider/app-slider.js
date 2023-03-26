@@ -1,4 +1,7 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import  './app-slider.css';
 import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.min.css';
@@ -14,17 +17,23 @@ import img5 from './slide5.png';
 
 const SLide = () => {
   return (
+
     <div className='topBlockTwo'>
-      
+    
       <div className="rgbaSLiderBLock" id='top'>
               <div className="rgbaSLiderText">
-                <h1>Модульные здания для бизнеса</h1>
-                <p>Сдаем в аренду склады - офисы <br /> под хранение товаров для Вашего бизнеса</p>
+              <Container>
+                <h1>Аренда складских помещений <br />
+                  для селлеров</h1>
+                <p>Предоставляем в аренду функциональные помещения <br /> 
+                    для ведения товарного бизнеса</p>
                 <Link className='buttonGrey' to="forms" spy={true} smooth={true} duration={500} offset={-217}>
-                  Арендовать модуль           
+                  Связаться с нами           
                 </Link>
-              </div>
+                </Container>
+              </div>  
       </div>
+
       <div className="slider__block">
         <Swiper
 
@@ -39,12 +48,12 @@ const SLide = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
           style={{
-            "--swiper-pagination-color": "#413C33",
-            "--swiper-pagination-width": "20px",
-            "--swiper-pagination-bullet-inactive-color": "#fff",
+            "--swiper-pagination-color": "#FF5C00",
+            "--swiper-pagination-width": "5px",
+            "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
             "--swiper-pagination-bullet-inactive-opacity": "1",
-            "--swiper-pagination-bullet-size": "15px",
-            "--swiper-pagination-bullet-horizontal-gap": "20px",
+            "--swiper-pagination-bullet-size": "10px",
+            "--swiper-pagination-bullet-horizontal-gap": "8px",
           }}
           breakpoints={{
               "@0.00": {
@@ -80,9 +89,9 @@ const SLide = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-        
-
+      
     </div>
+
   );
 }
 

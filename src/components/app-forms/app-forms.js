@@ -76,19 +76,6 @@ export default function App(props) {
         });
 
     }
-
-    const inputType = document.querySelectorAll('[name="Name[]"]');
-
-    inputType.onblur = function() {
-        if (!this.value.includes('@')) { // не email
-          // показать ошибку
-          this.classList.add("error");
-          // ...и вернуть фокус обратно
-          this.focus();
-        } else {
-          this.classList.remove("error");
-        }
-      };
   
   return (
     

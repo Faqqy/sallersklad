@@ -1,8 +1,6 @@
 .main-menu {
     height: 100%;
     font-family: 'FiraSans-regular';
-    font-weight: 400;
-    padding-left: 35px;
 }
 
 .main-menu ul {
@@ -13,8 +11,17 @@
     height: 100%;
 }
 
+.main-menu li {
+    padding-right: 120px;
+    white-space: nowrap;
+}
+
+.main-menu li:last-child {
+    padding-right: 0;
+}
+
 .main-menu a{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: #fff;
     transition: .25s ease-in-out!important;
@@ -23,3 +30,4 @@
 .main-menu a:hover {
     color: var(--hover-color)!important;
 }
+

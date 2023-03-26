@@ -20,29 +20,31 @@ function AboutInfo() {
         color: 'var(--hover-color)',
         fontSize: '25px'
     };
-    const styleLi = {
-        fontSize: '20px'
-    }
+    // const styleLi = {
+    //     fontSize: '20px'
+    // }
 
-    const [matches, setMatches] = useState(
-        window.matchMedia("(min-width: 768px)").matches
-      )
+    // const [matches, setMatches] = useState(
+    //     window.matchMedia("(min-width: 768px)").matches
+    //   )
     
-      useEffect(() => {
-        window
-        .matchMedia("(min-width: 768px)")
-        .addEventListener('change', e => setMatches( e.matches ));
-      }, []);
+    //   useEffect(() => {
+    //     window
+    //     .matchMedia("(min-width: 768px)")
+    //     .addEventListener('change', e => setMatches( e.matches ));
+    //   }, []);
     
     
-    const [style, setDp] = useState("none");
+    // const [style, setDp] = useState("none");
 
     return(
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img src={ h2Img } alt="" />О нас</h2>    
-                <p>Аренда склада - офиса с земельным участком в нашей компании – выгодное сотрудничество, которое можно <br /> реализовать как на небольшой, так и длительный срок. Мы предоставляем оформление аренды на договорной <br /> основе с ежемесячной оплатой.</p>
-                {!matches && (<span className='showHideLink' onClick={() => {setDp("block");}}>Развернуть</span>)}
+                <p>Мы предоставляем в аренду готовые функциональные помещения в сфере организации товарного бизнеса. <br />
+Помещения создавались с учетом потребностей селлеров, и уже оборудованы всем необходимым. <br />
+<span className='bigText'>Seller Sklad</span> – это эффективное решение для Вашего бизнеса!</p>
+                {/* {!matches && (<span className='showHideLink' onClick={() => {setDp("block");}}>Развернуть</span>)}
                 {!matches && (<div className="hiddenShowBlock" style={{ display: style }}>
                 <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
                 <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
@@ -65,7 +67,7 @@ function AboutInfo() {
                 </ul>
                 <br />
                 <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
-                </div> )}
+                </div> )} */}
             </div>
             <h3>Как можно использовать <span style={styleSpanTxtInfo}>модуль?</span></h3>
             <div className="second-block_aboutInfo">

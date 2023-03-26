@@ -1,18 +1,18 @@
 .slider {
-    padding-top: 136px;
+    padding-top: 85px;
 }
 
 .topBlockTwo {
     display: flex;
     justify-content: space-between;
-    height: 825px;
+    height: 555px;
 }
 
 .slider__block {
     width: 50%;
     overflow-x: hidden;
     border-radius: 50px 0px 0px 50px;
-    margin-left: 20px;
+    margin-left: 24px;
 }
 
 
@@ -28,7 +28,7 @@
 
 
 .imgslide {
-    height: 825px;
+    height: 555px;
 }
 
 .imgslide img {
@@ -37,19 +37,22 @@
     width: 100%;
 }
 
+.swiper-pagination {
+    padding-left: 75px!important;
+}
+
 .rgbaSLiderBLock .container {
     display: flex;
     height: 100%;
 }
 
-.rgbaSLiderText {
+.rgbaSLiderText .container {
     z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 90%;
-    width: 504px;
-    margin-right: 67px;
+    width: 500px;
+    margin-right: 85px;
 }
 
 .rgbaSLiderText h1 {
@@ -58,27 +61,31 @@
     color: #2C2C2C;
     font-weight: 600;
     padding-bottom: 18px;
+    line-height: 1.1;
 }
 
 .rgbaSLiderText p {
-    font-size: 25px;
+    font-family: 'FiraSans-regular';
+    font-weight: 400;
+    font-size: 17px;
     font-weight: 400;
     color: #fff;
-    padding-bottom: 70px;
+    padding-bottom: 45px;
     width: 510px;
 }
 
 .buttonGrey {
-    width: 350px;
-    height: 80px;
+    width: 346px;
+    height: 55px;
     background: linear-gradient(180deg, #504B42 0%, #2C2925 100%);
     border-radius: 4px;
     text-align: center;
-    line-height: 80px;
+    line-height: 55px;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
-    font-family: 'Fira Sans semibold';
+    font-size: 17px;
+    font-family: 'FiraSans-regular';
+    font-weight: 400;
     cursor: pointer;
 }
 

@@ -35,7 +35,7 @@ function App() {
             </div>
             <div className='main-body'>
                 <div className="slider">
-                    { <Slider/> }
+                    { <Slider/> }  
                 </div>
                 <div className="about-info">
                     <Container>

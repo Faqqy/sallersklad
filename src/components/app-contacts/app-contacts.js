@@ -7,7 +7,7 @@ function HeaderContacts() {
             <ul>
                 <li>
                     г. Москва <br />
-                    <a href="tel:+79265330740">+7 926 533 07 40</a>
+                    <a href="tel:+79851500606">+ 7 985 150 06 06</a>
                 </li>
             </ul>
         </div>

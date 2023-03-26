@@ -6,6 +6,20 @@
     height: 250px;
 }
 
+.first-block_aboutInfo p {
+    font-family: 'FiraSans-regular';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 2.2;
+}
+
+.first-block_aboutInfo .bigText {
+    font-family: 'Fira Sans semibold';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 2.2;
+}
+
 .aboutInfoBlock img {
     display: inline-block;
     padding-right: 20px;

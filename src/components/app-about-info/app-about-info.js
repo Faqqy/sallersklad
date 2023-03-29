@@ -9,16 +9,25 @@ import itemImg3 from './firstphotop3.png';
 import iconOkImg from './iconOk.png';
 import { Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import bginfo1 from './bginfo1.jpg';
+import bginfo2 from './bginfo2.jpg';
+import bginfo3 from './bginfo3.jpg';
+import bginfo4 from './bginfo4.jpg';
 
 
 function AboutInfo() {
     const styleSpanTxtInfo = {
         color: 'var(--hover-color)',
-        fontSize: '35px'
+        fontSize: '30px'
       };
     const styleSpanTxtInfo2 = {
         color: 'var(--hover-color)',
         fontSize: '25px'
+    };
+    const styleSpanTxtInfo3 = {
+      color: 'var(--main-color)',
+      fontSize: '30px'
     };
     // const styleLi = {
     //     fontSize: '20px'
@@ -69,61 +78,45 @@ function AboutInfo() {
                 <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
                 </div> )} */}
             </div>
-            <h3>Как можно использовать <span style={styleSpanTxtInfo}>модуль?</span></h3>
-            <div className="second-block_aboutInfo">
-                
-                <div className="second-block_aboutInfo-items">
-                <Swiper
-
-                modules={[Navigation, Pagination, A11y]}
-                spaceBetween={50}
-                slidesPerView={3}
-                breakpoints={{
-                    "320": {
-                      slidesPerView: 1,
-                      spaceBetween: 10,
-                    },
-                    "768": {
-                      slidesPerView: 3,
-                      spaceBetween: 20,
-                    },
-                    "@1.00": {
-                      slidesPerView: 3,
-                      spaceBetween: 40,
-                    },
-                    "@1.50": {
-                      slidesPerView: 3,
-                      spaceBetween: 50,
-                    },
-                  }}
-                >
-                <SwiperSlide>
-                <div className="second-block_aboutInfo-item">
-                        <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg1 } alt="" />
-                        <h4>Мини - офис</h4>
-                        <p>Кчественные утепленные помещения с внутренней отделкой. В модулях подключено освещение, розетки, кондиционеры, установлены пластиковые окна и металлические двери под размер паллетов.</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="second-block_aboutInfo-item">
-                        <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg2 } alt="" />
-                        <h4>Склад для магазина</h4>
-                        <p>Удобное отапливаемое помещение для размещения ассортимента вашего магазина. Модули оснащены стеллажами по периметру. Двери выполнены из прочного металла.</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="second-block_aboutInfo-item">
-                        <img className='iconOk' src={ iconOkImg } alt="" />
-                        <img src={ itemImg3 } alt="" />
-                        <h4>Хранение инвентаря и личных вещей</h4>
-                        <p>Многофункциональный модуль для личного пользования. Прочные и надежные металлические двери, окна оснащены антивандальными решетками.</p>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-
-                </div>
+            <h3 style={styleSpanTxtInfo}>Почему выбирают нас<span style={styleSpanTxtInfo3}>?</span></h3>
+            <div className="second-block_aboutInfo">   
+              <Tabs>
+                  <div className="tabBlockLeft">
+                    <TabList>
+                      <Tab>
+                          <h4>Удобство работы</h4>
+                      </Tab>
+                      <Tab>
+                          <h4>Полное оснащение</h4>
+              
+                      </Tab>
+                      <Tab>
+                          <h4>Простота погрузки/выгрузки </h4>
+                      </Tab>
+                      <Tab>
+                          <h4>Разнгообразие площадей</h4>
+                      </Tab>
+                    </TabList>
+                  </div>
+                  <div className="photoBlockRight">
+                    <TabPanel>
+                      <div className="bginfo1" style={{ backgroundImage: `url(${bginfo1})` }}>
+                      </div>
+                    </TabPanel>
+                    <TabPanel>
+                      <div className="bginfo1" style={{ backgroundImage: `url(${bginfo2})` }}>
+                      </div>
+                    </TabPanel>
+                    <TabPanel>
+                      <div className="bginfo1" style={{ backgroundImage: `url(${bginfo3})` }}>
+                      </div>
+                    </TabPanel>
+                    <TabPanel>
+                      <div className="bginfo1" style={{ backgroundImage: `url(${bginfo4})` }}>
+                      </div>
+                    </TabPanel>
+                  </div>
+              </Tabs>
             </div>
             <h3>Что можно хранить в <span style={{color:'var(--hover-color)'}}>модулях</span>?</h3>
             <Swiper

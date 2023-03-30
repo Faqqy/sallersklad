@@ -118,51 +118,6 @@ function AboutInfo() {
                   </div>
               </Tabs>
             </div>
-            <h3>Что можно хранить в <span style={{color:'var(--hover-color)'}}>модулях</span>?</h3>
-            <Swiper
-                // install Swiper modules
-                modules={[Navigation, A11y]}
-                spaceBetween={50}
-                slidesPerView={4}
-                navigation
-                style={{
-                  "--swiper-pagination-color": "#413C33",
-                  "--swiper-pagination-width": "20px",
-                  "--swiper-pagination-bullet-inactive-color": "#fff",
-                  "--swiper-pagination-bullet-inactive-opacity": "1",
-                  "--swiper-pagination-bullet-size": "15px",
-                  "--swiper-pagination-bullet-horizontal-gap": "20px",
-                  "--swiper-navigation-color": "#FF5C00",
-                }}
-                breakpoints={{
-                    "320": {
-                      slidesPerView: 2.2,
-                      spaceBetween: 10,
-                    },
-                    "768": {
-                      slidesPerView: 3.2,
-                      spaceBetween: 20,
-                    },
-                    "@1.00": {
-                      slidesPerView: 3,
-                      spaceBetween: 40,
-                    },
-                    "@1.50": {
-                      slidesPerView: 4,
-                      spaceBetween: 50,
-                    },
-                  }}
-                >
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image1about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image2about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image3about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image4about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image5about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image6about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image7about.png" /></SwiperSlide>
-                <SwiperSlide><img width="100%" src="images/imgSLideAbout/image8about.png" /></SwiperSlide>
-            </Swiper>
-
         </div> 
     );
 }

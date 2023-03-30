@@ -203,3 +203,71 @@
 .tabBlockLeft .react-tabs__tab--selected h4 {
     color: #fff;
 }
+
+.greyBlock {
+    margin-top: 85px;
+    background: #EDEDED;
+    height: 673px;
+    display: flex;
+    align-items:center;
+    position: relative;
+}
+
+.greyBlock .swiper-slide {
+    height: 535px!important;
+    filter: drop-shadow(0px 16px 24px rgba(109, 118, 163, 0.12));
+}
+
+.greyBlock .col {
+    margin-top: 60px;
+}
+
+.greyBlock .swiper-button-next, .swiper-button-prev {
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    top: 43%;
+    filter: drop-shadow(0px 8px 8px rgba(109, 118, 163, 0.12));
+}
+
+.sliderFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+    width: 980px;
+    height: 482px;
+    margin: 0 auto;
+}
+
+.sliderFlexImg {
+    width: 490px;
+    padding-left: 45px;
+}
+
+.greyBlock h3 {
+    font-family: 'Fira Sans semibold'; 
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.sliderFlexText {
+    width: 419px;
+    padding-left: 45px;
+}
+
+.sliderFlexText h4 {
+    font-family: 'Fira Sans semibold'; 
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.sliderFlexText p {
+    font-size: 17px;
+    font-family: 'FiraSans-regular';
+}

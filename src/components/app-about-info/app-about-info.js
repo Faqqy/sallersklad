@@ -1,19 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './app-about-info.css';
+import styles from './styles.module.css';
 import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.min.css';
 import h2Img from './h2img.svg';
-import itemImg1 from './firstphotop.png';
-import itemImg2 from './firstphotop2.png';
-import itemImg3 from './firstphotop3.png';
-import iconOkImg from './iconOk.png';
-import { Navigation, Pagination, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Accordion, AccordionItem as Item } from "@szhsin/react-accordion";
+import chevronDown from "./chevron-down.svg";
 import bginfo1 from './bginfo1.jpg';
 import bginfo2 from './bginfo2.jpg';
 import bginfo3 from './bginfo3.jpg';
 import bginfo4 from './bginfo4.jpg';
+import bginfoMob1 from './bg1mob.jpg';
+import bginfoMob2 from './bg2mob.jpg';
+import bginfoMob3 from './bg3mob.jpg';
+import bginfoMob4 from './bg4mob.jpg';
 
 
 function AboutInfo() {
@@ -21,62 +22,40 @@ function AboutInfo() {
         color: 'var(--hover-color)',
         fontSize: '30px'
       };
-    const styleSpanTxtInfo2 = {
-        color: 'var(--hover-color)',
-        fontSize: '25px'
-    };
     const styleSpanTxtInfo3 = {
       color: 'var(--main-color)',
       fontSize: '30px'
     };
-    // const styleLi = {
-    //     fontSize: '20px'
-    // }
 
-    // const [matches, setMatches] = useState(
-    //     window.matchMedia("(min-width: 768px)").matches
-    //   )
-    
-    //   useEffect(() => {
-    //     window
-    //     .matchMedia("(min-width: 768px)")
-    //     .addEventListener('change', e => setMatches( e.matches ));
-    //   }, []);
-    
-    
-    // const [style, setDp] = useState("none");
+      /**
+   * @type {React.ExoticComponent<import('@szhsin/react-accordion').AccordionItemProps>}
+   */
+    const AccordionItem = ({ header, ...rest }) => (
+      <Item
+        {...rest}
+        header={
+          <>
+            {header}
+            <img className={styles.chevron} src={chevronDown} alt="Chevron Down" />
+          </>
+        }
+        className={styles.item}
+        buttonProps={{
+          className: ({ isEnter }) =>
+            `${styles.itemBtn} ${isEnter && styles.itemBtnExpanded}`
+        }}
+        contentProps={{ className: styles.itemContent }}
+        panelProps={{ className: styles.itemPanel }}
+      />
+    );
 
     return(
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
-                <h2> <img src={ h2Img } alt="" />О нас</h2>    
+                <h2> <img className="h2style" src={ h2Img } alt="" />О нас</h2>    
                 <p>Мы предоставляем в аренду готовые функциональные помещения в сфере организации товарного бизнеса. <br />
 Помещения создавались с учетом потребностей селлеров, и уже оборудованы всем необходимым. <br />
 <span className='bigText'>Seller Sklad</span> – это эффективное решение для Вашего бизнеса!</p>
-                {/* {!matches && (<span className='showHideLink' onClick={() => {setDp("block");}}>Развернуть</span>)}
-                {!matches && (<div className="hiddenShowBlock" style={{ display: style }}>
-                <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
-                <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
-                    <li style={styleLi}>облегчить ведение бизнеса и поиски подходящего помещения под него;</li>
-                    <li style={styleLi}>доступность подъезда к складу на автомобиле и упрощение погрузки и выгрузки Вашего товара и вещей;</li>
-                    <li style={styleLi}>удобное расположение модульных зданий в пределах Москвы и в пешей доступности от метро;</li>
-                    <li style={styleLi}>круглосуточную охрану и видеонаблюдение на складах.</li>
-                </ul>
-                <br />
-                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
-                </div> )}
-               
-                {matches && (<div className="hiddenShowBlock">
-                <span style={styleSpanTxtInfo2}>Мы предлагаем Вам:</span>
-                <ul style={{listStyleType: 'disc',paddingLeft:'40px'}}>
-                    <li style={styleLi}>облегчить ведение бизнеса и поиски подходящего помещения под него;</li>
-                    <li style={styleLi}>доступность подъезда к складу на автомобиле и упрощение погрузки и выгрузки Вашего товара и вещей;</li>
-                    <li style={styleLi}>удобное расположение модульных зданий в пределах Москвы и в пешей доступности от метро;</li>
-                    <li style={styleLi}>круглосуточную охрану и видеонаблюдение на складах.</li>
-                </ul>
-                <br />
-                <p>Наши склады - офисы это полноценные модульные здания с освещением, отоплением, стеллажами, и прочими удобствами, где Вы можете проводить свой рабочий день.</p>
-                </div> )} */}
             </div>
             <h3 style={styleSpanTxtInfo}>Почему выбирают нас<span style={styleSpanTxtInfo3}>?</span></h3>
             <div className="second-block_aboutInfo">   
@@ -117,6 +96,28 @@ function AboutInfo() {
                     </TabPanel>
                   </div>
               </Tabs>
+            </div>
+            <div className="accordionMobile">
+              <div className={styles.app}>
+              <Accordion>
+                <AccordionItem header="Удобство работы">
+                  <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob1})` }}></div>
+                </AccordionItem>
+
+                <AccordionItem header="Полное оснащение">
+                  <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob2})` }}></div>
+                </AccordionItem>
+
+                <AccordionItem header="Простота погрузки/выгрузки">
+                  <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob3})` }}></div>
+                </AccordionItem>
+
+                <AccordionItem header="Разнгообразие площадей">
+                  <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob4})` }}></div>
+                </AccordionItem>
+              </Accordion>
+              </div>
+
             </div>
         </div> 
     );

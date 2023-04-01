@@ -271,3 +271,7 @@
     font-size: 17px;
     font-family: 'FiraSans-regular';
 }
+
+.accordionMobile {
+    display: none;
+}

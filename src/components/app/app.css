@@ -108,16 +108,29 @@
         flex-direction: column!important;
         border-radius: 0px 0px 15px 15px!important;
     }
-    .rgbaSLiderText .container {
-        width: 100%!important;
+    .topBlockTwo .slider__block {
+        margin-top: 10px;
+    }
+    .rgbaSLiderText {
+        width: 100%;
+        position: relative;
     }
     .rgbaSLiderText .container {
+        width: 95%!important;
+        height: 433px!important;
         text-align: left;
-        margin-right: 25px!important;
-      }
+        margin: 0 auto!important;
+        padding: 9px;
+    }
     .rgbaSLiderText .container h1 {
         font-size: 35px;
         padding-top: 45px;
+    }
+    .rgbaSLiderText .buttonGrey {
+        width: 100%;
+    }
+    .rgbaSLiderText h1 {
+        width: 233px;
     }
     .slider__block {
         overflow-x: visible!important;
@@ -158,7 +171,11 @@
         height: 90%!important;
     }
     .first-block_aboutInfo {
-        margin-top: 267px;
+        margin-top: 190px;
+    }
+    .aboutInfoBlock .first-block_aboutInfo p {
+        font-size: 12px;
+        width: 260px;
     }
     .second-block_aboutInfo-item {
         padding: 0!important;
@@ -219,7 +236,9 @@
     }
     .aboutInfoBlock h3 {
         font-size: 20px!important;
-        padding-top: 63px!important;
+        padding-top: 30px!important;
+        text-align: left!important;
+        padding-bottom: 20px!important;
     }
     .aboutInfoBlock span {
         font-size: 20px!important;
@@ -227,8 +246,10 @@
     .second-block_aboutInfo-item {
         width: 100%!important;
     }
-    .aboutInfoBlock img {
+    .aboutInfoBlock .h2style {
         padding-bottom: 0!important;
+        width: 40px;
+        padding-right: 10px!important;
     }
     .aboutInfoBlock .swiper-button-prev {
         display: none;
@@ -240,7 +261,8 @@
         font-size: 20px!important;
     }
     .aboutInfoBlock h2 {
-        font-size: 30px!important;
+        font-size: 25px!important;
+        padding-bottom: 18px!important;
     }
     .groundInfoBlock {
         margin-bottom: -135px!important;
@@ -286,13 +308,12 @@
         overflow-x: hidden!important;
     }
     .rgbaSLiderBLock {
-        margin-left: 0!important;
-        padding-left: 12px;
+        margin: 0 auto!important;
         width: 100%!important;
         border-radius: 0px 0px 15px 15px!important;
     }
-    .slider__block .swiper-pagination-bullet {
-        display: none;
+    .slider__block .swiper-pagination{
+        padding: 0!important;
     }
     .main-footer {
         margin-top: 460px!important;
@@ -440,6 +461,22 @@
     .greyBlock .swiper-button-prev:after {
         font-size: 12px;
         font-weight: 600;
+    }
+    .accordionMobile {
+        display: block!important;
+    }
+    .aboutInfoBlock .second-block_aboutInfo .react-tabs {
+        display: none;
+    }
+    .szh-accordion .szh-accordion__item-heading {
+        padding-top: 0px!important;
+        padding-bottom: 0!important;
+    }
+    .szh-accordion__item .szh-accordion__item-content .bgInfoMob {
+        width: 100%;
+        background-size: cover;
+        height: 445px;
+        /* padding: 0!important; */
     }
   }
 

@@ -1,5 +1,5 @@
 .groundInfoBlock {
-    margin-top: 135px; 
+    margin-top: 80px; 
     margin-bottom: 135px;                                  
 }
 
@@ -22,7 +22,7 @@
     font-size: 45px;
     font-family: 'Fira Sans semibold';
     font-weight: 600;
-    padding-bottom: 80px;
+    padding-bottom: 45px;
 }
 
 .firstBlockGround {
@@ -64,8 +64,8 @@
     background: #413C33;
     box-shadow: inset 0px 0px 15px rgb(18 18 18 / 51%);
     border-radius: 62px;
-    height: 85px;
-    width: 744px;
+    height: 45px;
+    width: 430px;
 }
 
 .paragTabName {
@@ -77,9 +77,9 @@
 }
 
 .react-tabs__tab {
-    height: 65px;
-    width: 350px;
-    margin: 8px 11px;
+    height: 35px;
+    width: 203px;
+    margin: 4px 6px;
     border: none!important;
 }
 
@@ -107,10 +107,10 @@
 
 .react-tabs__tab h4 {
     color: #fff;
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 400;
     display: block;
-    padding: 7px 48px;
+    text-align: center;
 } 
 
 .react-tabs__tab p {
@@ -609,7 +609,7 @@
 }
 
 .textOpen {
-    visibility: hidden;
+    display: none;
     width: 350px;
     height: 260px;
     color: #fff;
@@ -618,9 +618,10 @@
     padding: 11px 0;
     position: absolute;
     z-index: 1;
-    top: 90%;
-    left: -20%;
-    margin-left: -60px;
+    top: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     transition: .25s ease-in-out; 
 }
 
@@ -970,5 +971,13 @@
     display: block;
     position: absolute;
     bottom: 170px;
+}
+
+.paragTabNameMap {
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'FiraSans-regular';
+    padding-bottom: 10px;
 }
 

@@ -35,13 +35,22 @@ import imageTwoDPark2 from './twoMPark2.png';
 import imageMiniModule from './minimod.png';
 import imageMiniModule1 from './minimod1.png';
 import imageMiniModule2 from './minimod2.png';
-
-
+import { YMaps, Map, ZoomControl, Placemark } from '@pbe/react-yandex-maps';
 
 function Ground() {
   
         const ref = useRef();
         const closeTooltip = () => ref.current.close();
+        
+        function OpenModalAbout() {
+            const openInfoModal = document.querySelector('.textOpen');
+            function variationPlacements() {
+                
+                openInfoModal.classList.add('active');
+            }
+        }
+
+
 
     return(
         <div className='groundInfoBlock'>
@@ -58,14 +67,26 @@ function Ground() {
                     </Tab>
                     </TabList>
                     <TabPanel>
-                        <p className="paragTabName">
-                            Путевой проезд, д. 13с4
-                        </p>
                         <div className="map-block">
-                            <div id='hoverHiddenFirstMap' className="divPosAbsFirst">
-                                <div class="textOpen"><img src={ mapOpenFirst } alt="Путевой проезд, д. 13с4" /></div>
-                            </div>
-                            <img src={ mapSecond } alt="Путевой проезд, д. 13с4" />
+                        <div className="textOpen"><img src={ mapOpenFirst } alt="Путевой проезд, д. 13с4" /></div>
+                            <YMaps>
+                                <div>
+                                    <p className='paragTabNameMap'>
+                                        Путевой проезд, д. 13с4
+                                    </p>
+                                    <Map defaultState={{ center: [55.88728565832933,37.56954050727078], zoom: 18 }} width="100%" height="500px" >
+                                    <ZoomControl options={{ float: "right" }} />
+                                    <Placemark
+                                    onClick={OpenModalAbout}
+                                    options={{
+                                        iconLayout: 'default#image',
+                                        iconImageSize: [55, 65],
+                                        iconImageHref: './images/pin.svg',
+                                    }}
+                                    geometry={[55.88728565832933,37.56954050727078]} />
+                                    </Map>
+                                </div>
+                            </YMaps>
                         </div>
                         <h3>Схема расположения модулей</h3>
                         <div className="scrollDivName">

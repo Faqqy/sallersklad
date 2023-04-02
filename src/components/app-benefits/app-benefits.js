@@ -1,94 +1,83 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './app-benefits.css';
-import iconOk from './iconOk.png';
+import benef1 from './benif1.jpg';
+import benef2 from './benif2.jpg';
+import benef3 from './benif3.jpg';
+import benef4 from './benif4.jpg';
+import benef5 from './benif5.jpg';
+import benef6 from './benif6.jpg';
 
 function Benefits() {
-
-    const [matches, setMatches] = useState(
-        window.matchMedia("(min-width: 768px)").matches
-      )
-    
-      useEffect(() => {
-        window
-        .matchMedia("(min-width: 768px)")
-        .addEventListener('change', e => setMatches( e.matches ));
-      }, []);
-    
-    
-    const [style, setDp] = useState("none");
-
     return (
         <div className='benefitsBlock'>
-            <h3>Наши преимущества</h3>
+            <h3>У нас - сплошные <span style={{color:'var(--hover-color)'}}>преимущества!</span></h3>
             <div className="flexItem">
                 <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Освещение территории"/> 
-                        <p>Освещение территории</p>         
+                    <img src={ benef1 } alt="Освещение территории"/>          
                 </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Камеры наблюдения"/>
-                        <p>Камеры наблюдения</p>
-                    
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Вилочный погрузчик"/>
-                        <p>Вилочный погрузчик</p>
-                    
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Стеллажи для хранения"/>
-                        <p>Стеллажи для хранения</p>
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Модули с электричеством"/>
-                        <p>Модули с электричеством</p>
+                <div className="bnefitsBlock_itemText">
+                    <h4>Освещаемая территория</h4>
+                    <p>
+                        Территория площадки полностью освещается в темное<br /> время суток. <br />
+                        Над входом в каждое помещение дополнительно <br /> установлены индивидуальные прожекторы  
+                    </p>
                 </div>
             </div>
-            {!matches && (<span className='showHideLink' onClick={() => {setDp("flex");}}>Развернуть</span>)}
-            {!matches && (<div className="flexItem" style={{ display: style }}>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Охраняемая территория с КПП"/>
-                        <p>Охраняемая территория с КПП</p>
+            <div className="flexItem">
+                <div className="bnefitsBlock_itemText">
+                    <h4>Круглосуточная охрана</h4>
+                    <p>
+                        На площадке действует служба охраны, въезд осуществляется через КПП, установлена система видеонаблюдения
+                    </p>
                 </div>
                 <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Проезд на своей машине"/>
-                        <p>Проезд на своей машине</p>
+                    <img src={ benef2 } alt="Круглосуточная охрана"/>          
+                </div>
+            </div>
+            <div className="flexItem">
+                <div className="bnefitsBlock_item">
+                    <img src={ benef3 } alt="Собственная парковка и место для разгрузки"/>          
+                </div>
+                <div className="bnefitsBlock_itemText">
+                    <h4>Собственная парковка и место для разгрузки</h4>
+                    <p>
+                        Собственная парковка, а также возможность подъезда грузового автомобиля прямо ко входу в помещение для удобной погрузки/выгрузки
+                    </p>
+                </div>
+            </div>
+            <div className="flexItem">
+                <div className="bnefitsBlock_itemText">
+                    <h4>Круглосуточный доступ</h4>
+                    <p>
+                        Все помещения в круглосуточном доступе (24/7)
+                    </p>
                 </div>
                 <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Собственное место парковки"/>
-                        <p>Собственное место парковки</p>
+                    <img src={ benef4 } alt="Круглосуточный доступ"/>          
+                </div>
+            </div>
+            <div className="flexItem">
+                <div className="bnefitsBlock_item">
+                    <img src={ benef5 } alt="Готовые рабочие помещения"/>          
+                </div>
+                <div className="bnefitsBlock_itemText">
+                    <h4>Готовые рабочие помещения</h4>
+                    <p>
+                        Все помещения оборудованы рабочим местом, стеллажами, системой отопления и кондиционирования
+                    </p>
+                </div>
+            </div>
+            <div className="flexItem">
+                <div className="bnefitsBlock_itemText">
+                    <h4>Вилочный автопогрузчик</h4>
+                    <p>
+                        На территории площадки имеется автопогрузчик для <br /> приема и отправки паллетных партий
+                    </p>
                 </div>
                 <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Санузел"/>
-                        <p>Санузел</p>
+                    <img src={ benef6 } alt="Вилочный автопогрузчик"/>          
                 </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Круглосуточный доступ"/>
-                        <p>Круглосуточный доступ</p>
-                </div>
-            </div>)}
-            {matches && (<div className="flexItem">
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Охраняемая территория с КПП"/>
-                        <p>Охраняемая территория с КПП</p>
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Проезд на своей машине"/>
-                        <p>Проезд на своей машине</p>
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Собственное место парковки"/>
-                        <p>Собственное место парковки</p>
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Санузел"/>
-                        <p>Санузел</p>
-                </div>
-                <div className="bnefitsBlock_item">
-                    <img src={ iconOk } alt="Круглосуточный доступ"/>
-                        <p>Круглосуточный доступ</p>
-                </div>
-            </div>)}
+            </div>
         </div>
     );
 }

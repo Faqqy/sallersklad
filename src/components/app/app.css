@@ -476,7 +476,34 @@
         width: 100%;
         background-size: cover;
         height: 445px;
-        /* padding: 0!important; */
+    }
+    .desktopVersion-benefitsBlock {
+        display: none;
+    }
+    .mobileVersion-benefitsBlock {
+        display: block!important;
+    }
+    .mobileVersion-benefitsBlock h3 {
+        text-align: left!important;
+    }
+    .mobileVersion-benefitsBlock .slideItem {
+        width: 200px;
+    }
+    .mobileVersion-benefitsBlock .slideItem img {
+        width: 220px;
+    }
+    .slideItem h4 {
+        font-size: 14px;
+        color: var(--hover-color);
+        font-weight: 600;
+        margin-top: -23px;
+    }
+    .slideItem p {
+        font-family: 'FiraSans-regular';
+        font-weight: 400;
+        font-size: 12px;
+        padding-top: 8px;
+        width: 187px;
     }
   }
 

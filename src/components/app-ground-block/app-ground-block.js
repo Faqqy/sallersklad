@@ -3,8 +3,6 @@ import './app-ground-block.css';
 import h2Img from './h2img.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import mapFirst from './map1.jpg';
-import mapSecond from './map2.jpg';
 import modulFirstImg from './modul1.png';
 import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
@@ -39,18 +37,23 @@ import { YMaps, Map, ZoomControl, Placemark } from '@pbe/react-yandex-maps';
 
 function Ground() {
   
-        const ref = useRef();
-        const closeTooltip = () => ref.current.close();
-        
-        function OpenModalAbout() {
-            const openInfoModal = document.querySelector('.textOpen');
-            function variationPlacements() {
-                
-                openInfoModal.classList.add('active');
-            }
+    const ref = useRef();
+    const closeTooltip = () => ref.current.close();
+    
+    function OpenModalAbout() {
+        const openInfoModal = document.querySelector('.textOpen');
+        if (openInfoModal.getAttribute("show")=="true"){
+            openInfoModal.setAttribute("show","false");
+        } else {
+            openInfoModal.setAttribute("show","true");
         }
 
-
+        document.querySelector('.ground-block').addEventListener('click', e => {
+            if (e.target.className === 'ground-block') {
+                openInfoModal.setAttribute("show","false");
+            }
+        });
+    };
 
     return(
         <div className='groundInfoBlock'>
@@ -887,14 +890,26 @@ function Ground() {
                         </div>
                     </TabPanel>
                     <TabPanel>
-                        <p className="paragTabName">
-                            Алтуфьевское шоссе, вл. 79Ж
-                        </p>
-                        <div className="map-block">
-                            <div id='hoverHiddenSecondMap' className="divPosAbsSecond">
-                            <div class="textOpen2"><img src={ mapOpenSecond } alt="Алтуфьевское шоссе, вл. 79Ж" /></div>
-                            </div>
-                            <img src={ mapFirst } alt="Алтуфьевское шоссе, вл. 79Ж" />
+                    <div className="map-block">
+                        <div className="textOpen"><img src={ mapOpenSecond } alt="Алтуфьевское шоссе, вл. 79Ж" /></div>
+                            <YMaps>
+                                <div>
+                                    <p className='paragTabNameMap'>
+                                        Алтуфьевское шоссе, вл. 79Ж
+                                    </p>
+                                    <Map defaultState={{ center: [55.887254008443186,37.58502191104509], zoom: 18 }} width="100%" height="500px" >
+                                    <ZoomControl options={{ float: "right" }} />
+                                    <Placemark
+                                    onClick={OpenModalAbout}
+                                    options={{
+                                        iconLayout: 'default#image',
+                                        iconImageSize: [55, 65],
+                                        iconImageHref: './images/pin.svg',
+                                    }}
+                                    geometry={[55.887254008443186,37.58502191104509]} />
+                                    </Map>
+                                </div>
+                            </YMaps>
                         </div>
                         <h3>Схема расположения модулей</h3>
                         <div className="scrollDivName2">

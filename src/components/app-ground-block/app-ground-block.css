@@ -625,6 +625,10 @@
     transition: .25s ease-in-out; 
 }
 
+.textOpen[show='true'] {
+    display: block;
+}
+
 .textOpen::after {
     content: "";
     position: absolute;
@@ -633,7 +637,7 @@
 }
 
 .textOpen2 {
-    visibility: hidden;
+    display: none;
     width: 350px;
     height: 260px;
     color: #fff;
@@ -647,6 +651,11 @@
     margin-left: -60px;
     transition: .25s ease-in-out; 
 }
+
+.textOpen2[show='true'] {
+    display: block;
+}
+
 
 .textOpen2::after {
     content: "";

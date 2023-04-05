@@ -54,3 +54,7 @@
     width: 520px;
     padding-left: 25px;
 }
+
+.mobileVersion-benefitsBlock {
+    display: none;
+}

@@ -8,11 +8,11 @@ import 'swiper/swiper-bundle.min.css';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import img1 from './slide1.png';
-import img2 from './slide2.png';
-import img3 from './slide3.png';
-import img4 from './slide4.png';
-import img5 from './slide5.png';
+import img1 from './bgcarousel2.jpeg';
+import img2 from './bgcarousel3.jpeg';
+import img3 from './bgcarousel4.jpeg';
+import img4 from './bgcarousel5.jpeg';
+import img5 from './bgcarousel6.jpeg';
 
 
 const SLide = () => {
@@ -40,10 +40,10 @@ const SLide = () => {
           modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={10}
           slidesPerView={1}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}

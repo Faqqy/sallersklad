@@ -77,7 +77,7 @@ export default function App(props) {
 
     }
   
-  return (
+    return (
     
         <div className="secondBLockForm" id='forms'>
             <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
@@ -124,5 +124,5 @@ export default function App(props) {
 
         </div>
 
-  );
+    );
 }

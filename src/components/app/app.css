@@ -486,17 +486,13 @@
     .mobileVersion-benefitsBlock h3 {
         text-align: left!important;
     }
-    .mobileVersion-benefitsBlock .slideItem {
-        width: 200px;
-    }
-    .mobileVersion-benefitsBlock .slideItem img {
-        width: 220px;
-    }
     .slideItem h4 {
+        width: 200px;
         font-size: 14px;
         color: var(--hover-color);
         font-weight: 600;
         margin-top: -23px;
+        padding-left: 2px;
     }
     .slideItem p {
         font-family: 'FiraSans-regular';
@@ -504,6 +500,10 @@
         font-size: 12px;
         padding-top: 8px;
         width: 187px;
+        padding-left: 2px;
+    }
+    .slideItem img {
+        margin-left: -24px;
     }
   }
 

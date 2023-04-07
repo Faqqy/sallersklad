@@ -23,8 +23,8 @@ function AboutInfo() {
         fontSize: '30px'
       };
     const styleSpanTxtInfo3 = {
-      color: 'var(--main-color)',
-      fontSize: '30px'
+        color: 'var(--main-color)',
+        fontSize: '30px'
     };
 
       /**

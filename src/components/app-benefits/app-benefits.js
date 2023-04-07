@@ -8,7 +8,12 @@ import benef3 from './benif3.jpg';
 import benef4 from './benif4.jpg';
 import benef5 from './benif5.jpg';
 import benef6 from './benif6.jpg';
-import benefmob1 from './mobslide1.jpg';
+import mobcarus1 from './mobcarus1.jpg';
+import mobcarus2 from './mobcarus2.jpg';
+import mobcarus3 from './mobcarus3.jpg';
+import mobcarus4 from './mobcarus4.jpg';
+import mobcarus5 from './mobcarus5.jpg';
+import mobcarus6 from './mobcarus6.jpg';
 
 function Benefits() {
     return (
@@ -95,7 +100,7 @@ function Benefits() {
                     >
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benefmob1 } alt="" />
+                            <img src={ mobcarus1 } alt="" />
                             <h4>Освещаемая территория</h4>
                             <p>
                                 Территория площадки полностью освещается в темное<br /> время суток. <br />
@@ -105,27 +110,51 @@ function Benefits() {
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benef2 } alt="" />
+                            <img src={ mobcarus2 } alt="" />
+                            <h4>Круглосуточная охрана</h4>
+                            <p>
+                                На площадке действует служба охраны, въезд осуществляется через КПП, установлена система видеонаблюдения
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benef3 } alt="" />
+                            <img src={ mobcarus3 } alt="" />
+                            <h4>Собственная парковка
+                                и место для разгрузки</h4>
+                            <p>
+                                Собственная парковка, а также возможность подъезда грузового автомобиля прямо
+                                ко входу в помещение для удобной погрузки/выгрузки
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benef4 } alt="" />
+                            <img src={ mobcarus4 } alt="" />
+                            <h4>Круглосуточный доступ</h4>
+                            <p>
+                                Все помещения
+                                в круглосуточном доступе (24/7)
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benef5 } alt="" />
+                            <img src={ mobcarus5 } alt="" />
+                            <h4>Готовые рабочие помещения</h4>
+                            <p>
+                                Все помещения оборудованы рабочим местом, стеллажами, системой отопления
+                                и кондиционирования
+                            </p>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slideItem">
-                            <img src={ benef6 } alt="" />
+                            <img src={ mobcarus6 } alt="" />
+                            <h4>Вилочный автопогрузчик</h4>
+                            <p>
+                                На территории площадки имеется автопогрузчик для приема и отправки паллетных партий
+                            </p>
                         </div>
                     </SwiperSlide>
                 </Swiper>

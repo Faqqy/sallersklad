@@ -25,7 +25,7 @@ const SLide = () => {
               <Container>
                 <h1>Аренда складских помещений <br />
                   для селлеров</h1>
-                <p>Предоставляем в аренду функциональные помещения <br /> 
+                <p>Предоставляем в аренду функциональные помещения
                     для ведения товарного бизнеса</p>
                 <Link className='buttonGrey' to="forms" spy={true} smooth={true} duration={500} offset={-217}>
                   Связаться с нами           
@@ -40,10 +40,6 @@ const SLide = () => {
           modules={[Navigation, Pagination, A11y, Autoplay]}
           spaceBetween={10}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}

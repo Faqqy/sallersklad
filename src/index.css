@@ -28,6 +28,11 @@ dd {
   margin: 0;
 }
 
+body {
+  font-family: 'FiraSans-regular';
+  font-weight: 400;
+}
+
 a:not([href]):not([class]){
   color: #fff;
   cursor: pointer;

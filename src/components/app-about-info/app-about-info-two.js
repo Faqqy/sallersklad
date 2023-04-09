@@ -19,7 +19,7 @@ function AboutInfo2() {
                 <Swiper
                     // install Swiper modules
                     modules={[Navigation, A11y]}
-                    slidesPerView={1}
+                    spaceBetween={10}
                     loop
                     navigation
                     style={{
@@ -31,24 +31,6 @@ function AboutInfo2() {
                         "--swiper-pagination-bullet-horizontal-gap": "20px",
                         "--swiper-navigation-color": "#C9C9C9",
                         "--swiper-navigation-size": "21px",
-                    }}
-                    breakpoints={{
-                        "320": {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                        },
-                        "768": {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                        },
-                        "@1.00": {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                        },
-                        "@1.50": {
-                        slidesPerView: 1,
-                        spaceBetween: 50,
-                        },
                     }}
                     >
                     <SwiperSlide>

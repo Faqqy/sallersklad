@@ -111,6 +111,7 @@
     font-weight: 400;
     display: block;
     text-align: center;
+    padding-top: 2px;
 } 
 
 .react-tabs__tab p {
@@ -130,50 +131,108 @@
     padding-top: 60px;
 }
 
+.scrollDivName {
+    background: url("./modul1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 907px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    background-attachment: local;
+}
+
+.miniText {
+    font-size: 12px;
+}
+
 .block-modules {
     position: absolute;
 }
 
 .bigModul {
     display: block;
-    width: 160px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 4px;
-    background-color: var(--hover-color);
-    font-size: 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 15px;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
-    color: #fff;
-    border: none;
+    color: #000;
     transition: .25s ease-in-out!important;
+    position: relative;
+    z-index: 2;
 }
 
 .bigModul:hover {
-    color: #fff;
-    background-color: var(--main-color);
-    
+    border: 1px solid var(--hover-color);
+}
+
+.imgBg img {
+    padding: 21px 8px 0 8px!important;
+}
+
+.imgBg {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: -10px;
+    z-index: -2;
+}
+
+.imgBg2 {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: -3px;
+}
+
+.imgBg2 img {
+    padding: 18px 10px 16px 9px!important;
+    rotate: -90deg;
+}
+
+.imgBg3 {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: -3px;
+}
+
+.imgBg3 img {
+    padding: 18px 10px 16px 9px!important;
+    rotate: -90deg;
 }
 
 .minModul {
     position: relative;
     display: block;
-    width: 95px;
-    height: 100px;
+    width: 40px;
+    height: 50px;
     border-radius: 4px;
-    background-color: var(--hover-color);
-    font-size: 25px;
+    background-color: #fff;
+    border: 1px solid #000;
+    font-size: 15px;
     text-align: center;
     padding: 0px;
     text-decoration: none;
-    color: #fff;
-    border: none;
+    color: #000;
     transition: .25s ease-in-out!important;
 }
 
 .minModul:hover {
-    color: #fff;
-    background-color: var(--main-color);
+    border: 1px solid var(--hover-color);
 }
 
 .tooltiptext {
@@ -702,27 +761,27 @@
     position: relative;
 }
 
-.parkingToltip2::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
-}
+/*.parkingToltip2::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 100%;*/
+/*    left: 50%;*/
+/*    margin-left: -5px;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;*/
+/*}*/
 
-.parkingToltip1::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;
-}
+/*.parkingToltip1::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 100%;*/
+/*    left: 50%;*/
+/*    margin-left: -5px;*/
+/*    border-width: 5px;*/
+/*    border-style: solid;*/
+/*    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;*/
+/*}*/
 
 .openVis {
     width: 200px;
@@ -742,100 +801,32 @@
     margin-top: -1px;
 }
 
-.openVis:hover .parkingToltip2  {
-    visibility: visible;
-}
-
-.openVis1:hover .parkingToltip1  {
-    visibility: visible;
-}
-
-.divPosAbsSecond:hover .textOpen2 {
-    visibility: visible;
-}
-
-.divPosAbsFirst:hover .textOpen {
-    visibility: visible;
-}
-  
-.modulSecond:hover .tooltiptext {
-    visibility: visible;
-}
-
-.modulFirst:hover .tooltiptext2 {
-    visibility: visible;
-}
-
-.modulThree:hover .tooltiptext3 {
-    visibility: visible;
-}
-
-.modulFirst_seven:hover .tooltiptext4 {
-    visibility: visible;
-}
-
-.modulSecond:hover .tooltiptext5 {
-    visibility: visible;
-}
-
-.modulThree:hover .tooltiptext6 {
-    visibility: visible;
-}
-
-.modulFour:hover .tooltiptext7 {
-    visibility: visible;
-}
-
-.modulFive:hover .tooltiptext8 {
-    visibility: visible;
-}
-
-.modulSix:hover .tooltiptext9 {
-    visibility: visible;
-}
-
-.sec0:hover .tooltiptext10 {
-    visibility: visible;
-}
-
-.sec1:hover .tooltiptext11 {
-    visibility: visible;
-}
-
-.sec2:hover .tooltiptext12 {
-    visibility: visible;
-}
-
-.sec3:hover .tooltiptext13 {
-    visibility: visible;
-}
-
-.sec4:hover .tooltiptext14 {
-    visibility: visible;
-}
-
-.sec5:hover .tooltiptext15 {
-    visibility: visible;
-}
-
-.sec6:hover .tooltiptext16 {
-    visibility: visible;
-}
-
-
-.modulFirst, .modulSecond {
-    padding-right: 40px;
-}
-
 .modulImgBlock {
     padding: 0;
 }
 
 .modulFirst img, .modulSecond img, .modulThree img, .modulFour img, .modulFive img, .modulSix img {
-    padding: 0;
-    margin: 6px auto;
+    text-align: center;
+    margin: 0 auto;
     display: block;
     cursor: pointer;
+}
+
+.modulSecond .parking {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.modulSecond .parking p {
+    font-size: 32px;
+    text-align: center;
+    height: 40px;
+    line-height: 1.3;
 }
 
 .modulDash {
@@ -850,32 +841,19 @@
 
 .modulDash .bigModul img {
     padding: 0;
-    padding: 0px 0 80px 48px;
     transform: rotate(270deg);
 }
 
 .block-modules_second {
     position: relative;
-}
-
-
-.block-modules_second .bigModul {
-    width: 145px;
-}
-
-.block-modules_second .modulSecond, .modulThree, .modulFour, .modulFive, .modulSix {
-    padding-right: 13px;
+    margin-right: 311px;
 }
 
 .block-modules_three {
-    margin-top: -93px;
-    position: relative;
+    height: 338px;
+    padding-top: 38px;
+    margin-left: -462px;
 }
-
-.block-modules_three .modulSecond {
-    padding-right: 6px;
-}
-
 
 /* modal */
 
@@ -986,7 +964,6 @@
     width: 100%;
     text-align: right;
     font-size: 20px;
-    font-family: 'FiraSans-regular';
     padding-bottom: 10px;
 }
 

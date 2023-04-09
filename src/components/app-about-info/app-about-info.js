@@ -53,9 +53,9 @@ function AboutInfo() {
         <div className='aboutInfoBlock' id='about'>
             <div className="first-block_aboutInfo">
                 <h2> <img className="h2style" src={ h2Img } alt="" />О нас</h2>    
-                <p>Мы предоставляем в аренду готовые функциональные помещения в сфере организации товарного бизнеса. <br />
-                Помещения создавались с учетом потребностей селлеров, и уже оборудованы всем необходимым. <br />
-                <span className='bigText'>Seller Sklad</span> – это эффективное решение для Вашего бизнеса!</p>
+                <p>Мы предоставляем в аренду готовые функциональные помещения в сфере организации товарного бизнеса.</p>
+                <p>Помещения создавались с учетом потребностей селлеров, и уже оборудованы всем необходимым.</p>
+                <p><span className='bigText'>Seller Sklad</span> – это эффективное решение для Вашего бизнеса!</p>
             </div>
             <h3 style={styleSpanTxtInfo}>Почему выбирают нас<span style={styleSpanTxtInfo3}>?</span></h3>
             <div className="second-block_aboutInfo">   
@@ -112,7 +112,7 @@ function AboutInfo() {
                   <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob3})` }}></div>
                 </AccordionItem>
 
-                <AccordionItem header="Разнгообразие площадей">
+                <AccordionItem header="Разнообразие площадей">
                   <div className="bgInfoMob" style={{ backgroundImage: `url(${bginfoMob4})` }}></div>
                 </AccordionItem>
               </Accordion>

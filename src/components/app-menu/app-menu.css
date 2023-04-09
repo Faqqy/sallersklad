@@ -1,6 +1,7 @@
 .main-menu {
     height: 100%;
     font-family: 'FiraSans-regular';
+    overflow: hidden;
 }
 
 .main-menu ul {

@@ -3,8 +3,6 @@ import './app-ground-block.css';
 import h2Img from './h2img.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import modulFirstImg from './modul1.png';
-import modulSecondImg from './modul2.png';
 import carsImg from './car.png';
 import closeImg from './close-btn.png';
 import frameImg from './frameMini.png';
@@ -33,6 +31,8 @@ import imageTwoDPark2 from './twoMPark2.png';
 import imageMiniModule from './minimod.png';
 import imageMiniModule1 from './minimod1.png';
 import imageMiniModule2 from './minimod2.png';
+import imageFixed from './modul1.jpg';
+import imageFixedTwo from './modul2.jpg';
 import { YMaps, Map, ZoomControl, Placemark } from '@pbe/react-yandex-maps';
 
 function Ground() {
@@ -93,74 +93,10 @@ function Ground() {
                         </div>
                         <h3>Схема расположения модулей</h3>
                         <div className="scrollDivName">
+                            <div className="imgFixedBlock">
+                                <img src={ imageFixed } alt=""/>
+                            </div>
                             <div className="block-modules_second d-flex">
-                                {/*<div className="modulFirst_seven">*/}
-                                {/*<Popup ref={ref} trigger={<button className='bigModul open16'>*/}
-
-                                {/*        П7 <br />*/}
-                                {/*        (30 м<sup>2</sup>)*/}
-                                {/*    </button>}*/}
-                                {/*    modal*/}
-                                {/*    closeOnDocumentClick*/}
-                                {/*    lockScroll*/}
-                                {/*    closeOnEscape*/}
-                                {/*    >*/}
-                                {/*            <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>*/}
-                                {/*            <div className="infoBlockImgText d-flex">*/}
-                                {/*                <div className="carouselImgPopupp">*/}
-                                {/*                <Swiper*/}
-                                {/*                    modules={[Navigation, Pagination, A11y]}*/}
-                                {/*                    spaceBetween={100}*/}
-                                {/*                    slidesPerView={1}*/}
-                                {/*                    pagination={{ clickable: true }}*/}
-                                {/*                    style={{*/}
-                                {/*                        "--swiper-pagination-color": "#413C33",*/}
-                                {/*                        "--swiper-pagination-width": "20px",*/}
-                                {/*                        "--swiper-pagination-bullet-inactive-color": "#fff",*/}
-                                {/*                        "--swiper-pagination-bullet-inactive-opacity": "1",*/}
-                                {/*                        "--swiper-pagination-bullet-size": "15px",*/}
-                                {/*                        "--swiper-pagination-bullet-horizontal-gap": "20px",*/}
-                                {/*                      }}*/}
-                                {/*                    >*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok1 } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok2 } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                </Swiper>*/}
-                                {/*                </div>*/}
-                                {/*                <div className="infoBlockPopupp">*/}
-                                {/*                    <h4>*/}
-                                {/*                        Двойной модуль <br /> с участком*/}
-                                {/*                    </h4>*/}
-                                {/*                    <p>от 32 000 рулей <span className='dark'> в месяц</span></p>*/}
-                                {/*                    <div className="frameTextMini">*/}
-                                {/*                        <img src={ frameImg3 } alt="1" />*/}
-
-                                {/*                    </div>*/}
-                                {/*                </div>*/}
-                                {/*            </div>*/}
-                                {/*            <div className="aboutCallMe">*/}
-                                {/*                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>*/}
-                                {/*            </div>*/}
-                                {/*</Popup>*/}
-                                {/*    <span class="tooltiptext4">Двойной <br /> модуль <br /> с участком</span>*/}
-                                {/*</div>*/}
-                                {/*<div className="modulDash">*/}
-                                {/*    <button className='bigModul'>*/}
-                                {/*        <img src={ carsImg } alt="" />*/}
-                                {/*    </button>*/}
-                                {/*</div>*/}
                                 <div className="modulSecond">
                                 <Popup ref={ref} trigger={<button className='minModul open16'>
                                         П8 <br />
@@ -894,76 +830,16 @@ function Ground() {
                                 </div>
                             </div>
                             <div className="block-modules_secondsdfsdf d-flex">
-                                {/*<div className="modulFirst_seven">*/}
-                                {/*<Popup ref={ref} trigger={<button className='bigModul open16'>*/}
-
-                                {/*        П7 <br />*/}
-                                {/*        (30 м<sup>2</sup>)*/}
-                                {/*    </button>}*/}
-                                {/*    modal*/}
-                                {/*    closeOnDocumentClick*/}
-                                {/*    lockScroll*/}
-                                {/*    closeOnEscape*/}
-                                {/*    >*/}
-                                {/*            <span className='close'><img src={ closeImg } onClick={closeTooltip} alt="Закрыть окно" /></span>*/}
-                                {/*            <div className="infoBlockImgText d-flex">*/}
-                                {/*                <div className="carouselImgPopupp">*/}
-                                {/*                <Swiper*/}
-                                {/*                    modules={[Navigation, Pagination, A11y]}*/}
-                                {/*                    spaceBetween={100}*/}
-                                {/*                    slidesPerView={1}*/}
-                                {/*                    pagination={{ clickable: true }}*/}
-                                {/*                    style={{*/}
-                                {/*                        "--swiper-pagination-color": "#413C33",*/}
-                                {/*                        "--swiper-pagination-width": "20px",*/}
-                                {/*                        "--swiper-pagination-bullet-inactive-color": "#fff",*/}
-                                {/*                        "--swiper-pagination-bullet-inactive-opacity": "1",*/}
-                                {/*                        "--swiper-pagination-bullet-size": "15px",*/}
-                                {/*                        "--swiper-pagination-bullet-horizontal-gap": "20px",*/}
-                                {/*                      }}*/}
-                                {/*                    >*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok1 } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                    <SwiperSlide>*/}
-                                {/*                        <div className="firstSlide">*/}
-                                {/*                            <img src={ imageDoubleModulY4astok2 } alt="" />*/}
-                                {/*                        </div>*/}
-                                {/*                    </SwiperSlide>*/}
-                                {/*                </Swiper>*/}
-                                {/*                </div>*/}
-                                {/*                <div className="infoBlockPopupp">*/}
-                                {/*                    <h4>*/}
-                                {/*                        Двойной модуль <br /> с участком*/}
-                                {/*                    </h4>*/}
-                                {/*                    <p>от 32 000 рулей <span className='dark'> в месяц</span></p>*/}
-                                {/*                    <div className="frameTextMini">*/}
-                                {/*                        <img src={ frameImg3 } alt="1" />*/}
-
-                                {/*                    </div>*/}
-                                {/*                </div>*/}
-                                {/*            </div>*/}
-                                {/*            <div className="aboutCallMe">*/}
-                                {/*                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>*/}
-                                {/*            </div>*/}
-                                {/*</Popup>*/}
-                                {/*    <span class="tooltiptext4">Двойной <br /> модуль <br /> с участком</span>*/}
-                                {/*</div>*/}
-                                {/*<div className="modulDash">*/}
-                                {/*    <button className='bigModul'>*/}
-                                {/*        <img src={ carsImg } alt="" />*/}
-                                {/*    </button>*/}
-                                {/*</div>*/}
+                                <div className="modulSecond sec7">
+                                    <div className='parking two-parking'>
+                                        <p>
+                                            P
+                                        </p>
+                                    </div>
+                                </div>
                                 <div className="modulSecond">
                                     <Popup ref={ref} trigger={<button className='minModul open16'>
-                                        П8 <br/>
+                                        П27 <br/>
                                         <span className="miniText">18 м<sup>2</sup></span>
                                     </button>}
                                            modal
@@ -1020,12 +896,11 @@ function Ground() {
                                                 533 07 40</a></p>
                                         </div>
                                     </Popup>
-                                    <span className="tooltiptext5">Одиночный <br/> модуль</span>
                                 </div>
-                                <div className="modulThree">
-                                    <Popup ref={ref} trigger={<button className='bigModul open16'>
-                                        П9 <br/>
-                                        <span className="miniText">36 м<sup>2</sup></span>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П28 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
                                     </button>}
                                            modal
                                            closeOnDocumentClick
@@ -1051,28 +926,28 @@ function Ground() {
                                                 >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking2} alt=""/>
+                                                            <img src={imageOdino4Module} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking1} alt=""/>
+                                                            <img src={imageOdino4Module1} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking} alt=""/>
+                                                            <img src={imageOdino4Module2} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Большой модуль <br/> с парковкой
+                                                    Одиночный модуль <br/>
                                                 </h4>
-                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg4} alt="1"/>
+                                                    <img src={frameImg5} alt="1"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -1081,14 +956,11 @@ function Ground() {
                                                 533 07 40</a></p>
                                         </div>
                                     </Popup>
-                                    <div className="imgBg">
-                                        <img src={carsImg} alt=""/>
-                                    </div>
                                 </div>
-                                <div className="modulFour">
-                                    <Popup ref={ref} trigger={<button className='bigModul open16'>
-                                        П10 <br/>
-                                        <span className="miniText">36 м<sup>2</sup></span>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П29 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
                                     </button>}
                                            modal
                                            closeOnDocumentClick
@@ -1114,28 +986,28 @@ function Ground() {
                                                 >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking2} alt=""/>
+                                                            <img src={imageOdino4Module} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking1} alt=""/>
+                                                            <img src={imageOdino4Module1} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking} alt=""/>
+                                                            <img src={imageOdino4Module2} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Большой модуль <br/> с парковкой
+                                                    Одиночный модуль <br/>
                                                 </h4>
-                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg4} alt="1"/>
+                                                    <img src={frameImg5} alt="1"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -1144,14 +1016,11 @@ function Ground() {
                                                 533 07 40</a></p>
                                         </div>
                                     </Popup>
-                                    <div className="imgBg">
-                                        <img src={carsImg} alt=""/>
-                                    </div>
                                 </div>
-                                <div className="modulFive">
-                                    <Popup ref={ref} trigger={<button className='bigModul open16'>
-                                        П11 <br/>
-                                        <span className="miniText">36 м<sup>2</sup></span>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П30 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
                                     </button>}
                                            modal
                                            closeOnDocumentClick
@@ -1177,28 +1046,28 @@ function Ground() {
                                                 >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking2} alt=""/>
+                                                            <img src={imageOdino4Module} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking1} alt=""/>
+                                                            <img src={imageOdino4Module1} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking} alt=""/>
+                                                            <img src={imageOdino4Module2} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Большой модуль <br/> с парковкой
+                                                    Одиночный модуль <br/>
                                                 </h4>
-                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg4} alt="1"/>
+                                                    <img src={frameImg5} alt="1"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -1207,14 +1076,11 @@ function Ground() {
                                                 533 07 40</a></p>
                                         </div>
                                     </Popup>
-                                    <div className="imgBg">
-                                        <img src={carsImg} alt=""/>
-                                    </div>
                                 </div>
-                                <div className="modulSix">
-                                    <Popup ref={ref} trigger={<button className='bigModul open16'>
-                                        П12 <br/>
-                                        <span className="miniText">36 м<sup>2</sup></span>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П31 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
                                     </button>}
                                            modal
                                            closeOnDocumentClick
@@ -1240,28 +1106,28 @@ function Ground() {
                                                 >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking2} alt=""/>
+                                                            <img src={imageOdino4Module} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking1} alt=""/>
+                                                            <img src={imageOdino4Module1} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={imgageBigMudulForParking} alt=""/>
+                                                            <img src={imageOdino4Module2} alt=""/>
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Большой модуль <br/> с парковкой
+                                                    Одиночный модуль <br/>
                                                 </h4>
-                                                <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg4} alt="1"/>
+                                                    <img src={frameImg5} alt="1"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -1270,11 +1136,1043 @@ function Ground() {
                                                 533 07 40</a></p>
                                         </div>
                                     </Popup>
-                                    <div className="imgBg">
-                                        <img src={carsImg} alt=""/>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П32 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П33 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П34 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П35 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond sec7">
+                                    <div className='parking'>
+                                        <p>
+                                            P
+                                        </p>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div className="block-modules_secondsdfsdf two_block_modules d-flex">
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul twoMinModul open16'>
+                                        П14 <br/>
+                                        <span className="miniText">72 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П26 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П25 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П24 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П23 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П22 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П21 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П20 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П19 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П18 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П17 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П16 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond">
+                                    <Popup ref={ref} trigger={<button className='minModul open16'>
+                                        П15 <br/>
+                                        <span className="miniText">18 м<sup>2</sup></span>
+                                    </button>}
+                                           modal
+                                           closeOnDocumentClick
+                                           lockScroll
+                                    >
+                                        <span className='close'><img src={closeImg} onClick={closeTooltip}
+                                                                     alt="Закрыть окно"/></span>
+                                        <div className="infoBlockImgText d-flex">
+                                            <div className="carouselImgPopupp">
+                                                <Swiper
+                                                    modules={[Navigation, Pagination, A11y]}
+                                                    spaceBetween={100}
+                                                    slidesPerView={1}
+                                                    pagination={{clickable: true}}
+                                                    style={{
+                                                        "--swiper-pagination-color": "#413C33",
+                                                        "--swiper-pagination-width": "20px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                                                        "--swiper-pagination-bullet-size": "15px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    }}
+                                                >
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module1} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                    <SwiperSlide>
+                                                        <div className="firstSlide">
+                                                            <img src={imageOdino4Module2} alt=""/>
+                                                        </div>
+                                                    </SwiperSlide>
+                                                </Swiper>
+                                            </div>
+                                            <div className="infoBlockPopupp">
+                                                <h4>
+                                                    Одиночный модуль <br/>
+                                                </h4>
+                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <img src={frameImg5} alt="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="aboutCallMe">
+                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
+                                                533 07 40</a></p>
+                                        </div>
+                                    </Popup>
+                                </div>
+                                <div className="modulSecond sec7">
+                                    <div className='parking'>
+                                        <p>
+                                            P
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </TabPanel>
@@ -1302,6 +2200,9 @@ function Ground() {
                         </div>
                         <h3>Схема расположения модулей</h3>
                         <div className="scrollDivName2">
+                            <div className="imgFixedBlock">
+                                <img src={ imageFixedTwo } alt=""/>
+                            </div>
                             <div className="block-modules d-flex">
                                 <div className="modulFirst">
                                 <Popup ref={ref} trigger={<button className='bigModul open16'>
@@ -1360,17 +2261,15 @@ function Ground() {
                                                 <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
                                             </div>
                                 </Popup>
-
-
-
-                                    <span class="tooltiptext2">Двойной <br /> модуль <br /> с парковкой</span>
-                                    <img src={ carsImg } alt="" />
+                                    <div className="imgBg">
+                                        <img src={ carsImg } alt="" />
+                                    </div>
                                 </div>
-                                <div className="modulSecond">
+                                <div className="modulSecond paddingModule">
                                     
                                 <Popup ref={ref} trigger={<button className='minModul open15'>
                                     П2 <br />
-                                    (15 м<sup>2</sup>)
+                                    <span className="miniText">15 м<sup>2</sup></span>
                                 </button>} 
                                     modal
                                     closeOnDocumentClick
@@ -1424,14 +2323,11 @@ function Ground() {
                                                 <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
                                             </div>
                                 </Popup>
-            
-                                    <span class="tooltiptext">Мини <br /> модуль</span>
-                                    <img src={ carsImg } alt="" />
                                 </div>
                                 <div className="modulThree">
                                 <Popup ref={ref} trigger={<button className='bigModul open16'>
                                         П3 <br />
-                                        (30 м<sup>2</sup>)
+                                        <span className="miniText">30 м<sup>2</sup></span>
                                     </button>} 
                                     modal
                                     closeOnDocumentClick
@@ -1485,8 +2381,9 @@ function Ground() {
                                                 <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
                                             </div>
                                 </Popup>
-                                    <span class="tooltiptext3">Двойной <br /> модуль <br /> с парковкой</span>
-                                    <img src={ carsImg } alt="" />
+                                    <div className="imgBg">
+                                        <img src={ carsImg } alt="" />
+                                    </div>
                                 </div>
                             </div>
                             <div className="openVis">

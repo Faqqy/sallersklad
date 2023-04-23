@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 
 .logo-img {
@@ -47,6 +47,7 @@
     }
     .scrollDivName, .scrollDivName2  {
         overflow-x: scroll;
+        overflow-y: hidden;
     }
     input[type="text"] {
         width: 270px!important;
@@ -54,13 +55,10 @@
     .lg-react-element img {
         width: 465px!important;
     }
-    .modulFirst, .modulSecond {
-        padding-right: 15px!important;
-    }
     .firstBlockGround {
         height: 1380px!important;
     }
-    .scrollDivName {
+    .scrollDivName, .scrollDivName2  {
         height: 636px!important;
     }
     .popup-content {
@@ -288,9 +286,8 @@
     }
     .react-tabs__tab-panel h3 {
         font-size: 17px!important;
-        text-align: center;
+        text-align: left;
         padding-top: 20px!important;
-        padding-bottom: 10px!important;
     }
     .aboutInfoBlock .swiper-button-next {
         display: none;
@@ -554,6 +551,29 @@
     }
     .map-block .textOpen {
         width: 100%;
+    }
+    .scrollDivName .imgFixedBlock {
+        width: 1200px;
+        position: absolute;
+        height: 138%;
+    }
+    .scrollDivName2 .imgFixedBlock {
+        width: 1200px;
+    }
+    .scrollDivName .imgFixedBlock img {
+          margin-left: 292px;
+    }
+    .scrollDivName .block-modules_second {
+        margin-right: -218px;
+    }
+    .scrollDivName .block-modules_three {
+        margin-left: 36px;
+    }
+    .scrollDivName .block-modules_secondsdfsdf {
+        right: -677px;
+    }
+    .scrollDivName .block-modules_secondsdfsdf.two_block_modules {
+        top: 389px;
     }
   }
 

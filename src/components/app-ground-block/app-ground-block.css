@@ -3,13 +3,6 @@
     margin-bottom: 135px;                                  
 }
 
-.groundInfoBlock img {
-    display: inline-block;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    z-index: -1;
-}
-
 .map-block {
     position: relative;
 }
@@ -27,6 +20,12 @@
 
 .firstBlockGround {
     height: 1500px;
+}
+
+.firstBlockGround img {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 9px;
 }
 
 .divPosAbsFirst {
@@ -50,6 +49,7 @@
 .ground-block {
     overflow-x: hidden;
     overflow-y: hidden;
+    margin-bottom: 78px;
 }
 
 .ground-block_form {
@@ -127,21 +127,29 @@
     font-size: 35px;
     font-family: 'Fira Sans semibold';
     font-weight: 500;
-    padding-bottom: 55px;
-    padding-top: 60px;
+    padding-bottom: 35px;
+    padding-top: 45px;
 }
 
 .scrollDivName {
-    background: url("./modul1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 907px;
+    width: 100%;
+    height: 915px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-flow: column wrap;
-    background-attachment: local;
+    margin-top: -22px;
+}
+
+.imgFixedBlock {
+    width: 100%;
+    position: absolute;
+    height: 95%;
+}
+
+.imgFixedBlock img {
+    padding: 0;
 }
 
 .miniText {
@@ -150,11 +158,22 @@
 
 .block-modules {
     position: absolute;
+    top: 256px;
+    left: 300px;
 }
 
 .block-modules_secondsdfsdf {
     position: absolute;
-    right: 100px;
+    right: 18px;
+}
+
+.block-modules_secondsdfsdf.two_block_modules {
+    top: 527px;
+}
+
+.modulSecond.paddingModule {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .bigModul {
@@ -192,31 +211,33 @@
 }
 
 .imgBg2 {
-    width: 50px;
+    width: 37px;
     height: 50px;
     background: #fff;
     text-align: center;
     border-radius: 4px;
     margin-left: -3px;
+    z-index: 1;
 }
 
 .imgBg2 img {
-    padding: 18px 10px 16px 9px!important;
+    padding: 18px 0px 15px 3px!important;
     rotate: -90deg;
 }
 
 .imgBg3 {
-    width: 50px;
+    width: 37px;
     height: 50px;
     background: #fff;
     text-align: center;
     border-radius: 4px;
     margin-left: 5px;
     margin-right: -3px;
+    z-index: 1;
 }
 
 .imgBg3 img {
-    padding: 18px 10px 16px 9px!important;
+    padding: 18px 0px 15px 3px!important;
     rotate: -90deg;
 }
 
@@ -238,6 +259,13 @@
 
 .minModul:hover {
     border: 1px solid var(--hover-color);
+}
+
+.minModul.twoMinModul {
+    height: 100px;
+    width: 50px;
+    right: 58px;
+    bottom: 20px
 }
 
 .tooltiptext {
@@ -766,28 +794,6 @@
     position: relative;
 }
 
-/*.parkingToltip2::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: 100%;*/
-/*    left: 50%;*/
-/*    margin-left: -5px;*/
-/*    border-width: 5px;*/
-/*    border-style: solid;*/
-/*    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;*/
-/*}*/
-
-/*.parkingToltip1::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: 100%;*/
-/*    left: 50%;*/
-/*    margin-left: -5px;*/
-/*    border-width: 5px;*/
-/*    border-style: solid;*/
-/*    border-color: transparent transparent rgba(77, 77, 77, 0.86) transparent;*/
-/*}*/
-
 .openVis {
     width: 200px;
     height: 127px;
@@ -818,6 +824,7 @@
 }
 
 .modulSecond .parking {
+    position: relative;
     width: 40px;
     height: 40px;
     background: #fff;
@@ -825,6 +832,11 @@
     border: 1px solid #000;
     margin-top: 5px;
     margin-left: 5px;
+}
+
+.modulSecond .parking.two-parking {
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .modulSecond .parking p {
@@ -851,13 +863,14 @@
 
 .block-modules_second {
     position: relative;
+    margin-top: 39px;
     margin-right: 311px;
 }
 
 .block-modules_three {
     height: 338px;
     padding-top: 38px;
-    margin-left: -462px;
+    margin-left: -485px;
 }
 
 /* modal */

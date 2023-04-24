@@ -80,7 +80,10 @@ export default function App(props) {
     return (
     
         <div className="secondBLockForm" id='forms'>
-            <h3>Для аренды и по остальным вопросам оставьте заявку</h3>
+            <h3>
+                Заинтересовала аренда? <br />
+                Оставьте заявку и мы обязательно с Вами свяжемся
+            </h3>
             <p>или позвоните по номеру : <a href="tel:+79265330740">+7 926 533 07 40</a></p>
             <form id="formElem" onSubmit={handleSubmit(onSubmit)}>
                 <input id="input" type='text' placeholder='Имя' autoComplete="new-password" {...register("Name", {

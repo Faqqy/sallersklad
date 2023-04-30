@@ -151,11 +151,27 @@
         z-index: 9;
         position: relative;
     }
+    .footerMobileMenu .main-menu {
+        overflow-x: scroll!important;
+        overflow-y: hidden;
+    }
     .main-header .main-menu::-webkit-scrollbar {
         width: 0;
     }
     .main-header .main-menu li {
         padding-right: 35px;
+    }
+    .footerMobileMenu .main-menu li {
+        padding-right: 35px;
+    }
+    .aboutLinks {
+        flex-direction: column;
+    }
+    .aboutLinks .aboutLink {
+        font-size: 12px!important;
+    }
+    .footerMobileMenu .main-menu::-webkit-scrollbar {
+        width: 0;
     }
     .main-header .logo-img {
         width: 106px;
@@ -375,7 +391,7 @@
     }
     .main-footer {
         margin-top: 460px!important;
-        height: 460px!important;
+        height: 409px!important;
         align-items: baseline!important;
     }
     .main-footer .mobileMenu {

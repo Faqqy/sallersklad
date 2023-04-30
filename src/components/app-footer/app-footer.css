@@ -1,14 +1,18 @@
-.main-footer {
-    height: 400px;
+
+.main-footer{
+    height: 280px;
     display: flex;
-    background-color: #413C33;
-    margin-top: 290px;
+    margin-top: 225px;
     align-items: center;
+    background-color: #413C33;
 }
 
 .main-footer ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: baseline;
+    padding: 0;
+    height: 155px;
+    margin-top: 15px;
 }
 
 .main-footer li {
@@ -19,4 +23,10 @@
     display: flex;
     height: 100%;
     align-items: center;
+}
+
+.aboutLinks .aboutLink {
+    margin: 0;
+    font-size: 15px;
+    margin-top: 25px;
 }

@@ -228,14 +228,17 @@
         font-size: 12px!important;
         padding-top: 1px!important;
     }
-    .map-block .paragTabNameMap {
-        font-size: 15px;
+    .paragTabNameMap {
+        font-size: 15px!important;
     }
     .modulImgBlock {
         max-width: 860px!important;
     }
     .scrollDivName2 {
         position: relative!important;
+    }
+    .GalleryBox {
+        padding-top: 15px;
     }
     .logo-img img {
         width: 145px;
@@ -307,38 +310,57 @@
         font-size: 25px!important;
         padding-bottom: 18px!important;
     }
+    .Gallery {
+        margin-top: 160px!important;
+    }
     .Gallery h2 {
-        font-size: 30px!important; 
+        font-size: 25px!important; 
+        display: flex;
+        padding-bottom: 25px!important;
     }
     .cooperation-block {
         margin-bottom: -210px!important;
     }
     .cooperation-block h2 {
-        font-size: 30px!important;
-    }
-    .secondBLockForm {
-        margin-top: 30px!important;
+        font-size: 25px!important;
+        display: flex;
+        width: 150px;
+        padding-bottom: 20px!important;
     }
     .secondBLockForm h3 {
-        font-size: 30px!important;
+        font-size: 20px!important;
+        width: 246px;
+        margin: 0 auto;
+        padding-bottom: 5px!important;
+    }
+    .secondBLockForm p {
+        padding-bottom: 30px!important;
     }
     .ground-block_form {
         overflow: hidden!important;
-        height: 747px!important;
+        height: 450px!important;
         margin-bottom: -90px!important;
     }
     input[type="text"] {
+        height: 40px!important;
         width: 100%!important;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     #formElem input[type="submit"] {
         width: 100%!important;
+        height: 40px;
+        line-height: 40px;
     }
     .check_block {
-        padding-bottom: 50px!important;
-        margin-left: -16px!important;
-        margin-top: 26px!important;
+        margin-right: 0!important;
+        margin-top: 17px!important;
         justify-content: start!important;
+    }
+    .check_block .mx-3 {
+        margin: 0!important;
+    }
+    .check_block label {
+        padding-left: 10px;
     }
     .second-block_aboutInfo-items {
         overflow-x: hidden!important;
@@ -369,10 +391,16 @@
         margin: 0!important;
     }
     .cooperation-block {
-        margin-top: 40px!important;
+        margin-top: 10px!important;
     }
     .cooperation-block span {
-        font-size: 23px!important;
+        font-size: 15px!important;
+    }
+    .cooperation-block p {
+        font-size: 15px!important;
+    }
+    .spanOrangeColorPhone a {
+        font-size: 16px!important;
     }
     .buttonBack {
         display: none;
@@ -425,12 +453,12 @@
         position: relative;
     }
     .errors_block {
-        left: 3px!important;
-        top: 191px;
+        left: 0!important;
+        top: 97px;
     }
     .errors_block2 {
-        left: 3px;
-        top: 82px;
+        left: 0!important;
+        top: 37px!important;
     }
     .popup-content .close {
         top: 15px!important;

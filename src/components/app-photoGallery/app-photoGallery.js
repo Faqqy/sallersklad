@@ -55,8 +55,8 @@ function PhotoGallery() {
                 </TabList>
                 <TabPanel>
                     <div className="GalleryBox">
-                        <p className='paragTabName'>
-                            м. Алтуфьево, Путевой проезд, д. 13с4
+                        <p className='paragTabNameMap'>
+                            Путевой проезд, д. 13с4
                         </p>
                     <LightGallery
                         onInit={onInit}
@@ -86,7 +86,7 @@ function PhotoGallery() {
                 </TabPanel>
                 <TabPanel>
                     <div className="GalleryBox">
-                        <p className='paragTabName'>
+                        <p className='paragTabNameMap'>
                             Алтуфьевское шоссе, вл. 79Ж
                         </p>
                     <LightGallery

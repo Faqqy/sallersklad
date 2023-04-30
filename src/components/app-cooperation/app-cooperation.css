@@ -15,8 +15,23 @@
     padding-bottom: 45px;
 }
 
-.cooperation-block p {
+.spanOrangeColor {
+    font-family: 'Fira Sans medium';
+    font-size: 25px;
+    color: var(--hover-color);
+}
+
+.spanOrangeColorPhone a  {
+    font-family: 'FiraSans-regular';
+    text-decoration: none;
     font-size: 20px;
+    color: var(--hover-color);
+    padding-left: 8px;
+    line-height: 1.4;
+}
+
+.cooperation-block p {
+    font-size: 17px;
     color: #4D4D4D;
 }
 

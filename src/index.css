@@ -58,7 +58,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-
 img {
   max-width: 100%;
   display: block;
@@ -121,8 +120,6 @@ select {
   font-weight: normal;
   src: url('./fonts/FiraSans-Light.ttf') format('truetype');
 }
-
-
 
 
 :root {

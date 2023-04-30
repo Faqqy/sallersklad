@@ -12,22 +12,23 @@
 }
 
 .secondBLockForm p {
-    font-size: 22px;
+    font-family: 'FiraSans-regular';
+    font-size: 17px;
     color: #fff;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .secondBLockForm a {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--hover-color);
-    font-family: 'Fira Sans semibold';
+    font-family: 'FiraSans-regular';
     text-decoration: none;
     padding-left: 10px;
 }
 
 .errors_block3 {
     position: relative;
-    margin-top: 50px;
+    margin-top: 38px;
 }
 
 .errors_block3 span {
@@ -43,11 +44,11 @@ input[type="text"] {
     border-radius: 4px;
     margin-right: 15px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-
 input[type="submit"] {
+    font-family: 'FiraSans-regular';
     width: 350px;
     height: 55px;
     background: linear-gradient(180deg, #FF7A00 0%, #ED5500 100%);
@@ -56,9 +57,8 @@ input[type="submit"] {
     line-height: 55px;
     text-decoration: none;
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
     border: none;
-    font-family: 'Fira Sans semibold';
 }
 
 input[type="submit"]:hover {
@@ -87,10 +87,11 @@ input:focus::placeholder {
 .check_block {
     display: flex;
     text-align: left;
-    margin-right: 107px;
+    margin-right: 110px;
     justify-content: end;
+    font-size: 15px;
     margin-top: 20px;
-    line-height: 1.2;
+    line-height: 1;
     color: #fff;
 }
 
@@ -135,7 +136,7 @@ input:focus::placeholder {
 }
 
 ::placeholder {
-    font-size: 20px;
+    font-size: 17px;
     color: #2C2C2C;
     padding-left: 25px;
 }
@@ -190,27 +191,27 @@ input:focus-visible {
     padding: 0;
 }
 
-/* .overModal {
-    width: 1440px;
-    height: 100%;
-    position: absolute;
-} */
-
 .errors_block {
     position: absolute;
-    left: 368px;
+    left: 415px;
     color: #FFF;
 }
 
 .errors_block2 {
     position: absolute;
-    left: 5px;
+    left: 102px;
     color: #FFF;
 }
 
-input[type="text"]:invalid {
-    background-color: #000!important;
+input[type="text"]:focus {
+    border: 1px solid var(--hover-color);
 }
 
-input[type="text"]:valid {background:#fff;}
-input[type="text"]:invalid {background:#000;}
+.errorMessage {
+    font-size: 12px;
+}
+
+.errorMessage img {
+    display: inline-block;
+    padding-right: 5px;
+}

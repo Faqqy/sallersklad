@@ -97,7 +97,7 @@ function App() {
                 <div className="main-footer">
                     <Container>
                         <Row>
-                        <Col className="footerMobileMenu" sm={12}>{ <MainMenu/> }</Col> 
+                            <Col className="footerMobileMenu" sm={12}>{ <MainMenu/> }</Col> 
                         </Row>
                         <Row>
                             <Col md={4} sm={12}>{ <Logo/> }</Col>
@@ -106,12 +106,14 @@ function App() {
                         </Row>
                         <Row>
                             <Col>
+                            <div className='aboutLinks d-flex'>
                                 <a className='aboutLink' href="#">
                                     Согласие на обработку персональных данных
                                 </a>
                                 <a className='aboutLink' href="#">
                                     Политика конфиденциальности
                                 </a>
+                            </div>
                             </Col>
                         </Row>
                     </Container>

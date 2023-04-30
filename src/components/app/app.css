@@ -61,9 +61,6 @@
     .scrollDivName, .scrollDivName2  {
         height: 636px!important;
     }
-    .popup-content {
-        width: 94%!important;
-    }
     .aboutInfoBlock .swiper-wrapper {
         height: 420px!important;
     }
@@ -117,11 +114,11 @@
         padding-top: 78px;
     }
     .rgbaSLiderText .buttonGrey {
-        font-family: 'Fira Sans light';
-        height: 40px;
+        font-family: 'FiraSans-regular';
+        height: 50px;
         width: 100%;
-        font-size: 12px;
-        line-height: 40px;
+        font-size: 15px;
+        line-height: 50px;
     }
     .rgbaSLiderText h1 {
         width: 233px;
@@ -165,7 +162,7 @@
         padding-right: 35px;
     }
     .aboutLinks {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .aboutLinks .aboutLink {
         font-size: 12px!important;
@@ -183,7 +180,6 @@
     }
     .main-menu a {
         font-family: 'Fira Sans light';
-        font-size: 12px!important;
     }
     .main-header {
         height: 115px!important;
@@ -194,14 +190,12 @@
         right: 10px!important;
         top: -16px!important;
         left: 0;
-        font-size: 12px!important;
     }
     .first-block_aboutInfo {
         margin-top: 190px;
     }
     .aboutInfoBlock .first-block_aboutInfo p {
-        font-size: 12px;
-        width: 260px;
+        font-size: 15px;
         line-height: 170%;
     }
     .second-block_aboutInfo-item {
@@ -262,8 +256,8 @@
     .rgbaSLiderText p {
         width: 272px!important;
         padding-bottom: 26px!important;
-        font-size: 12px!important;
-        font-family: 'Fira Sans light'!important;
+        font-size: 15px!important;
+        font-family: 'FiraSans-regular'!important;
         padding: 3px;
     }
     .showHideLink {
@@ -285,7 +279,7 @@
         padding-bottom: 20px!important;
     }
     .aboutInfoBlock span {
-        font-size: 20px!important;
+        font-size: 15px!important;
     }
     .second-block_aboutInfo-item {
         width: 100%!important;
@@ -401,6 +395,7 @@
         display: block;
     }
     .main-footer ul {
+        height: 58px!important;
         flex-direction: row!important;
     }
     .aboutLink {
@@ -483,8 +478,8 @@
     .greyBlock {
         margin-top: 38px!important;
         padding-top: 180px!important;
-        padding-bottom: 93px!important;
-        height: 567px!important;
+        padding-bottom: 132px!important;
+        height: 608px!important;
     }
     .greyBlock .row .col {
         margin-top: -24px;
@@ -498,7 +493,7 @@
     .greyBlock .sliderFlex {
         flex-direction: column;
         width: 100%;
-        height: 430px;
+        height: 467px;
         align-items: baseline;
     }
     .sliderFlexText {
@@ -521,19 +516,19 @@
         padding-left: 5px;
     }
     .sliderFlex .sliderFlexText p {
-        font-size: 12px;
+        font-size: 15px;
         width: 260px;
         padding-left: 5px;
     }
     .greyBlock .container .swiper-button-next {
-        top: 85%;
+        top: 92%;
         right: 0;
         width: 35px;
         height: 35px;
         filter: none!important;
     }
     .greyBlock .container .swiper-button-prev {
-        top: 85%;
+        top: 92%;
         left: 0;
         width: 35px;
         height: 35px;
@@ -573,7 +568,7 @@
     }
     .slideItem h4 {
         width: 200px;
-        font-size: 14px;
+        font-size: 15px;
         color: var(--hover-color);
         font-weight: 600;
         margin-top: -23px;
@@ -582,10 +577,10 @@
     .slideItem p {
         font-family: 'FiraSans-regular';
         font-weight: 400;
-        font-size: 12px;
+        font-size: 15px;
         padding-top: 8px;
-        width: 187px;
-        padding-left: 2px;
+        width: 227px;
+        padding-left: 3px;
     }
     .slideItem img {
         margin-left: -24px;

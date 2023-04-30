@@ -918,10 +918,9 @@
     cursor: pointer;
 }
 
-
 .popup-content {
-    height: 740px;
-    width: 60%;
+    height: 710px;
+    width: 900px!important;
 }
 
 .infoBlockImgText {
@@ -936,8 +935,8 @@
 }
 
 .infoBlockPopupp {
-    margin-top: 66px;
-    margin-right: 55px;
+    margin-top: 75px;
+    margin-right: 22px
 }
 
 .infoBlockPopupp h4 {
@@ -956,8 +955,12 @@
     color: #766D62;
 } 
 
+.infoBlockImgText .swiper-pagination {
+    padding-left: 0!important;
+}
+
 .frameTextMini {
-    margin-top: 60px;
+    margin-top: 22px;
 }
 
 .aboutCallMe p {
@@ -971,10 +974,10 @@
 }
 
 .aboutCallMe {
-    left: 75px;
+    left: 73px;
     display: block;
     position: absolute;
-    bottom: 170px;
+    bottom: 70px;
 }
 
 .paragTabNameMap {

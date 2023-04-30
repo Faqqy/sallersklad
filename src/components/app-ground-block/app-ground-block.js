@@ -115,12 +115,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -146,7 +146,7 @@ function Ground() {
                                                     </h4>
                                                     <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
                                                     <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
+                                                        
                                                     </div>
                                                 </div>
                                             </div>

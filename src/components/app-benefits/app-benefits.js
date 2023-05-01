@@ -94,6 +94,7 @@ function Benefits() {
                     modules={[Navigation, Pagination, A11y]}
                     spaceBetween={-25}
                     slidesPerView={1.5}
+                    loop={true}
                     style={{
 
                         }}

@@ -4,12 +4,7 @@ import h2Img from './h2img.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import carsImg from './car.png';
-import closeImg from './close-btn.png';
-import frameImg from './frameMini.png';
-import frameImg2 from './frameDouble.png';
-import frameImg3 from './twoModulY4astok.png';
-import frameImg4 from './frame36.png';
-import frameImg5 from './frame18.png';
+import closeImg from './closeBTN.png';
 import mapOpenFirst from './mapFirst.png';
 import mapOpenSecond from './mapSecond.png';
 import { Navigation, Pagination, A11y } from 'swiper';
@@ -42,14 +37,14 @@ function Ground() {
     
     function OpenModalAbout() {
         const openInfoModal = document.querySelector('.textOpen');
-        if (openInfoModal.getAttribute("show")=="true"){
+        if (openInfoModal.getAttribute("show") === "true"){
             openInfoModal.setAttribute("show","false");
         } else {
             openInfoModal.setAttribute("show","true");
         }
 
-        document.querySelector('.ground-block').addEventListener('click', e => {
-            if (e.target.className === 'ground-block') {
+        openInfoModal.addEventListener('click', e => {
+            if (e.target.className !== openInfoModal) {
                 openInfoModal.setAttribute("show","false");
             }
         });
@@ -141,17 +136,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext5">Одиночный <br /> модуль</span>
@@ -174,12 +193,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -200,17 +219,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Большой модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg4 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">
@@ -235,12 +280,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -261,17 +306,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Большой модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg4 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">
@@ -296,12 +367,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -322,17 +393,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Большой модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg4 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">
@@ -357,12 +454,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -383,17 +480,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Большой модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 34 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg4 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">
@@ -406,7 +529,7 @@ function Ground() {
                                 <div className="modulFirst_seven sec0">
                                 <Popup ref={ref} trigger={<button className='bigModul open16'>
                                         П7 <br />
-                                    <span className="miniText">30 м<sup>2</sup></span>
+                                    <span className="miniText">36 м<sup>2</sup></span>
                                     </button>}
                                     modal
                                     closeOnDocumentClick
@@ -421,12 +544,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -447,17 +570,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Двойной модуль <br /> с участком
-                                                    </h4>
-                                                    <p>от 32 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg3 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                 </div>
@@ -485,12 +634,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -511,17 +660,43 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 36 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                 </div>
@@ -544,12 +719,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -570,17 +745,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext12">Одиночный <br /> модуль</span>
@@ -603,12 +802,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -629,17 +828,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext13">Одиночный <br /> модуль</span>
@@ -662,12 +885,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -688,17 +911,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext14">Одиночный <br /> модуль</span>
@@ -721,12 +968,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -747,17 +994,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext15">Одиночный <br /> модуль</span>
@@ -780,12 +1051,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{ clickable: true }}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                       }}
                                                     >
                                                     <SwiperSlide>
@@ -806,17 +1077,41 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Одиночный модуль <br />
-                                                    </h4>
-                                                    <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg5 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 18 кв. м<br/>
+                                                </h4>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <span class="tooltiptext16">Одиночный <br /> модуль</span>
@@ -856,12 +1151,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -883,18 +1178,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -916,12 +1234,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -943,18 +1261,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -976,12 +1317,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1003,18 +1344,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1036,12 +1400,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1063,18 +1427,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1096,12 +1483,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1123,18 +1510,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1156,12 +1566,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1183,18 +1593,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1216,12 +1649,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1243,18 +1676,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1276,12 +1732,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1303,18 +1759,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1336,12 +1815,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1363,18 +1842,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond sec7">
@@ -1405,12 +1907,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1432,17 +1934,43 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 72 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 70 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
+                                            <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985
+                                                150 06 06</a></p>
                                         </div>
                                     </Popup>
                                 </div>
@@ -1465,12 +1993,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1492,18 +2020,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1525,12 +2076,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1552,18 +2103,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1585,12 +2159,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1612,18 +2186,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1645,12 +2242,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1672,18 +2269,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1705,12 +2325,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1732,18 +2352,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1765,12 +2408,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1792,18 +2435,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1825,12 +2491,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1852,18 +2518,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1885,12 +2574,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1912,18 +2601,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -1945,12 +2657,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -1972,18 +2684,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -2005,12 +2740,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -2032,18 +2767,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -2065,12 +2823,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -2092,18 +2850,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond">
@@ -2125,12 +2906,12 @@ function Ground() {
                                                     slidesPerView={1}
                                                     pagination={{clickable: true}}
                                                     style={{
-                                                        "--swiper-pagination-color": "#413C33",
-                                                        "--swiper-pagination-width": "20px",
-                                                        "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                        "--swiper-pagination-color": "#FF5C00",
+                                                        "--swiper-pagination-width": "5px",
+                                                        "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                         "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                        "--swiper-pagination-bullet-size": "15px",
-                                                        "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                        "--swiper-pagination-bullet-size": "10px",
+                                                        "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                     }}
                                                 >
                                                     <SwiperSlide>
@@ -2152,18 +2933,41 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Одиночный модуль <br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 14 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
-                                                    <img src={frameImg5} alt="1"/>
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="aboutCallMe">
-                                            <p>Для аренды звоните <br/> по телефону <a href="tel:+79265330740">+7 926
-                                                533 07 40</a></p>
-                                        </div>
+                                            </div>
+                                            <div className="aboutCallMe">
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
+                                            </div>
                                     </Popup>
                                 </div>
                                 <div className="modulSecond sec7">
@@ -2222,12 +3026,12 @@ function Ground() {
                                                 slidesPerView={1}
                                                 pagination={{ clickable: true }}
                                                 style={{
-                                                    "--swiper-pagination-color": "#413C33",
-                                                    "--swiper-pagination-width": "20px",
-                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-color": "#FF5C00",
+                                                    "--swiper-pagination-width": "5px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                     "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                    "--swiper-pagination-bullet-size": "15px",
-                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    "--swiper-pagination-bullet-size": "10px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                   }}
                                                 >
                                                 <SwiperSlide>
@@ -2248,17 +3052,43 @@ function Ground() {
                                             </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Двойной модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg2 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 30 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
-                                            </div> 
+                                            </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">
@@ -2284,12 +3114,12 @@ function Ground() {
                                                 slidesPerView={1}
                                                 pagination={{ clickable: true }}
                                                 style={{
-                                                    "--swiper-pagination-color": "#413C33",
-                                                    "--swiper-pagination-width": "20px",
-                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-color": "#FF5C00",
+                                                    "--swiper-pagination-width": "5px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                     "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                    "--swiper-pagination-bullet-size": "15px",
-                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    "--swiper-pagination-bullet-size": "10px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                   }}
                                                 >
                                                 <SwiperSlide>
@@ -2310,17 +3140,41 @@ function Ground() {
                                             </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Мини модуль
-                                                    </h4>
-                                                    <p>от 13 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 15 кв. м<br/>
+                                                </h4>
+                                                <p>от 15 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Стандартная
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
-                                            </div> 
+                                            </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                 </div>
@@ -2342,12 +3196,12 @@ function Ground() {
                                                 slidesPerView={1}
                                                 pagination={{ clickable: true }}
                                                 style={{
-                                                    "--swiper-pagination-color": "#413C33",
-                                                    "--swiper-pagination-width": "20px",
-                                                    "--swiper-pagination-bullet-inactive-color": "#fff",
+                                                    "--swiper-pagination-color": "#FF5C00",
+                                                    "--swiper-pagination-width": "5px",
+                                                    "--swiper-pagination-bullet-inactive-color": "#DEDFE2",
                                                     "--swiper-pagination-bullet-inactive-opacity": "1",
-                                                    "--swiper-pagination-bullet-size": "15px",
-                                                    "--swiper-pagination-bullet-horizontal-gap": "20px",
+                                                    "--swiper-pagination-bullet-size": "10px",
+                                                    "--swiper-pagination-bullet-horizontal-gap": "8px",
                                                   }}
                                                 >
                                                 <SwiperSlide>
@@ -2368,17 +3222,43 @@ function Ground() {
                                             </Swiper>
                                                 </div>  
                                                 <div className="infoBlockPopupp">
-                                                    <h4>
-                                                        Двойной модуль <br /> с парковкой
-                                                    </h4>
-                                                    <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
-                                                    <div className="frameTextMini">
-                                                        <img src={ frameImg2 } alt="1" />
-                                                    </div>
+                                                <h4>
+                                                    Помещение 30 кв. м<br/>с личной парковкой
+                                                </h4>
+                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <div className="frameTextMini">
+                                                    <table>
+                                                        <tr className='dorComplect'>
+                                                            <th>
+                                                                Дверь:
+                                                            </th>
+                                                            <td>
+                                                                Увеличенная (Под паллеты)
+                                                            </td>
+                                                        </tr>
+                                                        <tr className='complectation'>
+                                                            <th>
+                                                                Комплектация:
+                                                            </th>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>Освещение</li>
+                                                                    <li>Рабочее место</li>
+                                                                    <li>Отопление</li>
+                                                                    <li>Кондиционер</li>
+                                                                    <li>Окно</li>
+                                                                    <li>Стеллаж</li>
+                                                                    <li>Парковочное место</li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+
+                                                    </table>
                                                 </div>
-                                            </div> 
+                                            </div>
+                                            </div>
                                             <div className="aboutCallMe">
-                                                <p>Для аренды звоните <br /> по телефону <a href="tel:+79265330740">+7 926 533 07 40</a></p>
+                                                <p>Для аренды звоните по телефону <a href="tel:+79851500606">+7 985 150 06 06</a></p>
                                             </div>
                                 </Popup>
                                     <div className="imgBg">

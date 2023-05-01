@@ -153,6 +153,7 @@
 
 .miniText {
     font-size: 12px;
+    white-space: nowrap;
 }
 
 .block-modules {
@@ -919,24 +920,25 @@
 }
 
 .popup-content {
-    height: 710px;
-    width: 900px!important;
+    height: 573px;
+    width: 935px!important;
 }
 
 .infoBlockImgText {
-    justify-content: space-between;
     width: 100%;
 }
 
 .infoBlockImgText .carouselImgPopupp {
     width: 375px;
-    margin-left: 68px;
-    margin-top: 77px;
+    height: 380px;
+    margin-left: 70px;
+    margin-right: 45px;
+    margin-top: 50px;
 }
 
 .infoBlockPopupp {
-    margin-top: 75px;
-    margin-right: 22px
+    margin-top: 50px;
+    margin-right: 70px;
 }
 
 .infoBlockPopupp h4 {
@@ -971,13 +973,15 @@
 
 .aboutCallMe a {
     color: #2C2C2C;
+    text-decoration: none;
 }
 
 .aboutCallMe {
-    left: 73px;
+    left: 70px;
     display: block;
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
+    width: 315px;
 }
 
 .paragTabNameMap {
@@ -985,5 +989,45 @@
     text-align: right;
     font-size: 20px;
     padding-bottom: 10px;
+}
+
+.complectation th {
+    display: flex;
+    font-family: 'Fira Sans light';
+    font-size: 15px;
+    color: #766D62;
+}
+
+
+.complectation ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dorComplect th {
+    font-family: 'Fira Sans light';
+    font-size: 15px;
+    color: #766D62;
+}
+
+.complectation td {
+    font-family: 'FiraSans-regular';
+    font-size: 17px;
+    color: #2C2C2C;
+}
+
+.dorComplect td {
+    font-family: 'FiraSans-regular';
+    font-size: 17px;
+    color: #2C2C2C;
+}
+
+.complectation ul {
+    padding-left: 45px;
+}
+
+.complectation li {
+    line-height: 2;
+    list-style-image: url(Vector.svg);
 }
 

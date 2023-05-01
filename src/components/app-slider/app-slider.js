@@ -1,13 +1,11 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import  './app-slider.css';
 import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.min.css';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 import img1 from './bgcarousel2.jpeg';
 import img2 from './bgcarousel3.jpeg';
 import img3 from './bgcarousel4.jpeg';

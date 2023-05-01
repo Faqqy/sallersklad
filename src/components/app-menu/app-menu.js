@@ -8,22 +8,22 @@ function MainMenu() {
         <div className='main-menu'>
           <ul>
             <li>
-              <Link id='about1' to="about" smooth={true} duration={1000} offset={-150}>
+              <Link id='about1' to="about" smooth={true} duration={300} offset={-65}>
                 О нас
               </Link>
             </li>
             <li>
-              <Link to="ploshadki" smooth={true} duration={1000} offset={-150}>
+              <Link to="ploshadki" smooth={true} duration={300} offset={-150}>
                 Площадки
               </Link>
             </li>
             <li>
-              <Link to="photoGallery" smooth={true} duration={1000} offset={-150}>
+              <Link to="photoGallery" smooth={true} duration={300} offset={-150}>
                 Фотогалерея
               </Link>
             </li>
             <li>
-              <Link to="coop" smooth={true} duration={1000} offset={-150}>
+              <Link to="coop" smooth={true} duration={300} offset={-150}>
                 Сотрудничество              
               </Link>
             </li>

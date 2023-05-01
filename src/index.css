@@ -5,10 +5,10 @@
   box-sizing: border-box;
 }
 
-ul[class],
+/* ul[class],
 ol[class] {
   padding: 0;
-}
+} */
 
 
 body,
@@ -48,9 +48,9 @@ ol[class] {
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 

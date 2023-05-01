@@ -14,7 +14,6 @@ import Form from '../app-forms/app-forms';
 import Benif from '../app-benefits/app-benefits';
 import PhotoGallery from '../app-photoGallery/app-photoGallery';
 import Cooperation from '../app-cooperation/app-cooperation';
-import Footer from '../app-footer/app-footer';
 import FooterContacts from '../app-contacts/app-contacts-footer';
 
 

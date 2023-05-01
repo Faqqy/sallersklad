@@ -5,7 +5,7 @@ import InputMask from "react-input-mask";
 import errorImg from './Icons_fields.png';
 
 export default function App(props) {
-    const { register, setError, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
         const formData = new FormData(document.getElementById("formElem"));
@@ -66,7 +66,7 @@ export default function App(props) {
         document.querySelector('.modal').append(thanksModal);
         const closeModalButton = document.querySelector('.modal__close');
         document.onclick = function (e) {
-            if (e.target.className != "modal") {
+            if (e.target.className !== "modal") {
                 thanksModal.remove();
                 closeModal();
             };
@@ -92,14 +92,14 @@ export default function App(props) {
                 })}
                 />
                 <div className="errors_block2" style={{height: 40}}>
-                    {errors.Name && errors.Name.type === "required" && <span className='errorMessage'><img src={ errorImg }></img>Поле обязательно к заполнению!</span>}
+                    {errors.Name && errors.Name.type === "required" && <span className='errorMessage'><img src={ errorImg } alt="ошибка"></img>Поле обязательно к заполнению!</span>}
                 </div>
                 <InputMask autoComplete="new-password" type='text' mask="+7 999 9999999" onChange={props.onChange} value={props.value}  placeholder='Телефон' {...register("Phone", {
                     required: true
                 })}
                  />
                 <div className="errors_block" style={{height: 40}}>
-                    {errors.Phone && errors.Phone.type === "required" && <span className='errorMessage'><img src={ errorImg }></img>Поле обязательно к заполнению!</span>}
+                    {errors.Phone && errors.Phone.type === "required" && <span className='errorMessage'><img src={ errorImg } alt="ошибка"></img>Поле обязательно к заполнению!</span>}
                 </div>
                 <input className='buttonOrange' type="submit" required value="Оставить заявку"/>
                 <div className="check_block">
@@ -112,7 +112,7 @@ export default function App(props) {
                         className='mx-3'
                     />
                     <div className="errors_block3" style={{height: 40}}>
-                        {errors.February && errors.February.type === "required" && <span className='errorMessage'><img src={ errorImg }></img>Нажмите чекбокс!</span>}
+                        {errors.February && errors.February.type === "required" && <span className='errorMessage'><img src={ errorImg } alt="ошибка"></img>Нажмите чекбокс!</span>}
                     </div>
                     <label htmlFor=''>Даю согласие на обработку персональных <br/> данных</label>
                 </div>

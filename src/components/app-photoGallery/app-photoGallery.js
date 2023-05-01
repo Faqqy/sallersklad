@@ -42,7 +42,7 @@ function PhotoGallery() {
     };
     return (
         <div className="Gallery" id='photoGallery'>
-            <h2> <img src={ h2Img } alt="Фотогалерея площадок" />Фотогалерея площадок</h2>
+            <h2> <img class="h2style" src={ h2Img } alt="Фотогалерея площадок" />Фотогалерея площадок</h2>
             <Tabs>
                 <TabList>
                 <Tab>

@@ -145,10 +145,10 @@ input:focus::placeholder {
     display: block;
     background: #fff;
     position: absolute;
-    width: 445px;
-    height: 310px;
+    width: 318px;
+    height: 255px;
     top: 0;
-    left: 320px;
+    left: 420px;
     margin: 0 auto;
     font-size: 25px;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -164,12 +164,30 @@ input:focus::placeholder {
     margin: 18px auto;
 }
 
-.modal__close {
-    position: absolute;
-    right: 11px;
-    top: -28px;
-    cursor: pointer;
+.modal__title .bigTextMessage {
+    padding-top: 20px;
 }
+
+.modal__title .miniTextMessage {
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-top: 15px;
+    color: #4D4D4D;
+}
+
+.modal__close {
+    width: 25px;
+    position: absolute;
+    right: 22px;
+    top: -20px;
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.modal__close:hover {
+    opacity: 0.5;
+}
+
 .modal__content {
     margin-top: 20px;
 }

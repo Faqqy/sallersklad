@@ -4,7 +4,7 @@ import h2Img from './h2img.svg';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import carsImg from './car.png';
-import closeImg from './closeBTN.png';
+import closeImg from './close-btn.png';
 import mapOpenFirst from './mapFirst.png';
 import mapOpenSecond from './mapSecond.png';
 import { Navigation, Pagination, A11y } from 'swiper';
@@ -139,7 +139,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -222,7 +222,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -309,7 +309,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -396,7 +396,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -483,7 +483,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -554,17 +554,17 @@ function Ground() {
                                                     >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageDoubleModulY4astok } alt="" />
+                                                            <img src={ imgageBigMudulForParking2 } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageDoubleModulY4astok1 } alt="" />
+                                                            <img src={ imgageBigMudulForParking1 } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageDoubleModulY4astok2 } alt="" />
+                                                            <img src={ imgageBigMudulForParking } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
@@ -573,7 +573,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -644,17 +644,17 @@ function Ground() {
                                                     >
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageOdino4Module } alt="" />
+                                                            <img src={ imgageBigMudulForParking2 } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageOdino4Module1 } alt="" />
+                                                            <img src={ imgageBigMudulForParking1 } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                     <SwiperSlide>
                                                         <div className="firstSlide">
-                                                            <img src={ imageOdino4Module2 } alt="" />
+                                                            <img src={ imgageBigMudulForParking } alt="" />
                                                         </div>
                                                     </SwiperSlide>
                                                 </Swiper>
@@ -663,7 +663,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 36 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 36 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 36 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -748,7 +748,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -831,7 +831,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -914,7 +914,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -997,7 +997,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1080,7 +1080,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1180,7 +1180,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1263,7 +1263,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1346,7 +1346,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1429,7 +1429,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1512,7 +1512,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1595,7 +1595,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1678,7 +1678,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1761,7 +1761,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1844,7 +1844,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -1936,7 +1936,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 72 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 70 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 70 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2022,7 +2022,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2105,7 +2105,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2188,7 +2188,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2271,7 +2271,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2354,7 +2354,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2437,7 +2437,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2520,7 +2520,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2603,7 +2603,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2686,7 +2686,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2769,7 +2769,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2852,7 +2852,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -2935,7 +2935,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 18 кв. м<br/>
                                                 </h4>
-                                                <p>от 18 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -3055,7 +3055,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 30 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 30 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -3143,7 +3143,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 15 кв. м<br/>
                                                 </h4>
-                                                <p>от 15 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 15 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>
@@ -3225,7 +3225,7 @@ function Ground() {
                                                 <h4>
                                                     Помещение 30 кв. м<br/>с личной парковкой
                                                 </h4>
-                                                <p>от 30 000 рулей <span className='dark'> в месяц</span></p>
+                                                <p>от 30 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
                                                     <table>
                                                         <tr className='dorComplect'>

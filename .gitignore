@@ -6,7 +6,8 @@
 .pnp.js
 
 .idea*
-
+.kdev4*
+sallersklad.kdev4
 # testing
 /coverage
 

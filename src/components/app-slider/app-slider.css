@@ -56,12 +56,12 @@
 }
 
 .rgbaSLiderText h1 {
-    font-family: 'Fira Sans semibold';
+    font-family: 'FiraSans-regular';
     font-size: 55px;
     color: #2C2C2C;
     font-weight: 600;
     padding-bottom: 18px;
-    line-height: 1.1;
+    width: 110%;
 }
 
 .rgbaSLiderText p {

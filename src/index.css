@@ -94,31 +94,35 @@ select {
 }
 
 @font-face {
-  font-family: 'Fira Sans medium';
+  font-family: 'FiraSans-medium';
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/FiraSans-Medium.ttf') format('truetype');
+  src: local('FiraSans-medium'),
+  url('./fonts/Inter-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'FiraSans-regular';
   font-style: normal;
-  font-weight: normal;
-  src: url('./fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  src: local('FiraSans-regular'),
+  url('./fonts/Inter-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Fira Sans semibold';
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/FiraSans-SemiBold.ttf') format('truetype');
+  src: local('Fira Sans semibold'),
+  url('./fonts/Inter-SemiBold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Fira Sans light';
   font-style: normal;
   font-weight: normal;
-  src: url('./fonts/FiraSans-Light.ttf') format('truetype');
+  src: local('Fira Sans light'),
+  url('./fonts/FiraSans-Light.ttf') format('truetype');
 }
 
 

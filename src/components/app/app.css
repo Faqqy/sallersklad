@@ -111,8 +111,13 @@
         padding: 2px;
     }
     .rgbaSLiderText .container h1 {
+        font-family: 'Fira Sans semibold';
+        font-weight: 600;
         font-size: 35px;
         padding-top: 75px;
+        width: 100%!important;
+        letter-spacing: -2px;
+        line-height: 120%;
     }
     .rgbaSLiderText .buttonGrey {
         font-family: 'FiraSans-regular';
@@ -120,9 +125,6 @@
         width: 100%;
         font-size: 15px;
         line-height: 50px;
-    }
-    .rgbaSLiderText h1 {
-        width: 100%!important;
     }
     .slider__block {
         overflow-x: visible!important;
@@ -355,8 +357,9 @@
         padding-bottom: 20px!important;
     }
     .secondBLockForm h3 {
+        font-family: 'FiraSans-regular'!important;
         font-size: 20px!important;
-        width: 246px;
+        width: 100%!important;
         margin: 0 auto;
         padding-bottom: 5px!important;
     }
@@ -542,7 +545,6 @@
     }
     .sliderFlex .sliderFlexText p {
         font-size: 15px;
-        width: 260px;
         padding-left: 5px;
     }
     .greyBlock .container .swiper-button-next {

@@ -16,7 +16,7 @@
 }
 
 .spanOrangeColor {
-    font-family: 'Fira Sans medium';
+    font-family: 'FiraSans-regular';
     font-size: 25px;
     color: var(--hover-color);
 }

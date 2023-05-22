@@ -8,12 +8,12 @@ import benef3 from './benif3.jpg';
 import benef4 from './benif4.jpg';
 import benef5 from './benif5.jpg';
 import benef6 from './benif6.jpg';
-import mobcarus1 from './mobcarus1.jpg';
-import mobcarus2 from './mobcarus2.jpg';
-import mobcarus3 from './mobcarus3.jpg';
-import mobcarus4 from './mobcarus4.jpg';
-import mobcarus5 from './mobcarus5.jpg';
-import mobcarus6 from './mobcarus6.jpg';
+import mobcarus1 from './newmob1.jpg';
+import mobcarus2 from './newmob2.jpg';
+import mobcarus3 from './newmob3.jpg';
+import mobcarus4 from './newmob4.jpg';
+import mobcarus5 from './newmob5.jpg';
+import mobcarus6 from './newmob6.jpg';
 
 function Benefits() {
     return (
@@ -92,7 +92,6 @@ function Benefits() {
             <h3>У нас - сплошные <span style={{color:'var(--hover-color)'}}><br />преимущества!</span></h3>
                 <Swiper
                     modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={-25}
                     slidesPerView={1.5}
                     loop={true}
                     style={{
@@ -104,8 +103,8 @@ function Benefits() {
                             <img src={ mobcarus1 } alt="" />
                             <h4>Освещаемая территория</h4>
                             <p>
-                                Территория площадки полностью освещается в темное<br /> время суток. <br />
-                                Над входом в каждое помещение дополнительно <br /> установлены индивидуальные прожекторы  
+                                Территория площадки полностью освещается в темное время суток.
+                                Над входом в каждое помещение дополнительно установлены индивидуальные прожекторы  
                             </p>
                         </div>
                     </SwiperSlide>

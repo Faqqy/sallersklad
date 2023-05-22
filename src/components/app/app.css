@@ -328,6 +328,7 @@
         font-size: 25px!important;
         padding-bottom: 18px!important;
         padding-top: 97px!important;
+        letter-spacing: -2px;
     }
     .groundInfoBlock {
         margin-bottom: -135px!important;
@@ -336,6 +337,7 @@
         font-family: 'FiraSans-regular'!important;
         font-size: 25px!important;
         padding-bottom: 18px!important;
+        letter-spacing: -2px;
     }
     .Gallery {
         margin-top: 160px!important;
@@ -345,6 +347,7 @@
         font-size: 25px!important; 
         display: flex;
         padding-bottom: 25px!important;
+        letter-spacing: -2px;
     }
     .cooperation-block {
         margin-bottom: -210px!important;
@@ -355,6 +358,7 @@
         display: flex;
         width: 150px;
         padding-bottom: 20px!important;
+        letter-spacing: -2px;
     }
     .secondBLockForm h3 {
         font-family: 'FiraSans-regular'!important;
@@ -515,7 +519,6 @@
     .greyBlock .col h3 {
         text-align: left;
         font-size: 20px;
-        width: 300px;
         padding-bottom: 11px;
     }
     .greyBlock .sliderFlex {
@@ -594,7 +597,7 @@
         text-align: left!important;
     }
     .slideItem h4 {
-        width: 200px;
+        width: 100%;
         font-size: 15px;
         color: var(--hover-color);
         font-weight: 600;
@@ -606,11 +609,14 @@
         font-weight: 400;
         font-size: 15px;
         padding-top: 8px;
-        width: 227px;
+        width: 85%;
         padding-left: 3px;
     }
+    .benefitsBlock .slideItem {
+        width: 105%;
+    }
     .slideItem img {
-        margin-left: -24px;
+        margin-left: -15px;
     }
     .main-body .slider {
       padding-top: 80px;
@@ -654,6 +660,9 @@
     .frameTextMini .complectation th {
         padding-left: 20px;
         font-size: 12px;
+    }
+    #photoGallery .lg-react-element img {
+        padding-bottom: 7px!important;
     }
   }
 

@@ -665,6 +665,9 @@
     #photoGallery .lg-react-element img {
         padding-bottom: 7px!important;
     }
+    .styles_itemBtn__3ViTo:hover {
+        color: #fff!important;
+    }
   }
 
 @media (max-width: 330px) {

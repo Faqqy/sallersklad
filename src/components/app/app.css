@@ -356,7 +356,6 @@
         font-family: 'FiraSans-regular'!important;
         font-size: 25px!important;
         display: flex;
-        width: 150px;
         padding-bottom: 20px!important;
         letter-spacing: -2px;
     }
@@ -597,12 +596,14 @@
         text-align: left!important;
     }
     .slideItem h4 {
+        font-family: 'FiraSans-regular';
         width: 100%;
         font-size: 15px;
         color: var(--hover-color);
         font-weight: 600;
         margin-top: -23px;
         padding-left: 2px;
+        letter-spacing: -0.3px;
     }
     .slideItem p {
         font-family: 'FiraSans-regular';

@@ -9,6 +9,7 @@ import HeaderContacts from '../app-contacts/app-contacts';
 import Slider from '../app-slider/app-slider';
 import AboutInfo from '../app-about-info/app-about-info';
 import AboutInfo2 from '../app-about-info/app-about-info-two';
+import AccordionMobile from '../app-about-info/accordionMobile';
 import Ground from '../app-ground-block/app-ground-block';
 import Form from '../app-forms/app-forms';
 import Benif from '../app-benefits/app-benefits';
@@ -46,6 +47,7 @@ function App() {
                             </Col>
                         </Row>
                     </Container>
+                    { <AccordionMobile/> }
                     { <AboutInfo2/> }
                 </div>
                 <div className="benefits-block">

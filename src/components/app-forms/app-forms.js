@@ -44,12 +44,8 @@ export default function App(props) {
         document.body.style.overflow = '';
     }
 
-    // const messageBig = {
-    //     success: 'Заявка отправлена! Наш менеджер свяжется с Вами в ближайшее время!',
-    // };
-
     const message = {
-        success: '<b class="bigTextMessage">Заявка отправлена!</b> <p class="miniTextMessage">Наш менеджер свяжется с Вами в ближайшее время!</p>',
+        success: '<b class="bigTextMessage">Заявка </br> отправлена!</b> <p class="miniTextMessage">Наш менеджер свяжется с Вами в ближайшее время!</p>',
     };
 
 

@@ -4,7 +4,7 @@
 }
 
 .secondBLockForm h3 {
-    font-family: 'Fira Sans medium';
+    font-family: 'FiraSans-regular';
     font-weight: 500;
     font-size: 35px;
     color: #fff;
@@ -87,7 +87,7 @@ input:focus::placeholder {
 .check_block {
     display: flex;
     text-align: left;
-    margin-right: 110px;
+    margin-right: 95px;
     justify-content: end;
     font-size: 15px;
     margin-top: 20px;
@@ -145,14 +145,15 @@ input:focus::placeholder {
     display: block;
     background: #fff;
     position: absolute;
-    width: 318px;
-    height: 255px;
+    width: 358px;
+    height: 290px;
     top: 0;
     left: 420px;
     margin: 0 auto;
     font-size: 25px;
     border: 1px solid rgba(0, 0, 0, .3);
     border-radius: 4px;
+    overflow: hidden;
 }
 
 .modal__dialog {
@@ -165,7 +166,9 @@ input:focus::placeholder {
 }
 
 .modal__title .bigTextMessage {
-    padding-top: 20px;
+    font-family: 'FiraSans-regular';
+    letter-spacing: -1px;
+    padding-top: 10px;
 }
 
 .modal__title .miniTextMessage {

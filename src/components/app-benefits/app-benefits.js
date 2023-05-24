@@ -89,7 +89,7 @@ function Benefits() {
                 </div>
             </div>
             <div className="mobileVersion-benefitsBlock">
-            <h3>У нас - сплошные <span style={{color:'var(--hover-color)'}}><br />преимущества!</span></h3>
+            <h3>У нас - сплошные <span style={{color:'var(--hover-color)'}}>преимущества!</span></h3>
                 <Swiper
                     modules={[Navigation, Pagination, A11y]}
                     slidesPerView={1.5}

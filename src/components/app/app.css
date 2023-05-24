@@ -366,9 +366,6 @@
         margin: 0 auto;
         padding-bottom: 5px!important;
     }
-    .secondBLockForm p {
-        padding-bottom: 30px!important;
-    }
     .ground-block_form {
         overflow: hidden!important;
         height: 450px!important;
@@ -667,6 +664,13 @@
     }
     .styles_itemBtn__3ViTo:hover {
         color: #fff!important;
+    }
+    .modal img {
+        padding-top: 16px;
+    }
+    .modal__content .modal__title .miniTextMessage {
+        padding-top: 0;
+        width: 101%;
     }
   }
 

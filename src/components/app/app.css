@@ -17,6 +17,7 @@
 }
 
 .aboutLink {
+    cursor: pointer;
     display: inline-block;
     margin-top: 65px;
     font-size: 17px;
@@ -181,14 +182,11 @@
     .main-menu ul {
         margin-top: 24px!important;
     }
-    .main-menu a {
-        font-family: 'Fira Sans light';
-    }
     .main-header {
         height: 115px!important;
     }
     .main-contacts {
-        font-family: 'Fira Sans light'!important;
+        font-family: 'FiraSans-regular'!important;
         position: absolute!important;
         right: 10px!important;
         top: -16px!important;
@@ -366,6 +364,10 @@
         margin: 0 auto;
         padding-bottom: 5px!important;
     }
+    .secondBLockForm .pbSpan {
+        display: block;
+        padding-bottom: 15px;
+    }
     .ground-block_form {
         overflow: hidden!important;
         height: 450px!important;
@@ -444,15 +446,22 @@
         padding-right: 0!important;
     }
     .infoBlockPopupp {
-        margin-top: -318px!important;
+        margin-top: 15px!important;
         margin-right: 0!important;
     }
     .frameTextMini {
-        margin-top: 300px!important;
+        margin-top: 285px!important;
     }
     .infoBlockImgText .carouselImgPopupp {
-        width: 85%!important;
-        margin: -29px auto!important;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        left: 0;
+        height: auto !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     .aboutCallMe {
         position: relative!important;
@@ -464,9 +473,9 @@
         font-size: 16px!important;
     }
     .infoBlockPopupp h4 {
-        font-family: 'FiraSans-regular'!important;
-        font-weight: 500!important;
-        font-size: 25px!important;
+        font-family: 'Fira Sans semibold'!important;
+        font-weight: 400!important;
+        font-size: 23px!important;
         padding-left: 23px;
         padding-right: 10px;
     }
@@ -478,11 +487,11 @@
         font-size: 18px!important;
     }
     #popup-root .popup-content {
-        width: 320px!important;
-        height: 720px!important;
+        width: 85% !important;
+        height: auto;
     }
     .popup-content .swiper-wrapper {
-        margin-top: 123px;
+        margin-top: 100px;
     }
     .secondBLockForm a {
         display: block;
@@ -500,7 +509,7 @@
     }
     .popup-content .close {
         top: 15px!important;
-        right: 17px!important;
+        right: 15px!important;
         z-index: 9;
     }
     .greyBlock {
@@ -671,6 +680,37 @@
     .modal__content .modal__title .miniTextMessage {
         padding-top: 0;
         width: 101%;
+    }
+    .bigModul {
+        text-align: center;
+        padding: 0;
+    }
+    #popup-root .popup-overlay #popup-35 {
+        height: 800px!important;
+        width: 90%!important;
+        overflow-y: scroll!important;
+        padding: 10px!important;
+    }
+    #popup-root .popup-overlay #popup-35 h4 {
+        font-size: 25px;
+    }
+    #popup-root .popup-overlay #popup-35 li {
+        font-size: 15px;
+    }
+    #popup-root .popup-overlay #popup-35 p {
+        font-size: 15px;
+    }
+    #popup-root .popup-overlay #popup-36 {
+        height: 800px!important;
+        width: 90%!important;
+        overflow-y: scroll!important;
+        padding: 10px!important;
+    }
+    #popup-root .popup-overlay #popup-36 h4 {
+        font-size: 25px;
+    }
+    #popup-root .popup-overlay #popup-36 p {
+        font-size: 15px;
     }
   }
 

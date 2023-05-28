@@ -15,7 +15,7 @@
     font-family: 'FiraSans-regular';
     font-size: 17px;
     color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 23px;
 }
 
 .secondBLockForm a {
@@ -24,6 +24,11 @@
     font-family: 'FiraSans-regular';
     text-decoration: none;
     padding-left: 10px;
+}
+
+.secondBLockForm .pbSpan {
+    display: block;
+    width: 100%;
 }
 
 .errors_block3 {

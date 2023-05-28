@@ -1,0 +1,28 @@
+#popup-35 {
+    width: 1203px!important;
+    height: auto;
+    padding: 60px 70px 60px 70px;
+}
+
+#popup-36 {
+    width: 1203px!important;
+    height: auto;
+    padding: 60px 70px 60px 70px;
+}
+
+#popup-36 {
+    height: 1200px;
+    overflow-y: scroll!important;
+}
+
+#popup-35 h4, #popup-36 h4 {
+    font-family: 'Fira Sans semibold';
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+
+#popup-35 li, #popup-36 p {
+    font-family: 'FiraSans-regular';
+    font-size: 17px;
+}
+

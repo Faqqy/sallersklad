@@ -910,11 +910,12 @@
     top: 33px;
     right: 33px;
     cursor: pointer;
+    opacity: 0.5;
     transition: all .25s;
 }
 
 .popup-content .close:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .moduleBlockDoubleModal .close2 {
@@ -982,11 +983,11 @@
 }
 
 .aboutCallMe {
-    left: 70px;
+    left: 75px;
     display: block;
     position: absolute;
-    bottom: 50px;
-    width: 315px;
+    bottom: 42px;
+    width: 348px;
 }
 
 .paragTabNameMap {

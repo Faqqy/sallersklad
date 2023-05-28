@@ -17,6 +17,7 @@ import PhotoGallery from '../app-photoGallery/app-photoGallery';
 import Cooperation from '../app-cooperation/app-cooperation';
 import Footer from '../app-footer/app-footer';
 import FooterContacts from '../app-contacts/app-contacts-footer';
+import FooterLinks from '../app-footer-links/app-footer-links';
 
 
 
@@ -108,14 +109,7 @@ function App() {
                         </Row>
                         <Row>
                             <Col>
-                            <div className='aboutLinks d-flex'>
-                                <a className='aboutLink' href="#">
-                                    Согласие на обработку персональных данных
-                                </a>
-                                <a className='aboutLink' href="#">
-                                    Политика конфиденциальности
-                                </a>
-                            </div>
+                                { <FooterLinks/> }
                             </Col>
                         </Row>
                     </Container>

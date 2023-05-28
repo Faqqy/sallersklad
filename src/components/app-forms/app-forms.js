@@ -83,7 +83,7 @@ export default function App(props) {
     
         <div className="secondBLockForm" id='forms'>
             <h3>
-                Заинтересовала аренда? <br />
+                <span class="pbSpan">Заинтересовала аренда?</span>
                 Оставьте заявку и мы обязательно с Вами свяжемся
             </h3>
             <p>или позвоните по номеру : <a href="tel:+79851500606">+7 985 150 06 06</a></p>

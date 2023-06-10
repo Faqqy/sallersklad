@@ -137,7 +137,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -746,7 +746,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -829,7 +829,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -912,7 +912,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -995,7 +995,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1078,7 +1078,7 @@ function Ground() {
                                                 </div>
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1178,7 +1178,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1261,7 +1261,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1344,7 +1344,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1427,7 +1427,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1510,7 +1510,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1593,7 +1593,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1676,7 +1676,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1759,7 +1759,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1842,7 +1842,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2020,7 +2020,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2186,7 +2186,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2269,7 +2269,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2352,7 +2352,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2435,7 +2435,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2518,7 +2518,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2601,7 +2601,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2684,7 +2684,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2767,7 +2767,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2850,7 +2850,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -2933,7 +2933,7 @@ function Ground() {
                                             </div>
                                             <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 18 кв. м<br/><br/>
+                                                    Помещение 18 кв. м<br/>
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -3141,7 +3141,7 @@ function Ground() {
                                                 </div>  
                                                 <div className="infoBlockPopupp">
                                                 <h4>
-                                                    Помещение 15 кв. м<br/><br/>
+                                                    Помещение 15 кв. м<br/>
                                                 </h4>
                                                 <p>от 15 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">

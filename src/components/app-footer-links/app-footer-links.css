@@ -2,6 +2,7 @@
     width: 1203px!important;
     height: 700px;
     padding: 60px 70px 60px 70px;
+    overflow-y: scroll!important;
 }
 
 #popup-36 {

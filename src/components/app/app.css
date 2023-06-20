@@ -446,7 +446,7 @@
         padding-right: 0!important;
     }
     .infoBlockPopupp {
-        margin-top: 15px!important;
+        margin-top: 30px!important;
         margin-right: 0!important;
     }
     .frameTextMini {
@@ -454,7 +454,7 @@
     }
     .infoBlockImgText .carouselImgPopupp {
         position: absolute;
-        top: 2px;
+        top: 25px;
         right: 0;
         left: 0;
         height: auto !important;

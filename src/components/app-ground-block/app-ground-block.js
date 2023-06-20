@@ -136,6 +136,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                    <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -745,6 +746,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                    <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -828,6 +830,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -911,6 +914,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -994,6 +998,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1077,6 +1082,7 @@ function Ground() {
                                                 </Swiper>
                                                 </div>
                                                 <div className="infoBlockPopupp">
+                                                <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1177,8 +1183,9 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
-                                                    Помещение 18 кв. м<br/>
+                                                    Помещение 18 кв. м
                                                 </h4>
                                                 <p>от 18 000 рублей <span className='dark'> в месяц</span></p>
                                                 <div className="frameTextMini">
@@ -1260,6 +1267,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1343,6 +1351,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1426,6 +1435,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1509,6 +1519,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1592,6 +1603,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1675,6 +1687,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1758,6 +1771,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -1841,6 +1855,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2019,6 +2034,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2102,6 +2118,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2185,6 +2202,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2268,6 +2286,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2351,6 +2370,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2434,6 +2454,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2517,6 +2538,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2600,6 +2622,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2683,6 +2706,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2766,6 +2790,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2849,6 +2874,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>
@@ -2932,6 +2958,7 @@ function Ground() {
                                                 </Swiper>
                                             </div>
                                             <div className="infoBlockPopupp">
+                                            <br />
                                                 <h4>
                                                     Помещение 18 кв. м
                                                 </h4>

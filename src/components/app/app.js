@@ -98,6 +98,7 @@ function App() {
                     </Container>
                 </div>
                 <div className="main-footer">
+                    <Footer/>
                     <Container>
                         <Row>
                             <Col className="footerMobileMenu" sm={12}>{ <MainMenu/> }</Col> 

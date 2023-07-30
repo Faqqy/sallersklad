@@ -15,12 +15,11 @@
     margin-left: 24px;
 }
 
-
 .rgbaSLiderBLock {
     z-index: 1;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     width: 50%;
     background: linear-gradient(146.05deg, rgba(255, 122, 0, 0.85) 14.13%, rgba(237, 85, 0, 0.86) 63.04%);
     border-radius: 0px 50px 50px 0px;

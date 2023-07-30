@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import InputMask from "react-input-mask";
 import errorImg from './Icons_fields.png';
 
+
 export default function App(props) {
     const { register, handleSubmit, formState: { errors } } = useForm();
 

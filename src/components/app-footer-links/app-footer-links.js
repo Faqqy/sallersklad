@@ -11,28 +11,28 @@ function FooterLinks() {
     const ref = useRef();
     const closeTooltip = () => ref.current.close();
     
-    function OpenModalAbout() {
-        const openInfoModal = document.querySelector('.textOpen');
-        if (openInfoModal.getAttribute("show") === "true"){
-            openInfoModal.setAttribute("show","false");
-        } else {
-            openInfoModal.setAttribute("show","true");
-        }
+    // function OpenModalAbout() {
+    //     const openInfoModal = document.querySelector('.textOpen');
+    //     if (openInfoModal.getAttribute("show") === "true"){
+    //         openInfoModal.setAttribute("show","false");
+    //     } else {
+    //         openInfoModal.setAttribute("show","true");
+    //     }
 
-        openInfoModal.addEventListener('click', e => {
-            if (e.target.className !== openInfoModal) {
-                openInfoModal.setAttribute("show","false");
-            }
-        });
-    };
+    //     openInfoModal.addEventListener('click', e => {
+    //         if (e.target.className !== openInfoModal) {
+    //             openInfoModal.setAttribute("show","false");
+    //         }
+    //     });
+    // };
 
     return (
         <div className='aboutLinks d-flex'>
 
             <Popup ref={ref} trigger={
-                <a className='aboutLink'>
+                <p className='aboutLink'>
                     Согласие на обработку персональных данных
-                </a>
+                </p>
                 }                                    
                 modal
                 closeOnDocumentClick
@@ -58,9 +58,9 @@ function FooterLinks() {
             </Popup>
 
             <Popup ref={ref} trigger={
-                <a className='aboutLink'>
+                <p className='aboutLink'>
                     Политика конфиденциальности
-                </a>
+                </p>
                 }                                    
                 modal
                 closeOnDocumentClick
